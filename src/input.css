@@ -1,0 +1,745 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("./fonts/Recoleta-Light.eot");
+  src:
+    url("./fonts/Recoleta-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Recoleta-Light.woff2") format("woff2"),
+    url("./fonts/Recoleta-Light.woff") format("woff"),
+    url("./fonts/Recoleta-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("./fonts/Recoleta-Bold.eot");
+  src:
+    url("./fonts/Recoleta-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Recoleta-Bold.woff2") format("woff2"),
+    url("./fonts/Recoleta-Bold.woff") format("woff"),
+    url("./fonts/Recoleta-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta Alt";
+  src: url("./fonts/RecoletaAlt-Thin.eot");
+  src:
+    url("./fonts/RecoletaAlt-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/RecoletaAlt-Thin.woff2") format("woff2"),
+    url("./fonts/RecoletaAlt-Thin.woff") format("woff"),
+    url("./fonts/RecoletaAlt-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("./fonts/Recoleta-Black.eot");
+  src:
+    url("./fonts/Recoleta-Black.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Recoleta-Black.woff2") format("woff2"),
+    url("./fonts/Recoleta-Black.woff") format("woff"),
+    url("./fonts/Recoleta-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta DEMO";
+  src: url("./fonts/Recoleta-RegularDEMO.eot");
+  src:
+    url("./fonts/Recoleta-RegularDEMO.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Recoleta-RegularDEMO.woff2") format("woff2"),
+    url("./fonts/Recoleta-RegularDEMO.woff") format("woff"),
+    url("./fonts/Recoleta-RegularDEMO.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("./fonts/Recoleta-Thin.eot");
+  src:
+    url("./fonts/Recoleta-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Recoleta-Thin.woff2") format("woff2"),
+    url("./fonts/Recoleta-Thin.woff") format("woff"),
+    url("./fonts/Recoleta-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("./fonts/Recoleta-Medium.eot");
+  src:
+    url("./fonts/Recoleta-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Recoleta-Medium.woff2") format("woff2"),
+    url("./fonts/Recoleta-Medium.woff") format("woff"),
+    url("./fonts/Recoleta-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("./fonts/Recoleta-SemiBold.eot");
+  src:
+    url("./fonts/Recoleta-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Recoleta-SemiBold.woff2") format("woff2"),
+    url("./fonts/Recoleta-SemiBold.woff") format("woff"),
+    url("./fonts/Recoleta-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("./fonts/Recoleta-Regular.eot");
+  src:
+    url("./fonts/Recoleta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Recoleta-Regular.woff2") format("woff2"),
+    url("./fonts/Recoleta-Regular.woff") format("woff"),
+    url("./fonts/Recoleta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta Alt";
+  src: url("./fonts/RecoletaAlt-Regular.eot");
+  src:
+    url("./fonts/RecoletaAlt-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/RecoletaAlt-Regular.woff2") format("woff2"),
+    url("./fonts/RecoletaAlt-Regular.woff") format("woff"),
+    url("./fonts/RecoletaAlt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta Alt";
+  src: url("./fonts/RecoletaAlt-Bold.eot");
+  src:
+    url("./fonts/RecoletaAlt-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/RecoletaAlt-Bold.woff2") format("woff2"),
+    url("./fonts/RecoletaAlt-Bold.woff") format("woff"),
+    url("./fonts/RecoletaAlt-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta Alt";
+  src: url("./fonts/RecoletaAlt-Medium.eot");
+  src:
+    url("./fonts/RecoletaAlt-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/RecoletaAlt-Medium.woff2") format("woff2"),
+    url("./fonts/RecoletaAlt-Medium.woff") format("woff"),
+    url("./fonts/RecoletaAlt-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta Alt";
+  src: url("./fonts/RecoletaAlt-SemiBold.eot");
+  src:
+    url("./fonts/RecoletaAlt-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/RecoletaAlt-SemiBold.woff2") format("woff2"),
+    url("./fonts/RecoletaAlt-SemiBold.woff") format("woff"),
+    url("./fonts/RecoletaAlt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta Alt";
+  src: url("./fonts/RecoletaAlt-Light.eot");
+  src:
+    url("./fonts/RecoletaAlt-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/RecoletaAlt-Light.woff2") format("woff2"),
+    url("./fonts/RecoletaAlt-Light.woff") format("woff"),
+    url("./fonts/RecoletaAlt-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta Alt";
+  src: url("./fonts/RecoletaAlt-Black.eot");
+  src:
+    url("./fonts/RecoletaAlt-Black.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/RecoletaAlt-Black.woff2") format("woff2"),
+    url("./fonts/RecoletaAlt-Black.woff") format("woff"),
+    url("./fonts/RecoletaAlt-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+@source "../index.html";
+@source "../services.html";
+
+@theme {
+  --font-recoleta: "Recoleta", serif;
+  --font-karla: "Karla", sans-serif;
+  --mivida-black: #21201f;
+  --mivida-white: #ffffff;
+  --mivida-cream-white: #fff7f1;
+  --mivida-off-white: #fdf1f1;
+  --mivida-white-warming: #fff5eb;
+  --mivida-orange: #e64428;
+  --mivida-light-orange: #eb6952;
+  --mivida-green: #4a5846;
+  --mivida-red: #d50401;
+  --mivida-light-red: #ffc1b6;
+  --mivida-light-gray: #f5f5f5;
+}
+:root {
+  --h1-font-size: clamp(2.375rem, 4.89vw, 4.375rem);
+  --h2-font-size: clamp(3.125rem, 4.66vw, 4.25rem);
+  --h3-font-size: clamp(2.375rem, 3.6vw, 3.125rem);
+  --h4-font-size: 2.375rem;
+  --h5-font-size: clamp(1.3125rem, 1.96vw, 1.75rem);
+  --h6-font-size: clamp(1rem, 1.45vw, 1.25rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-recoleta);
+}
+
+@layer base {
+  h1 {
+    font-size: var(--h1-font-size);
+    line-height: 1.01;
+    margin-bottom: 1.875rem;
+    color: var(--mivida-white);
+  }
+  h1 span {
+    color: var(--mivida-orange);
+  }
+  h2 {
+    font-size: var(--h2-font-size);
+    line-height: 1.1;
+  }
+  h2 span {
+    color: var(--mivida-orange);
+  }
+
+  h3 {
+    font-size: var(--h3-font-size);
+    line-height: 1.1;
+  }
+  h3 span {
+    color: var(--mivida-orange);
+  }
+
+  h4 {
+    font-size: var(--h4-font-size);
+    line-height: 1.1;
+  }
+  h4 span {
+    color: var(--mivida-orange);
+  }
+  h5 {
+    font-size: var(--h5-font-size);
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  h5 span {
+    color: var(--mivida-orange);
+  }
+  h6 {
+    font-size: var(--h6-font-size);
+    line-height: 1.1;
+  }
+  h6 span {
+    color: var(--mivida-orange);
+  }
+  h5:last-child {
+    margin: 0;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--mivida-white);
+    font-family: var(--font-karla);
+  }
+  h5 span {
+    color: var(--mivida-orange);
+  }
+}
+
+.l-container {
+  @apply mx-auto max-w-360 px-6.25 sm:px-11.25 md:px-15 lg:px-20 xl:px-33.75;
+}
+
+.l-container-narrow {
+  @apply mx-auto max-w-352 px-6.25 sm:px-8 lg:px-30;
+}
+
+.l-container-inner {
+  @apply mx-auto max-w-227.5 px-5 relative z-2;
+}
+
+.l-container-wide {
+  @apply mx-auto max-w-352.75;
+}
+
+.l-container-footer {
+  @apply mx-auto max-w-360 px-11.25;
+}
+
+.l-container-header {
+  @apply mx-auto max-w-302.75 px-3.25 sm:px-10 py-4;
+}
+.scrollLock {
+  @apply overflow-hidden;
+}
+@layer components {
+  /* header-css */
+  .site-header {
+    @apply fixed top-30 left-[50%] z-[9999] translate-x-[-50%]  w-[calc(100%-60px)] transition-all duration-300 ease-linear  max-w-303;
+  }
+  .site-header {
+    @apply max-sm:top-24.5;
+  }
+
+  .site-header.fixed {
+    @apply top-0  w-full max-w-full !rounded-none;
+  }
+  .site-header.c-bg-color {
+    @apply bg-[#FFF7F199] backdrop-blur-[1.875rem] rounded-2xl;
+  }
+  .site-header .header-menu li a {
+    @apply text-[var(--mivida-black)] text-[1rem] font-normal leading-[1.4] hover:text-[var(--mivida-orange)] transition-all duration-300 ease-linear;
+  }
+
+  .site-header nav {
+    @apply max-lg:flex 
+           max-lg:flex-col 
+           max-lg:absolute 
+           max-lg:top-[calc(100%+20px)] 
+           max-lg:left-0 
+           max-lg:w-full 
+           max-lg:h-auto 
+           max-lg:bg-[#FFF7F199] 
+           max-lg:backdrop-blur-[1.875rem]
+           max-lg:rounded-2xl max-lg:p-10;
+  }
+  .site-header.fixed nav {
+    @apply max-lg:top-[100%] max-lg:!rounded-none;
+  }
+  .site-header nav ul {
+    @apply max-lg:flex max-lg:flex-col max-lg:gap-5;
+  }
+  .site-header .btn-wrap {
+    @apply max-lg:flex max-lg:flex-col max-lg:gap-5;
+  }
+  .menuBtn.toggled span:first-child {
+    @apply max-lg:rotate-[45deg] max-lg:translate-x-[0px] max-lg:translate-y-[5px];
+  }
+  .menuBtn.toggled span:nth-of-type(2) {
+    @apply max-lg:opacity-0;
+  }
+  .menuBtn.toggled span:nth-of-type(3) {
+    @apply max-lg:rotate-[-45deg] max-lg:translate-x-[0px] max-lg:translate-y-[-8px];
+  }
+  nav {
+    @apply max-lg:max-h-0 
+         max-lg:overflow-hidden 
+         max-lg:opacity-0 
+         max-lg:invisible
+         max-lg:transition-[max-height,opacity,visibility]
+         max-lg:duration-[350ms]
+         max-lg:ease-in-out;
+    transition-delay: 0s, 0s, 350ms;
+  }
+  nav.open {
+    @apply max-lg:max-h-[80vh] 
+         max-lg:opacity-100 
+         max-lg:visible
+         max-lg:transition-[max-height,opacity,visibility]
+         max-lg:duration-[350ms]
+         max-lg:ease-in-out;
+    transition-delay: 0s, 0s, 0s;
+  }
+
+  /* banner-bg */
+  .bg-media {
+    @apply absolute inset-0 w-full h-full object-cover;
+  }
+
+  .bg-overlay {
+    @apply before:content-[''] before:absolute before:inset-0 before:bg-black/50;
+  }
+
+  .ab-shape {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+
+  /* img-with-text-css */
+
+  .c-card-split {
+    @apply flex flex-col md:flex-row justify-between gap-7.5 items-center sm:py-9 max-sm:pb-15;
+  }
+
+  .c-card-split-media {
+    @apply rounded-2xl overflow-hidden w-[48.72%] max-md:w-[100%];
+  }
+
+  .c-card-split-media img {
+    @apply w-full h-full object-cover;
+  }
+
+  .c-card-split-content {
+    @apply w-[42.65%] max-md:w-[100%] relative z-[9];
+  }
+
+  .c-card-split-content h3 {
+    @apply mb-7.5 text-[var(--mivida-black)];
+  }
+
+  .c-card-split-content p {
+    @apply mb-7.5 text-[var(--mivida-black)];
+  }
+  .c-card-split-content .btn-wrapper {
+    @apply mt-15;
+  }
+
+  /* card-banner-css */
+
+  .c-card-banner {
+    @apply relative flex flex-col-reverse md:flex-row overflow-hidden rounded-2xl bg-[var(--mivida-orange)];
+  }
+
+  .c-card-banner-content {
+    @apply py-10 px-6 sm:px-10 lg:px-17.5 flex flex-col justify-center w-full md:w-[50%] relative z-2;
+  }
+
+  .c-card-banner-content h2 {
+    @apply text-[var(--mivida-off-white)] mb-10;
+  }
+
+  .c-card-banner-content p {
+    @apply mb-5 text-[1.125rem] leading-[1.4] text-[var(--mivida-off-white)];
+  }
+  .c-card-banner-content p:last-child {
+    @apply mt-7.5;
+  }
+  .c-card-banner-media {
+    @apply relative overflow-hidden w-full md:w-[50%];
+  }
+
+  .c-card-banner-media img {
+    @apply w-full h-full object-cover;
+  }
+
+  /* COMPACT */
+
+  .cta-section h2 {
+    @apply text-[clamp(50px,4.66vw,68px)] text-[var(--mivida-cream-white)] leading-[1.10];
+  }
+  .cta-section p {
+    @apply text-[1.125rem] leading-[1.4] text-[var(--mivida-cream-white)] max-w-150 mx-auto mb-7.5;
+  }
+  .cta-section .btn-wrapper {
+    @apply mt-10;
+  }
+
+  /* btn-css-code */
+  .btn-wrapper {
+    @apply w-fit;
+  }
+  .primary-btn {
+    @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-[var(--mivida-orange)] min-w-46.5 text-[1rem] text-[var(--mivida-white)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  }
+  .primary-btn:hover {
+    @apply bg-[var(--mivida-green)];
+  }
+
+  .secondary-btn {
+    @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg  bg-[var(--mivida-white)] min-w-46.5 text-[1rem]  text-[var(--mivida-orange)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  }
+  .secondary-btn:hover {
+    @apply bg-[var(--mivida-green)] text-[var(--mivida-white)];
+  }
+  .secondary-btn img {
+    @apply transition-all duration-300 ease-out;
+  }
+  .secondary-btn:hover img {
+    @apply brightness-0 invert-100;
+  }
+
+  .transparent-btn {
+    @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-transparent border-[1px] border-[var(--mivida-black)] min-w-46.5 text-[1rem]  text-[var(--mivida-black)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  }
+  .transparent-btn:hover {
+    @apply bg-[var(--mivida-green)] text-[var(--mivida-white)] !border-transparent;
+  }
+  .transparent-btn img {
+    @apply brightness-100 invert-100;
+  }
+  .transparent-btn:hover img {
+    @apply filter brightness-100 invert-0;
+  }
+  .transparent-btn.white-border {
+    @apply border-[var(--mivida-white)] text-[var(--mivida-white)];
+  }
+  .transparent-btn.white-border img {
+    @apply brightness-100 invert-0;
+  }
+  .btn-size {
+    @apply !min-w-32.75 !px-3.75 !py-3 rounded;
+  }
+
+  /* sliderbtn-css-code */
+
+  .swiper-btn-wrapper {
+    @apply flex justify-center gap-2.5;
+  }
+  .swiper-btn-wrapper .primary-slider-btn {
+    @apply !flex !items-center !justify-center !w-10 !h-10 !rounded-md !bg-[var(--mivida-green)] !static !m-0 !transition-all !duration-300 !ease-out;
+  }
+  .swiper-btn-wrapper .primary-slider-btn:hover {
+    @apply !bg-[var(--mivida-orange)];
+  }
+  .swiper-btn-wrapper .primary-slider-btn::after {
+    @apply !content-none;
+  }
+
+  .swiper-btn-wrapper .secondary-slider-btn {
+    @apply !flex !items-center !justify-center !w-10 !h-10 !rounded-md !bg-[var(--mivida-orange)] !static !m-0 !transition-all !duration-300 !ease-out;
+  }
+  .swiper-btn-wrapper .secondary-slider-btn:hover {
+    @apply !bg-[var(--mivida-green)];
+  }
+  .swiper-btn-wrapper .secondary-slider-btn::after {
+    @apply !content-none;
+  }
+
+  /* footer-links-css */
+  footer .footer-links a {
+    @apply text-[0.875rem] font-normal text-[var(--mivida-white)] leading-[1.3] block mb-2.5 transition-all duration-300 ease-out hover:text-[var(--mivida-orange)];
+  }
+
+  /* connect-links-css */
+
+  .connect-links a {
+    @apply text-[1.3125rem] font-normal text-[var(--mivida-white)] leading-[1.1] block mb-1 transition-all duration-300 ease-out;
+    font-family: var(--font-recoleta);
+  }
+  .connect-links a:hover {
+    @apply text-[var(--mivida-orange)];
+  }
+
+  .social-links a {
+    @apply flex items-center justify-center w-12.5 h-12.5 rounded bg-[var(--mivida-orange)] hover:bg-[var(--mivida-green)] transition-all duration-300 ease-out;
+  }
+}
+
+/* testimonial-sec-css */
+.testimonial-sec .c-border-color-layout {
+  @apply border-(--mivida-green);
+}
+.testimonial-sec.c-color-layout-2 .c-border-color-layout {
+  @apply border-(--mivida-orange);
+}
+.testimonial-sec .swiper::before {
+  @apply !bg-transparent;
+}
+.testimonial-sec .swiper {
+  @apply before:content-[''] before:absolute before:left-[50%] before:top-[50%] before:-translate-x-1/2 before:-translate-y-1/2 before:bg-black/50 before:bg-[url('./images/quote.png')] before:bg-no-repeat before:bg-center before:bg-[contain] before:w-full before:h-full bg-transparent;
+}
+.testimonial-sec.c-color-layout-2 .c-border-color-layout .swiper {
+  @apply before:bg-[url('./images/quote-light-red.png')];
+}
+
+.testimonial-sec h3 {
+  @apply text-(--mivida-green);
+}
+.testimonial-sec.c-color-layout-2 h3 {
+  @apply text-(--mivida-orange);
+}
+
+/* multi-color-card-slider */
+
+.c-slider-card {
+  @apply flex flex-wrap w-137 sm:h-74.5 rounded-2xl overflow-hidden bg-[#D1D8CF];
+}
+.c-slider-media {
+  @apply w-50.5 max-sm:w-full max-sm:h-68.5;
+}
+.c-slider-media img {
+  @apply object-cover w-full h-full;
+}
+.c-slider-card .c-slider-content {
+  @apply px-5 py-5.5  max-sm:pb-22 w-[30%] max-sm:w-full grow-1 relative;
+}
+.c-slider-card .tag {
+  @apply bg-[#F5F5F5] text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit mb-5;
+}
+.c-slider-card span {
+  @apply text-(--mivida-green) font-[var(--font-karla)] font-normal relative block;
+}
+.c-slider-card span:not(:first-child)::before {
+  @apply content-[''] absolute  top-1/2 -left-3 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-[var(--mivida-green)];
+}
+.c-slider-card h4 {
+  @apply font-normal text-(--mivida-green) mb-3.5;
+}
+.c-slider-card p {
+  @apply font-normal text-(--mivida-green) mb-3.5;
+}
+.c-slider-card .btn {
+  @apply flex items-center justify-center w-10 h-10 rounded-md bg-[var(--mivida-green)] absolute right-3 bottom-4 max-sm:bottom-5 max-sm:right-4  transition-all duration-300 ease-out;
+}
+.c-slider-card .btn:hover {
+  @apply bg-[var(--mivida-orange)];
+}
+.c-slider-card .btn img {
+  @apply -rotate-45;
+}
+.c-slider-card.c-green-layout {
+  @apply bg-[var(--mivida-green)];
+}
+.c-slider-card.c-green-layout .tag {
+  @apply bg-[#99AA94] text-(--mivida-green);
+}
+.c-slider-card.c-green-layout span {
+  @apply text-(--mivida-light-gray);
+}
+.c-slider-card.c-green-layout span:not(:first-child)::before {
+  @apply bg-(--mivida-light-gray);
+}
+.c-slider-card.c-green-layout h4 {
+  @apply text-(--mivida-light-gray);
+}
+.c-slider-card.c-green-layout p {
+  @apply text-(--mivida-light-gray);
+}
+.c-slider-card.c-green-layout .btn {
+  @apply bg-[#6A7865];
+}
+.c-slider-card.c-green-layout .btn:hover {
+  @apply bg-[var(--mivida-orange)];
+}
+.c-slider-card.c-light-orange-layout {
+  @apply bg-(--mivida-light-orange);
+}
+.c-slider-card.c-light-orange-layout .tag {
+  @apply bg-(--mivida-light-red) text-(--mivida-orange);
+}
+.c-slider-card.c-light-orange-layout span {
+  @apply text-(--mivida-white);
+}
+.c-slider-card.c-light-orange-layout span:not(:first-child)::before {
+  @apply bg-(--mivida-white);
+}
+.c-slider-card.c-light-orange-layout h4 {
+  @apply text-(--mivida-white);
+}
+.c-slider-card.c-light-orange-layout p {
+  @apply text-(--mivida-white);
+}
+.c-slider-card.c-light-orange-layout .btn {
+  @apply bg-(--mivida-orange);
+}
+.c-slider-card.c-light-orange-layout .btn:hover {
+  @apply bg-(--mivida-green);
+}
+.c-slider-card.c-light-red-layout {
+  @apply bg-(--mivida-light-red);
+}
+.c-slider-card.c-light-red-layout .tag {
+  @apply bg-(--mivida-light-orange) text-(--mivida-off-white);
+}
+.c-slider-card.c-light-red-layout span {
+  @apply text-(--mivida-orange);
+}
+.c-slider-card.c-light-red-layout span:not(:first-child)::before {
+  @apply bg-(--mivida-orange);
+}
+.c-slider-card.c-light-red-layout h4 {
+  @apply text-(--mivida-red);
+}
+.c-slider-card.c-light-red-layout p {
+  @apply text-(--mivida-orange);
+}
+.c-slider-card.c-light-red-layout .btn {
+  @apply bg-(--mivida-orange);
+}
+.c-slider-card.c-light-red-layout .btn:hover {
+  @apply bg-(--mivida-green);
+}
+.c-single-card {
+  @apply sm:!w-88 !h-full;
+}
+.c-single-card .c-slider-media {
+  @apply sm:!w-full sm:!h-74.5;
+}
+
+.swiper-slide.c-slider-card {
+  @apply !mt-0 !mb-auto;
+}
+/* multi-color-card-slider-end */
+
+/* sticky card css */
+.c-sticky-card-wrapper {
+  @apply sticky top-22 w-[48.72%];
+}
+.c-sticky-card-wrapper .c-sticky-card {
+  @apply w-full sticky top-22 bg-(--mivida-cream-white) py-12.5;
+}
+.c-sticky-card-wrapper .c-sticky-card-media {
+  @apply w-full mb-7.5;
+}
+.c-sticky-card-wrapper .c-sticky-card-media img {
+  @apply w-full;
+}
+.c-sticky-card-wrapper h4 {
+  @apply text-[1.5rem] font-normal leading-[1.4] text-(--mivida-black) mb-4;
+}
+.c-sticky-card-wrapper p {
+  @apply text-(--mivida-black);
+}
+
+/* normal card css */
+.c-noraml-card {
+  @apply rounded-2xl overflow-hidden;
+}
+.c-noraml-card .c-card-media {
+  @apply w-full;
+}
+.c-noraml-card .c-card-content {
+  @apply p-7.5 border border-[#737271] border-t-0 rounded-2xl rounded-tl-none rounded-tr-none;
+}
+.c-noraml-card p {
+  @apply text-(--mivida-black);
+}
