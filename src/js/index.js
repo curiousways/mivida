@@ -1,22 +1,7 @@
-document.querySelectorAll('[class^="["]').forEach((el) => {
-  const cls = el.getAttribute("class");
-  const cleaned = cls.replace(/[\[\]]/g, "").trim();
-  el.setAttribute("class", cleaned);
-});
-
-const journalSwiper = new Swiper(".journal-sec .swiper", {
+const journalSwiper = new Swiper(".c-card-slider-sec.swiper", {
   slidesPerView: 1.202,
   spaceBetween: 12,
   loop: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 
   breakpoints: {
     641: {
@@ -28,9 +13,13 @@ const journalSwiper = new Swiper(".journal-sec .swiper", {
       },
     },
   },
+  navigation: {
+    nextEl: ".journal-sec .swiper-button-next",
+    prevEl: ".journal-sec .swiper-button-prev",
+  },
 });
 
-const testimonialSwiper = new Swiper(".testimonial-sec .swiper", {
+const testimonialSwiper = new Swiper(".c-testimonial-sec .swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -41,20 +30,93 @@ const testimonialSwiper = new Swiper(".testimonial-sec .swiper", {
   watchSlidesProgress: true,
   updateOnWindowResize: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+    nextEl: ".c-testimonial-sec .swiper-button-next",
+    prevEl: ".c-testimonial-sec .swiper-button-prev",
   },
 });
 
-document.querySelectorAll(".menuBtn").forEach((btn) => {
+const stepSlider = new Swiper(".c-step-slider-sec .c-step-slider", {
+  slidesPerView: 1.181,
+  spaceBetween: 20,
+  loop: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  watchSlidesProgress: true,
+  updateOnWindowResize: true,
+  navigation: {
+    nextEl: ".c-step-slider-sec .swiper-button-next",
+    prevEl: ".c-step-slider-sec .swiper-button-prev",
+  },
+  breakpoints: {
+    641: {
+      spaceBetween: 30,
+    },
+  },
+});
+
+const ValueSlider = new Swiper(".c-values-slider-sec .c-values-slider", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  watchSlidesProgress: true,
+  updateOnWindowResize: true,
+  navigation: {
+    nextEl: ".c-values-slider-sec .swiper-button-next",
+    prevEl: ".c-values-slider-sec .swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      spaceBetween: 0,
+      slidesPerView: 1,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+    },
+  },
+});
+const commitmentMobSlider = new Swiper(
+  ".c-commitments-sec .c-commitment-card-wrapper",
+  {
+    slidesPerView: 1.18,
+    spaceBetween: 20,
+    loop: true,
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+
+    navigation: {
+      nextEl: ".c-commitments-sec .swiper-button-next",
+      prevEl: ".c-commitments-sec .swiper-button-prev",
+    },
+    breakpoints: {
+      500: {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        loop: false,
+      },
+      1025: {
+        slidesPerView: "auto",
+        allowTouchMove: false,
+        simulateTouch: false,
+        spaceBetween: 0,
+      },
+    },
+  },
+);
+
+document.querySelectorAll(".c-menu-btn").forEach((btn) => {
   btn.addEventListener("click", function () {
     this.classList.toggle("toggled");
-    document.querySelector(".site-header nav")?.classList.toggle("menuOpen");
-    document.querySelector(".site-header")?.classList.toggle("active");
+    document.querySelector(".c-site-header nav")?.classList.toggle("menuOpen");
+    document.querySelector(".c-site-header")?.classList.toggle("active");
     document.documentElement.classList.toggle("scrollLock");
     document.querySelector("nav")?.classList.toggle("open");
   });
@@ -64,7 +126,7 @@ window.addEventListener("load", function () {
   function handleScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     document
-      .querySelector(".site-header")
+      .querySelector(".c-site-header")
       .classList.toggle("fixed", scrollTop > 100);
   }
 
