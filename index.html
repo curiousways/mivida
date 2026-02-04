@@ -9,50 +9,36 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./src/output.css" />
-    <!-- <link rel="stylesheet" href="./src/input.css" /> -->
   </head>
-  <body class="bg-(--mivida-cream-white)">
-    <header class="[site-header c-bg-color]">
-      <div class="[l-container-header]">
-        <div class="flex items-center justify-between">
-          <div class="max-w-23">
+  <body>
+    <header class="[ c-site-header c-header-theme ]">
+      <div class="[ l-container-header ]">
+        <div class="[ l-flex ]">
+          <div class="[ c-header-logo ]">
             <a href="#" class="block">
               <img src="./src/images/header-logo.png" alt="Mivida logo" />
             </a>
           </div>
-
           <div class="w-fit">
-            <button
-              class="[menuBtn] lg:hidden relative h-10 w-10 flex items-center justify-center cursor-pointer"
-              aria-label="Toggle navigation"
-            >
-              <span
-                class="[menu-line] absolute top-3 h-0.5 w-6 bg-(--mivida-orange) transition-all duration-300"
-              ></span>
-
-              <span
-                class="[menu-line] absolute top-5 h-0.5 w-6 bg-(--mivida-orange) transition-all duration-300"
-              ></span>
-
-              <span
-                class="[menu-line] absolute top-6.5 h-0.5 w-6 bg-(--mivida-orange) transition-all duration-300"
-              ></span>
+            <button class="[ c-menu-btn ]" aria-label="Toggle navigation">
+              <span class="[ c-menu-line ]"></span>
+              <span class="[ c-menu-line ]"></span>
+              <span class="[ c-menu-line ]"></span>
             </button>
-
-            <nav class="flex items-center gap-5 lg:gap-6 xl:gap-8">
-              <ul class="[header-menu] flex items-center lg:gap-7.5 xl:gap-12">
+            <nav class="[ c-header-menu-wrapper ]">
+              <ul class="[ c-header-menu ]">
                 <li><a href="#">How we Help</a></li>
                 <li><a href="#">Who we are</a></li>
                 <li><a href="#">Our People</a></li>
                 <li><a href="#">Insights</a></li>
               </ul>
 
-              <div class="[btn-wrap] flex items-center gap-4">
-                <a href="#" class="[primary-btn btn-size]">
+              <div class="[ c-btn-wrap ]">
+                <a href="#" class="[ c-primary-btn c-btn-size ]">
                   Let’s Talk
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
-                <a href="#" class="[transparent-btn btn-size]">
+                <a href="#" class="[ c-transparent-btn c-btn-size ]">
                   Portal
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
@@ -63,13 +49,13 @@
       </div>
     </header>
 
-    <section class="[announcement-bar] bg-(--mivida-orange)">
-      <div class="[l-container] !px-3.5 !sm:px-12.5">
-        <p class="text-center py-3.5 text-[0.875rem] sm:text-[1rem]">
+    <section class="[ c-announcement-bar ]">
+      <div class="[ l-container ] max-sm:!px-3.5">
+        <p class="[ c-announcement-bar-text ]">
           To get in touch please send us an Email at
           <a
             href="#"
-            class="underline hover:text-(--mivida-black) transition-all duration-300 ease-linear"
+            class="[ u-transistion-linear ] underline hover:text-(--mivida-black)"
           >
             hello@mividawealth.co.uk
           </a>
@@ -78,10 +64,8 @@
       </div>
     </section>
 
-    <section
-      class="[section-home-banner] relative overflow-hidden rounded-2xl sm:my-11 mt-3.5 mb-0 mx-3.5 z-[2]"
-    >
-      <div class="[bg-media bg-overlay]">
+    <section class="[ c-section-hero-banner ]">
+      <div class="[ c-media-bg c-media-overlay ]">
         <img
           class="w-full h-full object-cover"
           src="./src/images/home-banner.png"
@@ -89,24 +73,22 @@
         />
       </div>
 
-      <div
-        class="[l-container-narrow] relative z-[2] min-h-193.5 flex flex-col justify-end"
-      >
-        <div class="py-18.5 md:max-w-[80%] xl:max-w-[76.72%] max-w-full">
+      <div class="[ l-container-narrow c-banner-content-wrapper ]">
+        <div class="[ c-banner-content-box ]">
           <h1>
-            <span class="text-(--mivida-orange)">We are Mivida,</span>
+            <span>We are Mivida,</span>
             <br />
             your partner for life.
           </h1>
 
-          <p class="sm:max-w-[80%] md:max-w-[64.72%] max-w-full mb-4">
+          <p class="[ c-banner-desc ]">
             Wherever you are in your financial journey, we'll help you organise
             what you have and protect what matters most, building your financial
             future together.
           </p>
 
-          <div class="[btn-wrap] mt-15">
-            <a href="#" class="[primary-btn]">
+          <div class="[ c-btn-wrap ] mt-15">
+            <a href="#" class="[ c-primary-btn ]">
               How we Help
               <img src="./src/images/btn-arrow.png" alt="" />
             </a>
@@ -115,8 +97,8 @@
       </div>
     </section>
 
-    <section class="[rich-text-sec] py-21 md:py-20 relative">
-      <div class="[l-container-inner]">
+    <section class="[ c-rich-text-sec ]">
+      <div class="[ l-container-inner ]">
         <div class="text-center">
           <h5 class="mb-6.5">
             At Mivida, we understand that your finances are not simply about
@@ -135,7 +117,7 @@
         </div>
       </div>
 
-      <div class="ab-shape top-0 lg:top-[-20%]">
+      <div class="[ c-ab-shape ] top-0 lg:!top-[-20%]">
         <img
           class="object-cover w-full h-full sm:h-auto"
           src="./src/images/light-orange-zig-zag-line.png"
@@ -144,13 +126,13 @@
       </div>
     </section>
 
-    <section class="[img-with-text-sec] relative z-2">
-      <div class="[l-container]">
-        <div class="[c-card-split]">
-          <div class="[c-card-split-media]">
+    <section class="[ c-img-with-text-sec ]">
+      <div class="[ l-container ]">
+        <div class="[ c-card-split ]">
+          <div class="[ c-card-split-media ]">
             <img src="./src/images/clarity-in-complexity.png" alt="" />
           </div>
-          <div class="[c-card-split-content]">
+          <div class="[ c-card-split-content ]">
             <h3>Clarity in Complexity</h3>
             <p>
               Financial life can feel overwhelming when pensions, investments,
@@ -160,20 +142,20 @@
               wondering if you're on track. We transform scattered financial
               pieces into one comprehensive picture that makes sense.
             </p>
-            <div class="[btn-wrap] mt-7.5 lg:mt-15">
-              <a href="" class="[primary-btn]">
+            <div class="[ c-btn-wrap ] mt-7.5 lg:mt-15">
+              <a href="" class="[ c-primary-btn ]">
                 How we Help
                 <img src="./src/images/btn-arrow.png" alt="" />
               </a>
             </div>
           </div>
         </div>
-        <div class="[c-card-split] sm:flex-row-reverse">
-          <div class="[c-card-split-media]">
+        <div class="[ c-card-split row-reverse ]">
+          <div class="[ c-card-split-media ]">
             <img src="./src/images/confidence-future.png" alt="" />
           </div>
 
-          <div class="[c-card-split-content]">
+          <div class="[ c-card-split-content ]">
             <h3>Confidence in the Future</h3>
             <p>
               Through thoughtful planning and careful forecasting, we help you
@@ -183,8 +165,8 @@
               possibilities. Partnering with us ensures you have robust plans
               that adapt as life unfolds.
             </p>
-            <div class="[btn-wrap] mt-7.5 lg:mt-15">
-              <a href="" class="[primary-btn]">
+            <div class="[ c-btn-wrap ] mt-7.5 lg:mt-15">
+              <a href="" class="[ c-primary-btn ]">
                 Who we Are
                 <img src="./src/images/btn-arrow.png" alt="" />
               </a>
@@ -194,34 +176,36 @@
       </div>
     </section>
 
-    <section class="[c-card-banner-sec] sm:mx-3.5 mx-6 max-sm:mb-15">
-      <div class="[c-card-banner] [l-container-wide] relative">
-        <div class="[c-card-banner-content]">
-          <div class="md:max-w-128 md:ml-auto">
+    <section class="[ c-card-banner-sec ]">
+      <div class="[ l-container-wide c-card-banner ] relative">
+        <div class="[ c-card-banner-content ]">
+          <div class="[ c-card-banner-inner-box ]">
             <h2 class="">A Human Approach</h2>
-
-            <p>
-              Money conversations should feel reassuring, never intimidating or
-              overwhelming. We speak your language, not industry jargon. We
-              listen to your concerns and explain options clearly. Most
-              importantly, we remember the person behind the plan: you. The
-              hopes you're building toward, worries keeping you awake at night,
-              and dreams we're here to help protect and bring to life. We help
-              you find the delicate balance between preparing for your future,
-              experiencing your present and fully embracing life along the way.
-            </p>
-            <div class="[btn-wrap] mt-8.5 sm:mt-15">
-              <a href="" class="[secondary-btn]">
+            <div class="md:max-h-150 overflow-x-auto pr-2 scrollbar-thin">
+              <p>
+                Money conversations should feel reassuring, never intimidating
+                or overwhelming. We speak your language, not industry jargon. We
+                listen to your concerns and explain options clearly. Most
+                importantly, we remember the person behind the plan: you. The
+                hopes you're building toward, worries keeping you awake at
+                night, and dreams we're here to help protect and bring to life.
+                We help you find the delicate balance between preparing for your
+                future, experiencing your present and fully embracing life along
+                the way.
+              </p>
+            </div>
+            <div class="[ c-btn-wrap ] mt-8.5 sm:mt-15">
+              <a href="" class="[ c-secondary-btn ]">
                 How we Help
                 <img src="./src/images/orange-btn-arrow.png" alt="" />
               </a>
             </div>
           </div>
         </div>
-        <div class="[c-card-banner-media]">
+        <div class="[ c-card-banner-media ]">
           <img src="./src/images/human-approach.png" alt="" />
         </div>
-        <div class="[ab-shape]">
+        <div class="[ c-ab-shape ]">
           <img
             class="object-cover w-full h-full"
             src="./src/images/light-orange-2-zig-zag.png"
@@ -231,13 +215,13 @@
       </div>
     </section>
 
-    <section class="[img-with-text-sec] relative overflow-x-hidden">
-      <div class="[l-container]">
-        <div class="[c-card-split]">
-          <div class="[c-card-split-media]">
+    <section class="[ c-img-with-text-sec ]">
+      <div class="[ l-container ]">
+        <div class="[ c-card-split ]">
+          <div class="[ c-card-split-media ]">
             <img src="./src/images/who-we-work.png" alt="" />
           </div>
-          <div class="[c-card-split-content]">
+          <div class="[ c-card-split-content ]">
             <h3>Who we work with</h3>
             <p>
               We typically work with individuals, couples and families who have
@@ -247,8 +231,8 @@
               thoughtful guidance, long-term perspective and a relationship with
               experts in a firm that genuinely understands them.
             </p>
-            <div class="[btn-wrap] mt-7.5 lg:mt-15">
-              <a href="" class="[primary-btn]">
+            <div class="[ c-btn-wrap ] mt-7.5 lg:mt-15">
+              <a href="" class="[ c-primary-btn ]">
                 Get in touch
                 <img src="./src/images/btn-arrow.png" alt="" />
               </a>
@@ -256,7 +240,7 @@
           </div>
         </div>
       </div>
-      <div class="[ab-shape] top-[-5%] left-[15%]">
+      <div class="[ c-ab-shape ] top-[-5%] left-[15%]">
         <img
           class="object-cover w-full h-full"
           src="./src/images/white-light-zig-zag-line.png"
@@ -265,12 +249,10 @@
       </div>
     </section>
 
-    <section class="[testimonial-sec] mb-15 sm:mb-7.5 mx-6 sm:mx-3.75">
-      <div class="[l-container-wide]">
-        <div
-          class="[c-border-color-layout] border min-h-87.5 lg:min-h-117.75 rounded-2xl px-5 sm:px-10 pt-10 sm:pt-9.5 pb-10 sm:pb-13.5"
-        >
-          <div class="swiper max-w-256 mx-auto sm:!pt-17 sm:!pb-9.5">
+    <section class="[ c-testimonial-sec ]">
+      <div class="[ l-container-wide ]">
+        <div class="[ c-border-color-layout c-testimonial-wrapper ]">
+          <div class="swiper [ c-testimonial-slider ]">
             <div class="swiper-wrapper">
               <div class="swiper-slide text-center">
                 <h3 class="mb-7.5">
@@ -278,44 +260,38 @@
                   is, and forecasts for the future.
                 </h3>
 
-                <span
-                  class="text-3.5 text-[var(--mivida-black)] uppercase tracking-1.25 leading-3.75"
-                >
+                <span class="[ c-author-name ]">
                   J. & A. Smith, Cambridge
                 </span>
               </div>
               <div class="swiper-slide text-center">
-                <h3 class="mb-7.5 text-[var(--mivida-green)]">
+                <h3 class="mb-7.5">
                   Mivida have a great platform, showing what we’ve got, where it
                   is, and forecasts for the future.
                 </h3>
 
-                <span
-                  class="text-3.5 text-[var(--mivida-black)] uppercase tracking-1.25 leading-3.75"
-                >
+                <span class="[ c-author-name ]">
                   J. & A. Smith, Cambridge
                 </span>
               </div>
               <div class="swiper-slide text-center">
-                <h3 class="mb-7.5 text-[var(--mivida-green)]">
+                <h3 class="mb-7.5">
                   Mivida have a great platform, showing what we’ve got, where it
                   is, and forecasts for the future.
                 </h3>
 
-                <span
-                  class="text-3.5 text-[var(--mivida-black)] uppercase tracking-1.25 leading-3.75"
-                >
+                <span class="[ c-author-name ]">
                   J. & A. Smith, Cambridge
                 </span>
               </div>
             </div>
           </div>
 
-          <div class="[swiper-btn-wrapper] mt-7.5 sm:mt-5.25">
-            <div class="swiper-button-prev primary-slider-btn rotate-180">
+          <div class="[ c-swiper-btn-wrapper ] mt-7.5 sm:mt-5.25">
+            <div class="swiper-button-prev [ c-primary-slider-btn ] rotate-180">
               <img src="./src/images/btn-arrow.png" alt="" />
             </div>
-            <div class="swiper-button-next primary-slider-btn">
+            <div class="swiper-button-next [ c-primary-slider-btn ]">
               <img src="./src/images/btn-arrow.png" alt="" />
             </div>
           </div>
@@ -323,16 +299,14 @@
       </div>
     </section>
 
-    <section class="[journal-sec] mt-27 max-sm:mt-15 mb-22.5 max-sm:mb-16">
-      <div class="[l-container]">
-        <div
-          class="flex justify-between gap-7.5 mb-11.5 max-sm:mb-7.5 flex-wrap"
-        >
-          <div class="left-col">
+    <section class="[ journal-sec ] mt-27 max-sm:mt-15 mb-22.5 max-sm:mb-16">
+      <div class="[ l-container ]">
+        <div class="[ c-heading-btn-wrap ]">
+          <div>
             <h2><span>Journal</span></h2>
           </div>
-          <div class="[btn-wrap]">
-            <a href="" class="[primary-btn]">
+          <div class="[ c-btn-wrap ]">
+            <a href="" class="[ c-primary-btn ]">
               View all articles
               <img src="./src/images/btn-arrow.png" alt="" />
             </a>
@@ -340,22 +314,22 @@
         </div>
       </div>
       <div
-        class="[l-container-wide] pl-20 max-lg:pl-15 max-md:pl-11 max-sm:pl-6 max-w-360"
+        class="[ l-container-wide ] pl-20 max-lg:pl-15 max-md:pl-11 max-sm:pl-6 max-w-360"
       >
-        <div class="[c-card-slider-sec] swiper sm:h-153">
+        <div class="swiper [ c-card-slider-sec ]">
           <div class="swiper-wrapper">
             <div
-              class="swiper-slide c-slider-card c-light-red-layout c-single-card"
+              class="swiper-slide [ c-slider-card c-light-red-layout c-single-card ]"
             >
-              <div class="c-slider-media">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-1.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -364,21 +338,21 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="swiper-slide c-slider-card">
-              <div class="c-slider-media">
+            <div class="swiper-slide [ c-slider-card ]">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-2.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -387,21 +361,21 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="swiper-slide c-slider-card c-green-layout">
-              <div class="c-slider-media">
+            <div class="swiper-slide [ c-slider-card c-green-layout ]">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-1.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -410,21 +384,21 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="swiper-slide c-slider-card c-light-orange-layout">
-              <div class="c-slider-media">
+            <div class="swiper-slide [ c-slider-card c-light-orange-layout ]">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-3.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -433,21 +407,21 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="swiper-slide c-slider-card c-light-red-layout">
-              <div class="c-slider-media">
+            <div class="swiper-slide [ c-slider-card c-light-red-layout ]">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-4.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -456,21 +430,21 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="swiper-slide c-slider-card c-light-red-layout">
-              <div class="c-slider-media">
+            <div class="swiper-slide [ c-slider-card c-light-red-layout ]">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-1.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -479,21 +453,21 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="swiper-slide c-slider-card">
-              <div class="c-slider-media">
+            <div class="swiper-slide [ c-slider-card ]">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-2.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -502,21 +476,21 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="swiper-slide c-slider-card c-green-layout">
-              <div class="c-slider-media">
+            <div class="swiper-slide [ c-slider-card c-green-layout ]">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-1.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -525,21 +499,21 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="swiper-slide c-slider-card c-light-orange-layout">
-              <div class="c-slider-media">
+            <div class="swiper-slide [ c-slider-card c-light-orange-layout ]">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-3.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -548,21 +522,21 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
             </div>
-            <div class="swiper-slide c-slider-card c-light-red-layout">
-              <div class="c-slider-media">
+            <div class="swiper-slide [ c-slider-card c-light-red-layout ]">
+              <div class="[ c-slider-media ]">
                 <img
                   class="w-full h-full"
                   src="./src/images/journal-card-4.jpg"
                   alt=""
                 />
               </div>
-              <div class="[c-slider-content]">
-                <div class="[tag]">Investment</div>
+              <div class="[ c-slider-content ]">
+                <div class="[ c-tag ]">Investment</div>
                 <div class="flex gap-8 mb-3">
                   <span>01/01/2026</span> <span>3 min read</span>
                 </div>
@@ -571,7 +545,7 @@
                   US and Japanese equities continued to lead the charge in the
                   second...
                 </p>
-                <a href="" class="btn">
+                <a href="" class="[ c-btn ]">
                   <img src="./src/images/btn-arrow.png" alt="" />
                 </a>
               </div>
@@ -579,35 +553,32 @@
           </div>
         </div>
       </div>
-      <div class="[swiper-btn-wrapper] mt-7.5 sm:mt-5.5">
-        <div class="swiper-button-prev secondary-slider-btn rotate-180">
+      <div class="[ c-swiper-btn-wrapper ] mt-7.5 sm:mt-5.5">
+        <div class="swiper-button-prev [ c-secondary-slider-btn ] rotate-180">
           <img src="./src/images/btn-arrow.png" alt="" />
         </div>
-        <div class="swiper-button-next secondary-slider-btn">
+        <div class="swiper-button-next [ c-secondary-slider-btn ]">
           <img src="./src/images/btn-arrow.png" alt="" />
         </div>
       </div>
     </section>
 
-    <section
-      class="[cta-section] bg-(--mivida-red) mb-12 sm:my-7.5 mx-6 sm:mx-3.75 py-27.25 md:py-35 relative overflow-hidden rounded-2xl"
-    >
-      <div class="[l-container-inner] text-center">
-        <h2 class="mb-10">Ready to get started?</h2>
+    <section class="[ c-cta-section ]">
+      <div class="[ l-container-inner ] text-center">
+        <h2>Ready to get started?</h2>
         <p>
           It easier than you think. Tell us a bit about yourself and we’ll be in
           touch to start planning your future, together
         </p>
 
-        <div class="[btn-wrap] mt-10 flex justify-center w-full">
-          <a href="#" class="[secondary-btn]">
+        <div class="[ c-btn-wrap ]">
+          <a href="#" class="[ c-secondary-btn ]">
             How we Help
             <img src="./src/images/orange-btn-arrow.png" alt="" />
           </a>
         </div>
       </div>
-
-      <div class="[ab-shape]">
+      <div class="[ c-ab-shape ]">
         <img
           class="object-none w-full h-full max-sm:object-cover max-sm:object-center"
           src="./src/images/zig-zag-line.png"
@@ -616,13 +587,13 @@
       </div>
     </section>
 
-    <footer class="bg-(--mivida-black) pt-11.5 pb-9 sm:pb-5.75">
-      <div class="[l-container] sm:!px-11.25 !px-3.5">
+    <footer class="[ c-site-footer ]">
+      <div class="[ l-container-footer ]">
         <div
           class="flex justify-between max-md:flex-wrap gap-11.5 pb-7.75 sm:pb-0"
         >
           <div class="w-full md:w-[41.8%] lg:w-[42.8%]">
-            <div class="max-w-[32.75] mb-5">
+            <div class="[ c-footer-logo ]">
               <img
                 src="./src/images/footer-logo.png"
                 alt="Mivida Wealth logo"
@@ -633,29 +604,27 @@
               building confidence in your future - balancing preparation for
               tomorrow with experiencing today.
             </p>
-            <div class="flex flex-wrap gap-2.5 mb-5 sm:mb-8.5">
-              <a href="" class="[primary-btn btn-size]">
+            <div class="[ c-btn-wrap ]">
+              <a href="" class="[ c-primary-btn c-btn-size ]">
                 Let’s Talk
                 <img src="./src/images/btn-arrow.png" alt="" />
               </a>
-              <a href="" class="[transparent-btn white-border btn-size]">
+              <a href="" class="[ c-transparent-btn white-border c-btn-size ]">
                 Portal
                 <img src="./src/images/btn-arrow.png" alt="" />
               </a>
             </div>
 
-            <div class="[connect-links]">
+            <div class="[ c-connect-links ]">
               <a href="mailto:hello@mividawealth.com">hello@mividawealth.com</a>
               <a href="tel:+441279647663">+44 (0)1279 647663</a>
             </div>
           </div>
 
-          <div
-            class="w-full md:w-[52%] lg:w-[39%] flex justify-between gap-14 sm:gap-7.5 flex-wrap pr-9 sm:pr-0"
-          >
-            <div class="[menu-wrapper] w-fit text-(--mivida-white)">
-              <p class="mb-2.5 font-bold leading-[1.18]">About Mivida</p>
-              <ul class="[footer-links]">
+          <div class="[ c-footer-menu-wrapper ]">
+            <div class="[ c-menu-col ]">
+              <p class="[ c-footer-menu-heading ]">About Mivida</p>
+              <ul class="[ c-footer-links ]">
                 <li><a href="">How we Help</a></li>
                 <li><a href="">Who we are</a></li>
                 <li><a href="">Diversity & Inclusion</a></li>
@@ -664,16 +633,16 @@
               </ul>
             </div>
 
-            <div class="[menu-wrapper] w-fit text-(--mivida-white)">
-              <p class="mb-2.5 font-bold leading-[1.18]">Responsibility</p>
-              <ul class="[footer-links]">
+            <div class="[ c-menu-col ]">
+              <p class="[ c-footer-menu-heading ]">Responsibility</p>
+              <ul class="[ c-footer-links ]">
                 <li><a href="">ESG</a></li>
                 <li><a href="">Diversity & Inclusion</a></li>
                 <li><a href="">Accessibility</a></li>
               </ul>
             </div>
 
-            <div class="[social-links] w-full sm:w-fit">
+            <div class="[ c-social-links ]">
               <a href="" aria-label="LinkedIn">
                 <img src="./src/images/linkedin.png" alt="LinkedIn" />
               </a>
