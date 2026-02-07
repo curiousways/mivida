@@ -89,9 +89,34 @@ const commitmentMobSlider = new Swiper(
       prevEl: ".c-commitments-sec .swiper-button-prev",
     },
     breakpoints: {
-      500: {
+      400: {
         slidesPerView: "auto",
-        spaceBetween: 30,
+        spaceBetween: 20,
+        loop: false,
+      },
+      1025: {
+        slidesPerView: "auto",
+        allowTouchMove: false,
+        simulateTouch: false,
+        spaceBetween: 0,
+      },
+    },
+  },
+);
+const standardCardMobSlider = new Swiper(
+  ".c-standard-card-sec .c-standard-card-slider",
+  {
+    slidesPerView: 1.18,
+    spaceBetween: 12,
+
+    navigation: {
+      nextEl: ".c-standard-card-sec .swiper-button-next",
+      prevEl: ".c-standard-card-sec .swiper-button-prev",
+    },
+    breakpoints: {
+      400: {
+        slidesPerView: "auto",
+        spaceBetween: 20,
         loop: false,
       },
       1025: {
