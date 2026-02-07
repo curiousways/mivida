@@ -205,20 +205,22 @@
   --mivida-black: #21201f;
   --mivida-white: #ffffff;
   --mivida-cream-white: #fff7f1;
-  --mivida-off-white: #fdf1f1;
   --mivida-white-warming: #fff5eb;
-  --mivida-orange: #e64428;
-  --mivida-light-orange: #eb6952;
-  --mivida-green: #4a5846;
-  --mivida-red: #d50401;
-  --mivida-light-red: #ffc1b6;
-  --mivida-light-gray: #f5f5f5;
   --mivida-warm-cream: #fff7f199;
-  --mivida-sage-green: #d1d8cf;
-  --mivida-muted-sage: #99aa94;
+  --mivida-red: #d50401;
+  --mivida-red-400: #e64428;
+  --mivida-red-300: #eb6952;
+  --mivida-red-200: #ffc1b6;
+  --mivida-red-100: #fdf1f1;
+  --mivida-green: #4a5846;
+  --mivida-green-100: #f5f5f5;
+  --mivida-green-200: #d1d8cf;
+  --mivida-green-300: #99aa94;
+  --mivida-green-400: #6a7865;
   --mivida-warm-grey: #737271;
   --mivida-web-grey: #b6b6b6;
-  --mivida-olive-green: #6a7865;
+
+  --mivida-dark-teal: #024555;
   --h1-font-size: clamp(2.375rem, 4.89vw, 4.375rem);
   --h2-font-size: clamp(3.125rem, 4.66vw, 4.25rem);
   --h3-font-size: clamp(2.375rem, 3.6vw, 3.125rem);
@@ -237,14 +239,14 @@
 @utility bg-mivida-black {
   background-color: var(--mivida-black);
 }
-@utility bg-mivida-off-white {
-  background-color: var(--mivida-off-white);
+@utility bg-mivida-red-100 {
+  background-color: var(--mivida-red-100);
 }
-@utility bg-mivida-orange {
-  background-color: var(--mivida-orange);
+@utility bg-mivida-red-400 {
+  background-color: var(--mivida-red-400);
 }
-@utility bg-mivida-light-orange {
-  background-color: var(--mivida-light-orange);
+@utility bg-mivida-red-300 {
+  background-color: var(--mivida-red-300);
 }
 @utility bg-mivida-green {
   background-color: var(--mivida-green);
@@ -252,26 +254,32 @@
 @utility bg-mivida-red {
   background-color: var(--mivida-red);
 }
-@utility bg-mivida-light-gray {
-  background-color: var(--mivida-light-gray);
+@utility bg-mivida-red-200 {
+  background-color: var(--mivida-red-200);
+}
+@utility bg-mivida-green-100 {
+  background-color: var(--mivida-green-100);
 }
 @utility bg-mivida-warm-cream {
   background-color: var(--mivida-warm-cream);
 }
 
-@utility bg-mivida-sage-green {
-  background-color: var(--mivida-sage-green);
+@utility bg-mivida-green-200 {
+  background-color: var(--mivida-green-200);
 }
 
-@utility bg-mivida-muted-sage {
-  background-color: var(--mivida-muted-sage);
+@utility bg-mivida-green-300 {
+  background-color: var(--mivida-green-300);
 }
 @utility bg-mivida-warm-grey {
   background-color: var(--mivida-warm-grey);
 }
 
-@utility bg-mivida-olive-green {
-  background-color: var(--mivida-olive-green);
+@utility bg-mivida-green-400 {
+  background-color: var(--mivida-green-400);
+}
+@utility bg-mivida-dark-teal {
+  background-color: var(--mivida-dark-teal);
 }
 
 h1,
@@ -288,7 +296,7 @@ h6 {
   }
 
   .scrollbar-thin::-webkit-scrollbar-thumb {
-    background-color: var(--mivida-off-white); /* gray-400 */
+    background-color: var(--mivida-red-100); /* gray-400 */
     border-radius: 9999px;
   }
 
@@ -305,14 +313,14 @@ h6 {
     color: var(--mivida-white);
   }
   h1 span {
-    color: var(--mivida-orange);
+    color: var(--mivida-red-400);
   }
   h2 {
     font-size: var(--h2-font-size);
     line-height: 1.1;
   }
   h2 span {
-    color: var(--mivida-orange);
+    color: var(--mivida-red-400);
   }
 
   h3 {
@@ -320,7 +328,7 @@ h6 {
     line-height: 1.1;
   }
   h3 span {
-    color: var(--mivida-orange);
+    color: var(--mivida-red-400);
   }
 
   h4 {
@@ -328,7 +336,7 @@ h6 {
     line-height: 1.1;
   }
   h4 span {
-    color: var(--mivida-orange);
+    color: var(--mivida-red-400);
   }
   h5 {
     font-size: var(--h5-font-size);
@@ -337,14 +345,14 @@ h6 {
     margin-bottom: 1.5rem;
   }
   h5 span {
-    color: var(--mivida-orange);
+    color: var(--mivida-red-400);
   }
   h6 {
     font-size: var(--h6-font-size);
     line-height: 1.1;
   }
   h6 span {
-    color: var(--mivida-orange);
+    color: var(--mivida-red-400);
   }
   h5:last-child {
     margin: 0;
@@ -360,7 +368,7 @@ h6 {
     @apply !mb-0;
   }
   h5 span {
-    color: var(--mivida-orange);
+    color: var(--mivida-red-400);
   }
 }
 
@@ -455,7 +463,7 @@ h6 {
   @apply max-lg:flex max-lg:flex-col max-lg:gap-5;
 }
 .c-header-menu li a {
-  @apply text-(--mivida-black) text-[1rem] font-normal leading-[1.4] hover:text-[var(--mivida-orange)] transition-all duration-300 ease-linear;
+  @apply text-(--mivida-black) text-[1rem] font-normal leading-[1.4] hover:text-[var(--mivida-red-400)] transition-all duration-300 ease-linear;
 }
 .c-site-header .c-btn-wrap {
   @apply flex items-center gap-4 max-lg:flex-col max-lg:gap-5;
@@ -464,13 +472,13 @@ h6 {
   @apply lg:hidden relative h-9 w-8.5 flex items-center justify-center cursor-pointer;
 }
 .c-menu-line {
-  @apply absolute top-3 h-0.25 w-3 sm:w-5 bg-mivida-orange transition-all duration-300;
+  @apply absolute top-3 h-0.25 w-3 sm:w-5 bg-mivida-red-400 transition-all duration-300;
 }
 .c-menu-line:nth-of-type(2) {
-  @apply absolute top-4 h-0.25 w-3 sm:w-5 bg-mivida-orange transition-all duration-300;
+  @apply absolute top-4 h-0.25 w-3 sm:w-5 bg-mivida-red-400 transition-all duration-300;
 }
 .c-menu-line:nth-of-type(3) {
-  @apply absolute top-5 h-0.25 w-3 sm:w-5 bg-mivida-orange transition-all duration-300;
+  @apply absolute top-5 h-0.25 w-3 sm:w-5 bg-mivida-red-400 transition-all duration-300;
 }
 .c-menu-btn.toggled span:first-child {
   @apply max-lg:rotate-[45deg] max-lg:translate-x-[0px] max-lg:translate-y-[3px];
@@ -503,7 +511,7 @@ nav.open {
 
 /* accouncement-bar */
 .c-announcement-bar {
-  @apply bg-mivida-orange;
+  @apply bg-mivida-red-400;
 }
 .c-announcement-bar-text {
   @apply text-center py-3.5 text-[0.875rem] sm:text-[1rem];
@@ -589,7 +597,7 @@ nav.open {
   @apply sm:mx-3.5 mx-6 max-sm:mb-15 sm:my-7.5;
 }
 .c-card-banner {
-  @apply relative flex max-md:flex-col-reverse  overflow-hidden rounded-2xl bg-mivida-orange;
+  @apply relative flex max-md:flex-col-reverse  overflow-hidden rounded-2xl bg-mivida-red-400;
 }
 
 .c-card-banner-content {
@@ -600,11 +608,11 @@ nav.open {
 }
 
 .c-card-banner-content h2 {
-  @apply text-(--mivida-off-white) mb-7.5;
+  @apply text-(--mivida-red-100) mb-7.5;
 }
 
 .c-card-banner-content p {
-  @apply mb-5 text-[1.125rem] leading-[1.4] text-(--mivida-off-white);
+  @apply mb-5 text-[1.125rem] leading-[1.4] text-(--mivida-red-100);
 }
 .c-card-banner-content p:last-child {
   @apply mb-0;
@@ -640,7 +648,7 @@ nav.open {
   @apply text-(--mivida-green);
 }
 .c-cta-section.c-cta-section-layout-2 .c-secondary-btn:hover {
-  @apply text-(--mivida-white) bg-mivida-orange;
+  @apply text-(--mivida-white) bg-mivida-red-400;
 }
 
 /* btn-css-code */
@@ -648,14 +656,14 @@ nav.open {
   @apply w-fit;
 }
 .c-primary-btn {
-  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-mivida-orange min-w-46.5 text-[1rem] text-[var(--mivida-white)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-mivida-red-400 min-w-46.5 text-[1rem] text-[var(--mivida-white)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
 .c-primary-btn:hover {
   @apply bg-mivida-green;
 }
 
 .c-secondary-btn {
-  @apply cursor-pointer flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg  bg-mivida-white min-w-46.5 text-[1rem]  text-[var(--mivida-orange)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  @apply cursor-pointer flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg  bg-mivida-white min-w-46.5 text-[1rem]  text-[var(--mivida-red-400)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
 .c-secondary-btn:hover {
   @apply bg-mivida-green text-[var(--mivida-white)];
@@ -668,11 +676,11 @@ nav.open {
 }
 
 .c-secondary-btn.c-green-bg:hover {
-  @apply bg-mivida-orange;
+  @apply bg-mivida-red-400;
 }
 
 .c-tertiary-btn {
-  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-mivida-sage-green min-w-46.5 text-[1rem] text-(--mivida-green) font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-mivida-green-200 min-w-46.5 text-[1rem] text-(--mivida-green) font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
 .c-tertiary-btn:hover {
   @apply bg-mivida-white;
@@ -710,7 +718,7 @@ nav.open {
   @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg  bg-mivida-white min-w-46.5 text-[1rem]  text-(--mivida-green) font-karla leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
 .c-form-primay-btn:hover {
-  @apply bg-mivida-orange text-(--mivida-white);
+  @apply bg-mivida-red-400 text-(--mivida-white);
 }
 .c-form-primay-btn img {
   @apply transition-all duration-300 ease-out;
@@ -731,7 +739,7 @@ nav.open {
   @apply flex items-center justify-center w-10 h-10 rounded-md bg-mivida-green  m-0 transition-all duration-300 ease-out;
 }
 .c-primary-slider-btn:hover {
-  @apply bg-mivida-orange;
+  @apply bg-mivida-red-400;
 }
 .c-primary-slider-btn::after {
   @apply content-none;
@@ -741,7 +749,7 @@ nav.open {
   @apply static;
 }
 .c-secondary-slider-btn {
-  @apply flex items-center justify-center w-10 h-10 rounded-md bg-mivida-orange  m-0 transition-all duration-300 ease-out;
+  @apply flex items-center justify-center w-10 h-10 rounded-md bg-mivida-red-400  m-0 transition-all duration-300 ease-out;
 }
 .c-secondary-slider-btn:hover {
   @apply bg-mivida-green;
@@ -771,20 +779,20 @@ nav.open {
   @apply mb-2.5 font-bold leading-[1.18];
 }
 .c-footer-links a {
-  @apply text-[0.875rem] font-normal text-(--mivida-white) leading-[1.3] block mb-2.5 transition-all duration-300 ease-out hover:text-(--mivida-orange);
+  @apply text-[0.875rem] font-normal text-(--mivida-white) leading-[1.3] block mb-2.5 transition-all duration-300 ease-out hover:text-(--mivida-red-400);
 }
 .c-social-links {
   @apply w-full sm:w-fit;
 }
 .c-social-links a {
-  @apply flex items-center justify-center w-12.5 h-12.5 rounded bg-mivida-orange hover:bg-mivida-green transition-all duration-300 ease-out;
+  @apply flex items-center justify-center w-12.5 h-12.5 rounded bg-mivida-red-400 hover:bg-mivida-green transition-all duration-300 ease-out;
 }
 
 .c-connect-links a {
   @apply font-recoleta text-[1.3125rem] font-normal text-(--mivida-white) leading-[1.1] block mb-1 transition-all duration-300 ease-out w-fit;
 }
 .c-connect-links a:hover {
-  @apply text-(--mivida-orange);
+  @apply text-(--mivida-red-400);
 }
 
 /* c-testimonial-sec-css */
@@ -799,7 +807,7 @@ nav.open {
   @apply min-h-87.5 lg:min-h-117.75 px-5 sm:px-10 pt-10 sm:pt-9.5 pb-10 sm:pb-13.5 flex flex-col justify-between;
 }
 .c-testimonial-sec.c-color-layout-2 .c-border-color-layout {
-  @apply border-(--mivida-orange);
+  @apply border-(--mivida-red-400);
 }
 .c-testimonial-sec .swiper::before {
   @apply !bg-transparent;
@@ -821,7 +829,7 @@ nav.open {
   @apply text-(--mivida-green) mb-5.5;
 }
 .c-testimonial-sec.c-color-layout-2 h3 {
-  @apply text-(--mivida-orange);
+  @apply text-(--mivida-red-400);
 }
 .c-author-name {
   @apply text-(--mivida-black) uppercase tracking-[2.85px] leading-[1.10] text-[0.875rem] font-bold font-karla;
@@ -835,7 +843,7 @@ nav.open {
   @apply h-153;
 }
 .c-slider-card {
-  @apply flex flex-wrap max-sm:flex-col w-137 sm:h-74.5 rounded-2xl overflow-hidden bg-mivida-sage-green;
+  @apply flex flex-wrap max-sm:flex-col w-137 sm:h-74.5 rounded-2xl overflow-hidden bg-mivida-green-200;
 }
 .c-slider-media {
   @apply w-50.5 max-sm:w-full max-sm:h-68.5;
@@ -847,7 +855,7 @@ nav.open {
   @apply px-5 py-5.5  max-sm:pb-12.5 w-[30%] max-sm:w-full  grow-1 relative;
 }
 .c-slider-card .c-tag {
-  @apply bg-mivida-light-gray text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit mb-5;
+  @apply bg-mivida-green-100 text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit mb-5;
 }
 .c-slider-card span {
   @apply text-(--mivida-green) font-[var(--font-karla)] font-normal relative block;
@@ -865,7 +873,7 @@ nav.open {
   @apply flex items-center justify-center w-10 h-10 rounded-md bg-mivida-green absolute right-3 bottom-4 max-sm:bottom-5 max-sm:right-4  transition-all duration-300 ease-out;
 }
 .c-btn:hover {
-  @apply bg-mivida-orange;
+  @apply bg-mivida-red-400;
 }
 .c-btn img {
   @apply -rotate-45;
@@ -874,31 +882,31 @@ nav.open {
   @apply bg-mivida-green;
 }
 .c-slider-card.c-green-layout .c-tag {
-  @apply bg-mivida-muted-sage text-(--mivida-green);
+  @apply bg-mivida-green-300 text-(--mivida-green);
 }
 .c-slider-card.c-green-layout span {
-  @apply text-(--mivida-light-gray);
+  @apply text-(--mivida-green-100);
 }
 .c-slider-card.c-green-layout span:not(:first-child)::before {
-  @apply bg-mivida-light-gray;
+  @apply bg-mivida-green-100;
 }
 .c-slider-card.c-green-layout h4 {
-  @apply text-(--mivida-light-gray);
+  @apply text-(--mivida-green-100);
 }
 .c-slider-card.c-green-layout p {
-  @apply text-(--mivida-light-gray);
+  @apply text-(--mivida-green-100);
 }
 .c-slider-card.c-green-layout .c-btn {
-  @apply bg-mivida-olive-green;
+  @apply bg-mivida-green-400;
 }
 .c-slider-card.c-green-layout .c-btn:hover {
-  @apply bg-mivida-orange;
+  @apply bg-mivida-red-400;
 }
 .c-slider-card.c-light-orange-layout {
-  @apply bg-mivida-light-orange;
+  @apply bg-mivida-red-300;
 }
 .c-slider-card.c-light-orange-layout .c-tag {
-  @apply bg-(--mivida-light-red) text-(--mivida-orange);
+  @apply bg-(--mivida-red-200) text-(--mivida-red-400);
 }
 .c-slider-card.c-light-orange-layout span {
   @apply text-(--mivida-white);
@@ -913,31 +921,31 @@ nav.open {
   @apply text-(--mivida-white);
 }
 .c-slider-card.c-light-orange-layout .c-btn {
-  @apply bg-mivida-orange;
+  @apply bg-mivida-red-400;
 }
 .c-slider-card.c-light-orange-layout .c-btn:hover {
   @apply bg-mivida-green;
 }
 .c-slider-card.c-light-red-layout {
-  @apply bg-(--mivida-light-red);
+  @apply bg-(--mivida-red-200);
 }
 .c-slider-card.c-light-red-layout .c-tag {
-  @apply bg-mivida-light-orange text-(--mivida-off-white);
+  @apply bg-mivida-red-300 text-(--mivida-red-100);
 }
 .c-slider-card.c-light-red-layout span {
-  @apply text-(--mivida-orange);
+  @apply text-(--mivida-red-400);
 }
 .c-slider-card.c-light-red-layout span:not(:first-child)::before {
-  @apply bg-mivida-orange;
+  @apply bg-mivida-red-400;
 }
 .c-slider-card.c-light-red-layout h4 {
   @apply text-(--mivida-red);
 }
 .c-slider-card.c-light-red-layout p {
-  @apply text-(--mivida-orange);
+  @apply text-(--mivida-red-400);
 }
 .c-slider-card.c-light-red-layout .c-btn {
-  @apply bg-mivida-orange;
+  @apply bg-mivida-red-400;
 }
 .c-slider-card.c-light-red-layout .c-btn:hover {
   @apply bg-mivida-green;
@@ -1017,7 +1025,7 @@ nav.open {
 
 /* step-proces-sec */
 .c-step-slider-sec {
-  @apply mt-15 mb-22.5;
+  @apply mt-15 mb-22.5 max-sm:mb-8.5;
 }
 .c-step-topHeading {
   @apply sm:max-w-226.5 mb-7.5 pr-33 max-md:pr-15 max-sm:pr-6;
@@ -1026,7 +1034,13 @@ nav.open {
   @apply max-w-326 ml-auto mr-0;
 }
 .c-step-slide {
-  @apply flex  flex-nowrap bg-mivida-olive-green rounded-2xl overflow-hidden max-md:flex-col-reverse h-auto;
+  @apply flex  flex-nowrap bg-mivida-green-400 rounded-2xl overflow-hidden max-md:flex-col-reverse h-auto;
+}
+.c-step-slider-bg-layout-2 .c-step-slide {
+  @apply bg-mivida-red-400;
+}
+.c-step-slider-bg-layout-2 .c-step-slide.swiper-slide-active {
+  @apply bg-mivida-red-400;
 }
 .c-step-slide.swiper-slide-active {
   @apply bg-mivida-green;
@@ -1042,16 +1056,25 @@ nav.open {
   @apply w-full h-full object-cover object-left;
 }
 .c-step-slide-count.u-title {
-  @apply mb-0 text-(--mivida-white) font-recoleta mt-15.5 max-sm:text-[4.1875rem];
+  @apply mb-0 text-(--mivida-white) font-recoleta mt-10.5 max-sm:text-[4.1875rem];
+}
+.c-step-slider-bg-layout-2 .c-step-slide-count.u-title {
+  @apply text-(--mivida-cream-white);
 }
 .c-step-slide-content-inner {
   @apply w-[88.83%];
 }
 .c-step-slide-tag {
-  @apply bg-mivida-olive-green text-(--mivida-off-white) py-1 px-4 rounded-[3.125rem] w-fit mb-7.5 text-[0.875rem] font-karla;
+  @apply bg-mivida-green-400 text-(--mivida-red-100) py-1 px-4 rounded-[3.125rem] w-fit mb-7.5 text-[0.875rem] font-karla;
+}
+.c-step-slider-bg-layout-2 .c-step-slide-tag {
+  @apply bg-mivida-red-100 text-(--mivida-red-400);
 }
 .c-step-slide-desc {
-  @apply text-[1.125rem] text-(--mivida-off-white) mt-7.5;
+  @apply text-[1.125rem] text-(--mivida-red-100) mt-7.5;
+}
+.c-step-slider-bg-layout-2 .c-tertiary-btn {
+  @apply bg-mivida-white text-(--mivida-red-400) hover:bg-mivida-green hover:text-(--mivida-white);
 }
 
 .c-commitments-sec {
@@ -1086,10 +1109,10 @@ nav.open {
   @apply fill-(--mivida-black);
 }
 .c-commitment-card.c-color-layout-2 {
-  @apply bg-mivida-olive-green;
+  @apply bg-mivida-green-400;
 }
 .c-commitment-card.c-color-layout-3 {
-  @apply bg-mivida-sage-green;
+  @apply bg-mivida-green-200;
 }
 .c-commitment-card.c-color-layout-3 h6 {
   @apply text-(--mivida-green);
@@ -1114,7 +1137,7 @@ nav.open {
 }
 
 .c-values-slider-sec {
-  @apply mx-3.5 max-md:mx-5 my-7.5 bg-mivida-sage-green rounded-3xl pt-15.5  pb-30.5 max-md:pb-15 max-sm:pb-9.5;
+  @apply relative z-2 mx-3.5 max-md:mx-5 my-7.5 bg-mivida-green-200 rounded-3xl pt-15.5  pb-30.5 max-md:pb-15 max-sm:pb-9.5;
 }
 .c-values-slider-title {
   @apply max-w-192.5 mx-auto max-lg:max-w-full max-lg:px-25 max-md:px-15 max-sm:px-5;
@@ -1129,7 +1152,7 @@ nav.open {
   @apply mt-11.5 max-md:mt-7.5 max-w-191 max-lg:max-w-full max-lg:px-17.5 max-md:px-5;
 }
 .c-value-slide {
-  @apply bg-mivida-cream-white flex max-md:flex-col-reverse rounded-2xl overflow-hidden h-auto;
+  @apply bg-mivida-cream-white flex max-md:flex-col-reverse rounded-2xl overflow-hidden h-auto min-h-93.5;
 }
 .c-value-slide-media {
   @apply w-70.5 max-md:w-full;
@@ -1138,10 +1161,10 @@ nav.open {
   @apply w-full h-full object-cover object-left;
 }
 .c-value-slide-content {
-  @apply py-10.5  max-sm:py-7.5  px-12 max-sm:px-5 w-[30%] grow-1 max-md:w-full;
+  @apply py-10.5  max-sm:py-7.5  px-12 max-sm:px-5 w-[30%] grow-1 max-md:w-full flex flex-col justify-center;
 }
 .c-value-slide-tag {
-  @apply bg-mivida-olive-green text-(--mivida-off-white) py-1.25 px-4.75 rounded-[3.125rem] w-fit text-[0.875rem] font-karla;
+  @apply bg-mivida-green-400 text-(--mivida-red-100) py-1.25 px-4.75 rounded-[3.125rem] w-fit text-[0.875rem] font-karla;
 }
 .c-value-slide-dec {
   @apply text-(--mivida-green) text-[1.125rem] leading-[1.4];
@@ -1162,11 +1185,11 @@ nav.open {
   @apply flex items-center justify-center gap-5 mt-19 max-sm:mt-15 flex-wrap max-sm:hidden;
 }
 .c-filter-btn button {
-  @apply py-1 px-5 text-(--mivida-green) bg-mivida-light-gray rounded-[50px] border border-(--mivida-green) text-[0.875rem] transition-all duration-300 ease-linear cursor-pointer;
+  @apply py-1 px-5 text-(--mivida-green) bg-mivida-green-100 rounded-[50px] border border-(--mivida-green) text-[0.875rem] transition-all duration-300 ease-linear cursor-pointer;
 }
 .c-filter-btn button:hover,
 .c-filter-btn button.active {
-  @apply bg-mivida-olive-green border-(--mivida-olive-green) text-(--mivida-off-white);
+  @apply bg-mivida-green-400 border-(--mivida-green-400) text-(--mivida-red-100);
 }
 .c-filter-content-wrapper {
   @apply mt-7.5 max-sm:mt-15;
@@ -1199,7 +1222,7 @@ nav.open {
   @apply max-w-47.5 max-sm:mt-auto max-sm:mb-2.5;
 }
 .c-bottom-content .c-tag {
-  @apply bg-mivida-sage-green text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit mb-1 text-[0.75rem] max-sm:text-[0.625rem] block;
+  @apply bg-mivida-green-200 text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit mb-1 text-[0.75rem] max-sm:text-[0.625rem] block;
 }
 .c-team-content .c-btn {
   @apply bottom-4.5 right-4 max-sm:static inline-flex ml-auto;
@@ -1233,7 +1256,7 @@ nav.open {
   @apply mb-9  max-sm:text-[1.75rem];
 }
 .c-enquries-content a {
-  @apply font-recoleta font-normal text-[1.75rem] max-sm:text-[1.375rem] leading-[1.3] text-(--mivida-black) transition-all duration-300 ease-linear hover:text-(--mivida-orange)  block;
+  @apply font-recoleta font-normal text-[1.75rem] max-sm:text-[1.375rem] leading-[1.3] text-(--mivida-black) transition-all duration-300 ease-linear hover:text-(--mivida-red-400)  block;
 }
 .c-contact-form {
   @apply w-[52.92%] max-lg:w-full bg-mivida-green rounded-[20px] pt-13 px-12.5 max-sm:px-4.5 pb-9 max-sm:pb-13.5;
@@ -1284,6 +1307,9 @@ nav.open {
 .c-standard-card-sec {
   @apply my-30 max-md:my-20 max-sm:mt-11 max-sm:mb-13;
 }
+.c-standard-card-sec.c-stanard-spacinglayout-2 {
+  @apply my-20.5  max-sm:mt-14.25 max-sm:mb-9.5;
+}
 .c-standard-card-slider {
   @apply max-lg:-mr-6 max-lg:w-[calc(100%+25px)];
 }
@@ -1299,15 +1325,20 @@ nav.open {
 .c-standard-slide-media img {
   @apply w-full h-full object-cover;
 }
+
 .c-standard-slide-content {
   @apply pt-6 px-7.5 pb-9.5 grow-1 flex flex-col;
+}
+.c-standard-card-sec.c-stanard-spacinglayout-2 .c-standard-slide-content {
+  @apply xl:pb-13.5;
 }
 .c-standard-slide-content h6 {
   @apply font-karla leading-[1.4] text-(--mivida-white) font-bold mb-4;
 }
 .c-standard-slide-content p {
-  @apply mb-4;
+  @apply mb-5;
 }
+
 .c-standard-slide-content a {
   @apply mt-4 inline-flex items-center gap-2.5  text-(--mivida-white) text-[0.875rem] leading-[1.10] transition-all duration-300 ease-linear;
 }
@@ -1315,11 +1346,152 @@ nav.open {
   @apply transition-all duration-300 ease-linear;
 }
 .c-standard-slide-content a:hover {
-  @apply text-(--mivida-orange);
+  @apply text-(--mivida-red-400);
 }
 .c-standard-slide-content a:hover svg path {
-  @apply fill-(--mivida-orange);
+  @apply fill-(--mivida-red-400);
 }
 .c-standard-card-sec .c-swiper-btn-wrapper {
+  @apply lg:hidden;
+}
+
+.c-faq-sec {
+  @apply mt-22.5 mt-15 mx-6;
+}
+.c-faq-content-col {
+  @apply w-[47.55%] max-md:w-[80%] max-sm:w-full;
+}
+.c-faq-content-col-inner {
+  @apply md:max-w-137.5 ml-auto;
+}
+.c-faq-content-col h3 {
+  @apply mb-7.5;
+}
+.c-faq-content-col p {
+  @apply mb-7.5 text-(--mivida-black);
+}
+.c-faq-col {
+  @apply w-[calc(41.7%+9px)] max-md:w-full lg:-mr-2.25;
+}
+
+.c-accor-heading {
+  @apply cursor-pointer pt-8.5 pb-9.75 pr-10 relative border-t-1 border-(--mivida-green);
+}
+
+.c-accor-heading h5 {
+  @apply m-0 text-(--mivida-black) relative text-[1.75rem];
+}
+.active .c-accor-heading h5 {
+  @apply underline;
+}
+/* plus / minus icon */
+.c-accor-heading h5::after {
+  content: "+";
+  @apply absolute -right-8.75 top-1/2 -translate-y-1/2 text-[1.9375rem]
+         transition-transform duration-300 text-(--mivida-dark-teal);
+}
+
+.c-accor-row.active .c-accor-heading h5::after {
+  content: "−";
+}
+
+/* content */
+.c-accor-content {
+  @apply max-h-0 overflow-hidden transition-[max-height] duration-400 ease-linear -translate-y-6.25;
+}
+
+.c-accor-content-inner {
+  @apply pb-2.25 max-sm:pb-1.25 pr-5;
+}
+.c-ineline-list {
+  @apply flex  gap-y-1 mb-3.5 flex-wrap;
+}
+.c-ineline-list span {
+  @apply relative text-(--mivida-green) font-karla text-[0.75rem] leading-[1.4] font-normal pl-3.75  after:content-['']
+         after:absolute
+         after:w-[3px]
+         after:h-[3px]
+         after:left-1.25
+         after:top-1/2
+         after:-translate-y-1/2
+         after:bg-mivida-green-300
+         after:rounded-full;
+}
+.c-ineline-list span:first-child {
+  @apply pl-0  after:w-[0px]
+         after:h-[0px];
+}
+.c-accor-content p {
+  @apply text-(--mivida-green);
+}
+
+.c-multicolor-article-cards {
+  @apply mt-32 mb-44.5 max-lg:my-20 max-lg:my-20 max-lg:mt-8.5;
+}
+.article-heading-col {
+  @apply sm:max-w-226.5 mb-7.5 pr-33 max-md:pr-15 max-sm:pr-6;
+}
+.article-heading-col p {
+  @apply text-(--mivida-black);
+}
+.c-article-card-wrapper {
+  @apply lg:max-w-278 lg:ml-0 max-lg:-mr-6 max-lg:w-[calc(100%+25px)];
+}
+.c-article-card-wrapper .swiper-wrapper {
+  @apply lg:grid lg:grid-cols-2 lg:gap-4.5;
+}
+.c-article-card {
+  @apply max-lg:w-136.75 max-sm:w-79 flex max-sm:flex-col bg-mivida-red-200 rounded-2xl overflow-hidden min-h-85.75 max-sm:min-h-153;
+}
+.article-card-media {
+  @apply w-50.75 max-sm:w-full max-sm:h-68.5;
+}
+.article-card-media img {
+  @apply w-full h-full object-cover object-top;
+}
+.article-card-content {
+  @apply px-5 pt-8 w-[30%] grow-1 max-sm:w-full max-sm:flex max-sm:flex-col max-sm:p-5 max-sm:pb-10;
+}
+.article-card-content h4 {
+  @apply text-(--mivida-red) mb-2.5;
+}
+.article-card-content p {
+  @apply text-(--mivida-red-400) max-w-71.5;
+}
+.article-card-content .c-btn {
+  @apply static mt-6.5 bg-mivida-red-400 max-sm:mt-auto;
+}
+.article-card-content .c-btn:hover {
+  @apply bg-mivida-green;
+}
+.c-article-card.c-article-card-red300 {
+  @apply bg-mivida-red-300;
+}
+.c-article-card.c-article-card-red300 h4 {
+  @apply text-(--mivida-red-100);
+}
+.c-article-card.c-article-card-red300 p {
+  @apply text-(--mivida-red-100);
+}
+.c-article-card.c-article-card-green {
+  @apply bg-mivida-green;
+}
+.c-article-card.c-article-card-green h4,
+.c-article-card.c-article-card-green p {
+  @apply text-(--mivida-green-100);
+}
+.c-article-card.c-article-card-green200 {
+  @apply bg-mivida-green-200;
+}
+.c-article-card.c-article-card-green200 h4,
+.c-article-card.c-article-card-green200 p {
+  @apply text-(--mivida-green);
+}
+
+.c-article-card.c-article-card-green200 .c-btn,
+.c-article-card.c-article-card-green .c-btn {
+  @apply bg-mivida-green-400 hover:bg-mivida-red-400;
+}
+.c-multicolor-article-cards .c-swiper-btn-wrapper {
   @apply lg:hidden;
 }
