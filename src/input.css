@@ -514,7 +514,7 @@ nav.open {
   @apply relative overflow-hidden rounded-2xl sm:my-11 mt-3.5 mb-0 mx-3.5 z-[2];
 }
 .c-banner-content-wrapper {
-  @apply relative z-[2] sm:h-[100vh] min-h-125   flex flex-col justify-end;
+  @apply relative z-[2] sm:h-[100vh] min-h-125 max-sm:min-h-[100vh]   flex flex-col justify-end;
 }
 .c-banner-content-wrapper.c-banner-content-center {
   @apply justify-center max-sm:justify-start;
@@ -655,7 +655,7 @@ nav.open {
 }
 
 .c-secondary-btn {
-  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg  bg-mivida-white min-w-46.5 text-[1rem]  text-[var(--mivida-orange)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  @apply cursor-pointer flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg  bg-mivida-white min-w-46.5 text-[1rem]  text-[var(--mivida-orange)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
 .c-secondary-btn:hover {
   @apply bg-mivida-green text-[var(--mivida-white)];
@@ -665,6 +665,10 @@ nav.open {
 }
 .c-secondary-btn:hover img {
   @apply brightness-0 invert-100;
+}
+
+.c-secondary-btn.c-green-bg:hover {
+  @apply bg-mivida-orange;
 }
 
 .c-tertiary-btn {
@@ -699,6 +703,20 @@ nav.open {
 }
 .c-btn-size {
   @apply min-w-32.75 px-3.75 py-3 rounded;
+}
+
+/* form-btn */
+.c-form-primay-btn {
+  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg  bg-mivida-white min-w-46.5 text-[1rem]  text-(--mivida-green) font-karla leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+}
+.c-form-primay-btn:hover {
+  @apply bg-mivida-orange text-(--mivida-white);
+}
+.c-form-primay-btn img {
+  @apply transition-all duration-300 ease-out;
+}
+.c-form-primay-btn:hover img {
+  @apply brightness-0 invert-100;
 }
 
 /* sliderbtn-css-code */
@@ -1039,9 +1057,7 @@ nav.open {
 .c-commitments-sec {
   @apply mt-15 mb-30 max-sm:mt-6 max-lg:mb-12;
 }
-/* .c-commitments-sec .l-container {
-  @apply max-lg:pr-0;
-} */
+
 .c-commitment-card-wrapper {
   @apply mt-22.5 max-lg:mt-15 max-sm:mt-7.5  max-lg:-mr-6 max-lg:w-[calc(100%+25px)];
 }
@@ -1049,7 +1065,7 @@ nav.open {
   @apply lg:grid lg:gap-7.5 lg:grid-cols-3;
 }
 .c-commitment-card {
-  @apply max-lg:w-93 min-h-146 p-7.5 pt-34 max-sm:pt-15 relative rounded-2xl overflow-hidden bg-mivida-green text-center;
+  @apply max-lg:w-93 max-sm:w-79 min-h-146 p-7.5 pt-34 max-sm:pt-15 relative rounded-2xl overflow-hidden bg-mivida-green text-center;
 }
 .c-commitment-card h6 {
   @apply text-[1.5rem] text-(--mivida-white) leading-[1.4] mb-4;
@@ -1162,13 +1178,13 @@ nav.open {
   @apply flex;
 }
 .c-team-card {
-  @apply sm:w-67.5 max-sm:max-w-44 min-h-105.5 max-sm:min-h-85.5 rounded-2xl flex flex-col overflow-hidden border border-(--mivida-web-grey);
+  @apply sm:w-67.5 max-sm:max-w-[80%] max-sm:w-44 max-sm:grow-1 min-h-105.5 max-sm:min-h-85.5 rounded-2xl flex flex-col overflow-hidden border border-(--mivida-web-grey);
 }
 .c-team-media {
   @apply w-full h-59 max-sm:h-37;
 }
 .c-team-media img {
-  @apply w-full h-full object-cover object-bottom;
+  @apply w-full h-full object-cover object-top;
 }
 .c-team-content {
   @apply relative pt-7 pl-5 pb-5.5 pr-4 max-sm:pt-5 max-sm:pl-3 max-sm:pb-2 max-sm:pr-1.5 flex flex-col sm:justify-between grow-1;
@@ -1193,4 +1209,117 @@ nav.open {
 }
 .c-banner-img img {
   @apply w-full h-full object-cover;
+}
+
+.c-get-in-touch-sec {
+  @apply mx-4 max-sm:mx-6.25 mb-7.5  mt-19 max-sm:mt-7.5;
+}
+.c-contant-content {
+  @apply w-[34.41%]  max-lg:w-[60%] max-md:w-[70%] max-sm:w-full;
+}
+.c-contact-heading {
+  @apply mt-6 max-lg:mt-0;
+}
+.c-contact-heading h2 {
+  @apply text-(--mivida-green) mb-5;
+}
+.c-contact-heading p {
+  @apply text-(--mivida-black) mb-5;
+}
+.c-enquries-content {
+  @apply mt-12.5;
+}
+.c-enquries-content h4 {
+  @apply mb-9  max-sm:text-[1.75rem];
+}
+.c-enquries-content a {
+  @apply font-recoleta font-normal text-[1.75rem] max-sm:text-[1.375rem] leading-[1.3] text-(--mivida-black) transition-all duration-300 ease-linear hover:text-(--mivida-orange)  block;
+}
+.c-contact-form {
+  @apply w-[52.92%] max-lg:w-full bg-mivida-green rounded-[20px] pt-13 px-12.5 max-sm:px-4.5 pb-9 max-sm:pb-13.5;
+}
+.c-input-wrapper {
+  @apply mb-4.5;
+}
+.c-input-wrapper input,
+.c-input-wrapper textarea {
+  @apply bg-mivida-white rounded-2xl py-4.75 px-10 text-[1rem] leading-[1.4] font-karla font-normal text-(--mivida-black) w-full;
+}
+.c-input-wrapper input:focus,
+.c-input-wrapper textarea:focus {
+  @apply outline-none;
+}
+.c-input-wrapper input::placeholder,
+.c-input-wrapper textarea::placeholder {
+  @apply text-(--mivida-warm-grey);
+}
+.c-check-box-wrapper {
+  @apply my-7.25;
+}
+.c-check-box-heading {
+  @apply font-normal text-[1.75rem] max-sm:text-[1.3125rem] leading-[1.10] text-(--mivida-white) mb-7;
+}
+.c-custom-checkbox {
+  @apply flex items-center gap-3 cursor-pointer select-none;
+}
+.c-custom-checkbox span {
+  @apply relative pl-10.5 text-[1rem] font-normal font-karla text-white leading-[1.4]
+
+  before:absolute before:left-0 before:top-1/2
+  before:h-7.5 before:w-7.5 before:-translate-y-1/2
+  before:border before:border-white before:rounded-sm
+
+  after:absolute after:left-2.5 after:top-1/3
+  after:h-3.5 after:w-2.5
+  after:-translate-y-1/3 after:rotate-45
+  after:border-r-2 after:border-b-2
+  after:border-white after:opacity-0
+
+  peer-checked:after:opacity-100;
+}
+.c-agree-wrapper .c-custom-checkbox span {
+  @apply font-normal text-[1.125rem];
+}
+
+.c-standard-card-sec {
+  @apply my-30 max-md:my-20 max-sm:mt-11 max-sm:mb-13;
+}
+.c-standard-card-slider {
+  @apply max-lg:-mr-6 max-lg:w-[calc(100%+25px)];
+}
+.c-standard-card-slider .swiper-wrapper {
+  @apply lg:grid lg:gap-7.5 lg:grid-cols-3;
+}
+.c-standard-card-slide {
+  @apply max-lg:w-93 max-sm:w-79 h-auto flex flex-col grow-1 bg-mivida-green overflow-hidden min-h-146 rounded-2xl;
+}
+.c-standard-slide-media {
+  @apply h-76.5 w-full;
+}
+.c-standard-slide-media img {
+  @apply w-full h-full object-cover;
+}
+.c-standard-slide-content {
+  @apply pt-6 px-7.5 pb-9.5 grow-1 flex flex-col;
+}
+.c-standard-slide-content h6 {
+  @apply font-karla leading-[1.4] text-(--mivida-white) font-bold mb-4;
+}
+.c-standard-slide-content p {
+  @apply mb-4;
+}
+.c-standard-slide-content a {
+  @apply mt-4 inline-flex items-center gap-2.5  text-(--mivida-white) text-[0.875rem] leading-[1.10] transition-all duration-300 ease-linear;
+}
+.c-standard-slide-content a svg path {
+  @apply transition-all duration-300 ease-linear;
+}
+.c-standard-slide-content a:hover {
+  @apply text-(--mivida-orange);
+}
+.c-standard-slide-content a:hover svg path {
+  @apply fill-(--mivida-orange);
+}
+.c-standard-card-sec .c-swiper-btn-wrapper {
+  @apply lg:hidden;
 }
