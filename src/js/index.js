@@ -128,6 +128,28 @@ const standardCardMobSlider = new Swiper(
     },
   },
 );
+const articleCardMobSlider = new Swiper(".c-article-card-wrapper", {
+  slidesPerView: 1.18,
+  spaceBetween: 12,
+
+  navigation: {
+    nextEl: ".c-multicolor-article-cards .swiper-button-next",
+    prevEl: ".c-multicolor-article-cards .swiper-button-prev",
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      loop: false,
+    },
+    1025: {
+      slidesPerView: "auto",
+      allowTouchMove: false,
+      simulateTouch: false,
+      spaceBetween: 0,
+    },
+  },
+});
 
 document.querySelectorAll(".c-menu-btn").forEach((btn) => {
   btn.addEventListener("click", function () {
@@ -148,6 +170,31 @@ filterButtons.forEach((btn, index) => {
     filterContents.forEach((c) => c.classList.remove("active"));
     btn.classList.add("active");
     filterContents[index].classList.add("active");
+  });
+});
+
+const accorHeadings = document.querySelectorAll(".c-accor-heading");
+accorHeadings.forEach((heading) => {
+  heading.addEventListener("click", () => {
+    const row = heading.parentElement;
+    const content = row.querySelector(".c-accor-content");
+
+    // close others (optional – remove if multiple open chahiye)
+    document.querySelectorAll(".c-accor-row").forEach((item) => {
+      if (item !== row) {
+        item.classList.remove("active");
+        item.querySelector(".c-accor-content").style.maxHeight = null;
+      }
+    });
+
+    // toggle current
+    row.classList.toggle("active");
+
+    if (row.classList.contains("active")) {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+      content.style.maxHeight = null;
+    }
   });
 });
 
