@@ -22,11 +22,11 @@ const journalSwiper = new Swiper(".c-card-slider-sec.swiper", {
 const testimonialSwiper = new Swiper(".c-testimonial-sec .swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // loop: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   watchSlidesProgress: true,
   updateOnWindowResize: true,
   navigation: {
@@ -38,11 +38,7 @@ const testimonialSwiper = new Swiper(".c-testimonial-sec .swiper", {
 const stepSlider = new Swiper(".c-step-slider-sec .c-step-slider", {
   slidesPerView: 1.181,
   spaceBetween: 20,
-  loop: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+
   watchSlidesProgress: true,
   updateOnWindowResize: true,
   navigation: {
@@ -81,16 +77,12 @@ const ValueSlider = new Swiper(".c-values-slider-sec .c-values-slider", {
     },
   },
 });
+
 const commitmentMobSlider = new Swiper(
   ".c-commitments-sec .c-commitment-card-wrapper",
   {
     slidesPerView: 1.18,
     spaceBetween: 20,
-    loop: true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
 
     navigation: {
       nextEl: ".c-commitments-sec .swiper-button-next",
@@ -119,6 +111,18 @@ document.querySelectorAll(".c-menu-btn").forEach((btn) => {
     document.querySelector(".c-site-header")?.classList.toggle("active");
     document.documentElement.classList.toggle("scrollLock");
     document.querySelector("nav")?.classList.toggle("open");
+  });
+});
+
+const filterButtons = document.querySelectorAll(".c-filter-btn button");
+const filterContents = document.querySelectorAll(".c-filter-content");
+
+filterButtons.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    filterButtons.forEach((b) => b.classList.remove("active"));
+    filterContents.forEach((c) => c.classList.remove("active"));
+    btn.classList.add("active");
+    filterContents[index].classList.add("active");
   });
 });
 
