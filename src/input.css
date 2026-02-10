@@ -535,7 +535,7 @@ nav.open {
 }
 
 .c-banner-content-center .c-banner-content-box .c-banner-desc {
-  @apply max-w-full;
+  @apply max-w-full mx-auto;
 }
 .c-banner-content-box h1 {
   @apply mb-3.5;
@@ -597,7 +597,7 @@ nav.open {
   @apply sm:mx-3.5 mx-6 max-sm:mb-15 sm:my-7.5;
 }
 .c-card-banner {
-  @apply relative flex max-md:flex-col-reverse  overflow-hidden rounded-2xl bg-mivida-red-400;
+  @apply relative flex max-md:flex-col-reverse  overflow-hidden rounded-2xl bg-mivida-red-400 md:min-h-172.5;
 }
 
 .c-card-banner-content {
@@ -620,9 +620,39 @@ nav.open {
 .c-card-banner-media {
   @apply relative overflow-hidden w-full md:w-[50%];
 }
-
 .c-card-banner-media img {
   @apply w-full h-full object-cover;
+}
+
+.banner-team-card {
+  @apply relative z-2 overflow-hidden w-full md:w-[50%] flex justify-center items-center max-md:pt-10 max-md:px-6 max-sm:pb-1;
+}
+.banner-team-card .c-team-card {
+  @apply w-67.5 max-sm:max-w-[100%] max-sm:grow-0 min-h-105.5  rounded-2xl flex flex-col overflow-hidden border border-(--mivida-web-grey) bg-mivida-cream-white;
+}
+.banner-team-card .c-team-media {
+  @apply w-full h-59;
+}
+.banner-team-card .c-team-media img {
+  @apply w-full h-full object-cover object-top;
+}
+.banner-team-card .c-team-content {
+  @apply relative pt-7 pl-5 pb-5.5 pr-4  flex flex-col sm:justify-between grow-1;
+}
+.banner-team-card .c-team-top-content h6 {
+  @apply text-(--mivida-green) mb-2.5 font-karla font-bold;
+}
+.banner-team-card .c-team-top-content p {
+  @apply text-(--mivida-green) mb-2.5;
+}
+.banner-team-card .c-bottom-content {
+  @apply max-w-47.5 mb-0;
+}
+.banner-team-card .c-bottom-content .c-tag {
+  @apply bg-mivida-green-200 text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit mb-1 text-[0.75rem]  block;
+}
+.banner-team-card .c-team-content .c-btn {
+  @apply bottom-4.5 right-4  absolute ml-auto;
 }
 
 /* COMPACT */
@@ -999,7 +1029,7 @@ nav.open {
 
 /* normal card css */
 .c-heading-with-cards {
-  @apply mt-7.5 mb-15;
+  @apply mt-15 mb-15;
 }
 .l-grid {
   @apply grid gap-7 grid-cols-2 max-md:grid-cols-1;
