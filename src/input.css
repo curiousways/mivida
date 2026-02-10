@@ -707,10 +707,19 @@ nav.open {
 .c-cta-section.c-cta-section-layout-2 .c-secondary-btn:hover {
   @apply text-(--mivida-white) bg-mivida-red-400;
 }
+.c-cta-section-layout-2 .c-secondary-btn svg path {
+  @apply fill-(--mivida-green);
+}
 
 /* btn-css-code */
 .c-btn-wrapper {
   @apply w-fit;
+}
+.c-btn-center {
+  @apply flex justify-center gap-7.5 max-sm:gap-5 max-sm:flex-wrap;
+}
+.c-section-hero-banner .c-btn-center a {
+  @apply max-sm:min-w-37.75;
 }
 .c-primary-btn {
   @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-mivida-red-400 min-w-46.5 text-[1rem] text-[var(--mivida-white)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
@@ -725,11 +734,11 @@ nav.open {
 .c-secondary-btn:hover {
   @apply bg-mivida-green text-[var(--mivida-white)];
 }
-.c-secondary-btn img {
-  @apply transition-all duration-300 ease-out;
+.c-secondary-btn svg path {
+  @apply fill-(--mivida-red-400) transition-all duration-300 ease-out;
 }
-.c-secondary-btn:hover img {
-  @apply brightness-0 invert-100;
+.c-secondary-btn:hover svg path {
+  @apply fill-(--mivida-white);
 }
 
 .c-secondary-btn.c-green-bg:hover {
@@ -739,9 +748,16 @@ nav.open {
 .c-tertiary-btn {
   @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-mivida-green-200 min-w-46.5 text-[1rem] text-(--mivida-green) font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
+.c-tertiary-btn svg {
+  @apply w-auto h-auto;
+}
+.c-tertiary-btn svg path {
+  @apply fill-(--mivida-green);
+}
 .c-tertiary-btn:hover {
   @apply bg-mivida-white;
 }
+
 .c-tertiary-btn.c-btn-size {
   @apply p-5;
 }
@@ -751,11 +767,11 @@ nav.open {
 .c-transparent-btn:hover {
   @apply bg-mivida-green text-(--mivida-white) border-transparent;
 }
-.c-transparent-btn img {
-  @apply brightness-100 invert-100;
+.c-transparent-btn svg path {
+  @apply fill-(--mivida-black) transition-all duration-300 ease-out;
 }
-.c-transparent-btn:hover img {
-  @apply filter brightness-100 invert-0;
+.c-transparent-btn:hover svg path {
+  @apply fill-(--mivida-white);
 }
 .c-transparent-btn.white-border {
   @apply border-[var(--mivida-white)] text-[var(--mivida-white)];
@@ -763,8 +779,8 @@ nav.open {
 .c-transparent-btn.white-border:hover {
   @apply border-transparent;
 }
-.c-transparent-btn.white-border img {
-  @apply brightness-100 invert-0;
+.c-transparent-btn.white-border svg path {
+  @apply fill-(--mivida-white);
 }
 .c-btn-size {
   @apply min-w-32.75 px-3.75 py-3 rounded;
@@ -801,7 +817,10 @@ nav.open {
 .c-primary-slider-btn::after {
   @apply content-none;
 }
-
+.c-primary-slider-btn svg,
+.c-secondary-slider-btn svg {
+  @apply w-auto h-auto;
+}
 .c-swiper-btn-wrapper .c-secondary-slider-btn {
   @apply static;
 }
@@ -911,8 +930,11 @@ nav.open {
 .c-slider-card .c-slider-content {
   @apply px-5 py-5.5  max-sm:pb-12.5 w-[30%] max-sm:w-full  grow-1 relative;
 }
+.c-tag-wrapper {
+  @apply flex gap-2.75 mb-5;
+}
 .c-slider-card .c-tag {
-  @apply bg-mivida-green-100 text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit mb-5;
+  @apply bg-mivida-green-100 text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit before:hidden;
 }
 .c-slider-card span {
   @apply text-(--mivida-green) font-[var(--font-karla)] font-normal relative block;
@@ -932,7 +954,7 @@ nav.open {
 .c-btn:hover {
   @apply bg-mivida-red-400;
 }
-.c-btn img {
+.c-btn svg {
   @apply -rotate-45;
 }
 .c-slider-card.c-green-layout {
@@ -1187,7 +1209,12 @@ nav.open {
 .c-step-slider-bg-layout-2 .c-tertiary-btn {
   @apply bg-mivida-white text-(--mivida-red-400) hover:bg-mivida-green hover:text-(--mivida-white);
 }
-
+.c-step-slider-bg-layout-2 .c-tertiary-btn svg path {
+  @apply fill-(--mivida-red-400);
+}
+.c-step-slider-bg-layout-2 .c-tertiary-btn:hover svg path {
+  @apply fill-(--mivida-white);
+}
 .c-commitments-sec {
   @apply mt-15 mb-30 max-sm:mt-6 max-lg:mb-12;
 }
@@ -1669,7 +1696,10 @@ nav.open {
   @apply sm:mx-3.5 mx-6 my-7.5;
 }
 .c-insights-article-content {
-  @apply max-w-202.5 px-5 mx-auto mt-15.75 mb-18.25 max-md:mt-10 max-md:mb-17.5;
+  @apply mt-15.75 mb-18.25 max-md:mt-10 max-md:mb-17.5;
+}
+.l-content-readable {
+  @apply max-w-202.5 px-5 mx-auto max-sm:px-0;
 }
 .c-insights-article-content h1,
 .c-insights-article-content h2,
@@ -1699,4 +1729,20 @@ nav.open {
 }
 .c-social-share a {
   @apply flex justify-center items-center w-10 h-10 bg-mivida-dark-teal rounded-[10px] hover:bg-mivida-red-400 transition-all duration-300 ease-linear;
+}
+.c-genric-text-sec {
+  @apply mt-12.5 mb-17.5 max-sm:mt-8 max-sm:mb-19;
+}
+
+.text-box span {
+  @apply text-[1rem] leading-[1.4] font-karla font-normal text-(--mivida-black) block mb-6 max-sm:mb-5.5;
+}
+.text-box p {
+  @apply text-(--mivida-black) mt-4.75;
+}
+.text-box ul {
+  @apply list-disc ml-[1.5rem];
+}
+.text-box ul li {
+  @apply text-[1rem] leading-[1.35] font-karla font-normal text-(--mivida-black);
 }
