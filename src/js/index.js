@@ -89,7 +89,7 @@ const commitmentMobSlider = new Swiper(
       prevEl: ".c-commitments-sec .swiper-button-prev",
     },
     breakpoints: {
-      400: {
+      500: {
         slidesPerView: "auto",
         spaceBetween: 20,
         loop: false,
@@ -114,7 +114,7 @@ const standardCardMobSlider = new Swiper(
       prevEl: ".c-standard-card-sec .swiper-button-prev",
     },
     breakpoints: {
-      400: {
+      500: {
         slidesPerView: "auto",
         spaceBetween: 20,
         loop: false,
@@ -128,6 +128,7 @@ const standardCardMobSlider = new Swiper(
     },
   },
 );
+
 const articleCardMobSlider = new Swiper(".c-article-card-wrapper", {
   slidesPerView: 1.18,
   spaceBetween: 12,
@@ -137,7 +138,7 @@ const articleCardMobSlider = new Swiper(".c-article-card-wrapper", {
     prevEl: ".c-multicolor-article-cards .swiper-button-prev",
   },
   breakpoints: {
-    400: {
+    500: {
       slidesPerView: "auto",
       spaceBetween: 20,
       loop: false,
@@ -150,6 +151,57 @@ const articleCardMobSlider = new Swiper(".c-article-card-wrapper", {
     },
   },
 });
+
+const mostarticleCardMobSlider = new Swiper(
+  ".c-article-grid-editorial-sec .c-article-grid-editorial-slider",
+  {
+    slidesPerView: 1.18,
+    spaceBetween: 12,
+
+    navigation: {
+      nextEl: ".c-article-grid-editorial-sec .swiper-button-next",
+      prevEl: ".c-article-grid-editorial-sec .swiper-button-prev",
+    },
+    breakpoints: {
+      500: {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        loop: false,
+      },
+      1025: {
+        slidesPerView: "auto",
+        allowTouchMove: false,
+        simulateTouch: false,
+        spaceBetween: 0,
+      },
+    },
+  },
+);
+
+const verticalCardMobSlider = new Swiper(
+  ".c-article-grid-equal .c-vertical-card-slider",
+  {
+    slidesPerView: 1.18,
+    spaceBetween: 12,
+    navigation: {
+      nextEl: ".c-article-grid-equal .swiper-button-next",
+      prevEl: ".c-article-grid-equal .swiper-button-prev",
+    },
+    breakpoints: {
+      500: {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        loop: false,
+      },
+      1025: {
+        slidesPerView: "auto",
+        allowTouchMove: false,
+        simulateTouch: false,
+        spaceBetween: 0,
+      },
+    },
+  },
+);
 
 document.querySelectorAll(".c-menu-btn").forEach((btn) => {
   btn.addEventListener("click", function () {
@@ -196,6 +248,23 @@ accorHeadings.forEach((heading) => {
       content.style.maxHeight = null;
     }
   });
+});
+
+const wrap = document.querySelector(".c-search-wrap");
+const btn = document.getElementById("c-search-expand");
+const input = wrap.querySelector(".c-search-input");
+
+btn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  wrap.classList.add("active");
+  input.focus();
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".c-search-wrap")) {
+    wrap.classList.remove("active");
+    input.value = "";
+  }
 });
 
 window.addEventListener("load", function () {
