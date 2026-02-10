@@ -252,20 +252,23 @@ accorHeadings.forEach((heading) => {
 
 const wrap = document.querySelector(".c-search-wrap");
 const btn = document.getElementById("c-search-expand");
-const input = wrap.querySelector(".c-search-input");
 
-btn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  wrap.classList.add("active");
-  input.focus();
-});
+if (wrap && btn) {
+  const input = wrap.querySelector(".c-search-input");
 
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".c-search-wrap")) {
-    wrap.classList.remove("active");
-    input.value = "";
-  }
-});
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    wrap.classList.add("active");
+    input?.focus();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".c-search-wrap")) {
+      wrap.classList.remove("active");
+      if (input) input.value = "";
+    }
+  });
+}
 
 window.addEventListener("load", function () {
   function handleScroll() {
