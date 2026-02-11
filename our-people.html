@@ -137,15 +137,15 @@
           <h3><span>The Team</span></h3>
         </div>
         <div class="c-filter-btn">
-          <button class="active">All</button>
-          <button>Wealth Management</button>
-          <button>Investments</button>
-          <button>Retirement</button>
-          <button>Inhertitance</button>
-          <button>Legacy Protection</button>
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="wealth">Wealth Management</button>
+          <button data-filter="investment">Investments</button>
+          <button data-filter="retirement">Retirement</button>
+          <button data-filter="inheritance">Inheritance</button>
+          <button data-filter="legacy">Legacy Protection</button>
         </div>
         <div class="[ c-filter-content-wrapper ]">
-          <div class="[ c-filter-content ] active">
+          <div class="[ c-filter-content ] active" data-filter="all">
             <div class="[ c-team-card ]">
               <div class="[ c-team-media ]">
                 <img src="./src/images/alex-vital.jpg" alt="" />
@@ -659,7 +659,7 @@
               </div>
             </div>
           </div>
-          <div class="[ c-filter-content ]">
+          <div class="[ c-filter-content ]" data-filter="wealth">
             <div class="[ c-team-card ]">
               <div class="[ c-team-media ]">
                 <img src="./src/images/alex-vital.jpg" alt="" />
@@ -915,7 +915,7 @@
               </div>
             </div>
           </div>
-          <div class="[ c-filter-content ]">
+          <div class="[ c-filter-content ]" data-filter="investment">
             <div class="[ c-team-card ]">
               <div class="[ c-team-media ]">
                 <img src="./src/images/alex-vital.jpg" alt="" />
@@ -1171,7 +1171,7 @@
               </div>
             </div>
           </div>
-          <div class="[ c-filter-content ]">
+          <div class="[ c-filter-content ]" data-filter="retirement">
             <div class="[ c-team-card ]">
               <div class="[ c-team-media ]">
                 <img src="./src/images/alex-vital.jpg" alt="" />
@@ -1427,7 +1427,7 @@
               </div>
             </div>
           </div>
-          <div class="[ c-filter-content ]">
+          <div class="[ c-filter-content ]" data-filter="inheritance">
             <div class="[ c-team-card ]">
               <div class="[ c-team-media ]">
                 <img src="./src/images/alex-vital.jpg" alt="" />
@@ -1683,7 +1683,7 @@
               </div>
             </div>
           </div>
-          <div class="[ c-filter-content ]">
+          <div class="[ c-filter-content ]" data-filter="legacy">
             <div class="[ c-team-card ]">
               <div class="[ c-team-media ]">
                 <img src="./src/images/alex-vital.jpg" alt="" />
@@ -1971,11 +1971,17 @@
         </div>
       </div>
       <div class="[ c-ab-shape ]">
-        <img
-          class="object-none w-full h-full max-sm:object-cover max-sm:object-center"
-          src="./src/images/Vector.png"
-          alt=""
-        />
+        <picture>
+          <source
+            srcset="./src/images/mob-light-green-zig-zag-line.png"
+            media="(max-width: 48rem)"
+          />
+          <img
+            class="object-none w-full h-full max-md:object-cover max-md:object-center"
+            src="./src/images/Vector.png"
+            alt=""
+          />
+        </picture>
       </div>
     </section>
 

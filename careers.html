@@ -93,11 +93,13 @@
 
     <section class="[ c-section-hero-banner ]">
       <div class="[ c-media-bg c-media-overlay ]">
-        <img
-          class="w-full h-full object-cover"
-          src="./src/images/careers-banner.png"
-          alt="careers banner"
-        />
+        <picture>
+          <img
+            class="w-full h-full object-cover"
+            src="./src/images/careers-banner.png"
+            alt="careers banner"
+          />
+        </picture>
       </div>
 
       <div class="[ l-container-narrow c-banner-content-wrapper ]">
@@ -141,12 +143,18 @@
         </div>
       </div>
 
-      <div class="[ c-ab-shape ] top-0 lg:!top-[-20%]">
-        <img
-          class="object-cover w-full h-full sm:h-auto"
-          src="./src/images/light-orange-zig-zag-line.png"
-          alt=""
-        />
+      <div class="[ c-ab-shape ] top-0 lg:!top-[-20%] max-sm:!top-0">
+        <picture>
+          <source
+            srcset="./src/images/mob-zig-zag-rich-text.png"
+            media="(max-width: 39.9375rem)"
+          />
+          <img
+            class="object-cover w-full h-auto"
+            src="./src/images/light-orange-zig-zag-line.png"
+            alt=""
+          />
+        </picture>
       </div>
     </section>
 
@@ -369,126 +377,130 @@
           <p class="text-(--mivida-black)">Copy TBC</p>
         </div>
       </div>
-      <div class="[ l-container-wide ] pl-6 !max-w-360">
-        <div class="swiper [ c-step-slider ]">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide [ c-step-slide ]">
-              <div class="[ c-step-slide-content ]">
-                <div class="flex justify-between gap-1 w-full">
-                  <div class="[ c-step-slide-count u-title ]">1</div>
-                  <div class="[ c-step-slide-content-inner ]">
-                    <div class="[ c-step-slide-tag ]">
-                      <span>Title here</span>
-                    </div>
-                    <p class="[ c-step-slide-desc ]">Copy TBC</p>
-                    <div class="[ c-btn-wrap ] mt-7.5">
-                      <div
-                        class="[ c-tertiary-btn c-btn-size swiper-button-next ]"
-                      >
-                        Next
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+      <div class="[ l-container-wide ] pl-6 !max-w-328.25 !mr-0">
+        <div class="[ touch-viewport-left ]">
+          <div class="swiper [ c-step-slider ]">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide [ c-step-slide ]">
+                <div class="[ c-step-slide-content ]">
+                  <div class="flex justify-between gap-1 w-full">
+                    <div class="[ c-step-slide-count u-title ]">1</div>
+                    <div class="[ c-step-slide-content-inner ]">
+                      <div class="[ c-step-slide-tag ]">
+                        <span>Title here</span>
+                      </div>
+                      <p class="[ c-step-slide-desc ]">Copy TBC</p>
+                      <div class="[ c-btn-wrap ] mt-7.5">
+                        <div
+                          class="[ c-tertiary-btn c-btn-size swiper-button-next ]"
                         >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
-                            fill="white"
-                          />
-                        </svg>
+                          Next
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="[ c-step-slide-media ]">
+                  <img src="./src/images/listen-&-understand.png" alt="" />
+                </div>
               </div>
-              <div class="[ c-step-slide-media ]">
-                <img src="./src/images/listen-&-understand.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide [ c-step-slide ]">
-              <div class="[ c-step-slide-content ]">
-                <div class="flex justify-between gap-1 w-full">
-                  <div class="[ c-step-slide-count u-title ]">2</div>
-                  <div class="[ c-step-slide-content-inner ]">
-                    <div class="[ c-step-slide-tag ]">
-                      <span>Step 2: Listen & Understand</span>
-                    </div>
-                    <p class="[ c-step-slide-desc ]">
-                      Before we discuss investments or strategies, we spend time
-                      understanding your complete story; your family priorities,
-                      financial concerns, and what success looks like for you.
-                    </p>
-                    <div class="[ c-btn-wrap ] mt-7.5">
-                      <div
-                        class="[ c-tertiary-btn c-btn-size swiper-button-next ]"
-                      >
-                        Next
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+              <div class="swiper-slide [ c-step-slide ]">
+                <div class="[ c-step-slide-content ]">
+                  <div class="flex justify-between gap-1 w-full">
+                    <div class="[ c-step-slide-count u-title ]">2</div>
+                    <div class="[ c-step-slide-content-inner ]">
+                      <div class="[ c-step-slide-tag ]">
+                        <span>Step 2: Listen & Understand</span>
+                      </div>
+                      <p class="[ c-step-slide-desc ]">
+                        Before we discuss investments or strategies, we spend
+                        time understanding your complete story; your family
+                        priorities, financial concerns, and what success looks
+                        like for you.
+                      </p>
+                      <div class="[ c-btn-wrap ] mt-7.5">
+                        <div
+                          class="[ c-tertiary-btn c-btn-size swiper-button-next ]"
                         >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
-                            fill="white"
-                          />
-                        </svg>
+                          Next
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="[ c-step-slide-media ]">
+                  <img src="./src/images/listen-&-understand.png" alt="" />
+                </div>
               </div>
-              <div class="[ c-step-slide-media ]">
-                <img src="./src/images/listen-&-understand.png" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide [ c-step-slide ]">
-              <div class="[ c-step-slide-content ]">
-                <div class="flex justify-between gap-1 w-full">
-                  <div class="[ c-step-slide-count u-title ]">3</div>
-                  <div class="[ c-step-slide-content-inner ]">
-                    <div class="[ c-step-slide-tag ]">
-                      <span>Step 3: Listen & Understand</span>
-                    </div>
-                    <p class="[ c-step-slide-desc ]">
-                      Before we discuss investments or strategies, we spend time
-                      understanding your complete story; your family priorities,
-                      financial concerns, and what success looks like for you.
-                    </p>
-                    <div class="[ c-btn-wrap ] mt-7.5">
-                      <div
-                        class="[ c-tertiary-btn c-btn-size swiper-button-next ]"
-                      >
-                        Next
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+              <div class="swiper-slide [ c-step-slide ]">
+                <div class="[ c-step-slide-content ]">
+                  <div class="flex justify-between gap-1 w-full">
+                    <div class="[ c-step-slide-count u-title ]">3</div>
+                    <div class="[ c-step-slide-content-inner ]">
+                      <div class="[ c-step-slide-tag ]">
+                        <span>Step 3: Listen & Understand</span>
+                      </div>
+                      <p class="[ c-step-slide-desc ]">
+                        Before we discuss investments or strategies, we spend
+                        time understanding your complete story; your family
+                        priorities, financial concerns, and what success looks
+                        like for you.
+                      </p>
+                      <div class="[ c-btn-wrap ] mt-7.5">
+                        <div
+                          class="[ c-tertiary-btn c-btn-size swiper-button-next ]"
                         >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
-                            fill="white"
-                          />
-                        </svg>
+                          Next
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="[ c-step-slide-media ]">
-                <img src="./src/images/listen-&-understand.png" alt="" />
+                <div class="[ c-step-slide-media ]">
+                  <img src="./src/images/listen-&-understand.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -541,7 +553,13 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide [ c-article-card ]">
               <div class="[ article-card-media ]">
-                <img src="./src/images/article-img-1.jpg" alt="" />
+                <picture>
+                  <source
+                    srcset="./src/images/article-img-1.jpg"
+                    media="(max-width: 40rem)"
+                  />
+                  <img src="./src/images/desk-article-img-1.png" alt="" />
+                </picture>
               </div>
               <div class="[ article-card-content ]">
                 <h4>Journal article title goes here</h4>
@@ -570,7 +588,13 @@
             </div>
             <div class="swiper-slide [ c-article-card c-article-card-red300 ]">
               <div class="[ article-card-media ]">
-                <img src="./src/images/article-img-2.jpg" alt="" />
+                <picture>
+                  <source
+                    srcset="./src/images/article-img-2.jpg"
+                    media="(max-width: 40rem)"
+                  />
+                  <img src="./src/images/desk-article-img-2.png" alt="" />
+                </picture>
               </div>
               <div class="[ article-card-content ]">
                 <h4>Journal article title goes here</h4>
@@ -599,7 +623,13 @@
             </div>
             <div class="swiper-slide [ c-article-card c-article-card-green ]">
               <div class="[ article-card-media ]">
-                <img src="./src/images/article-img-3.jpg" alt="" />
+                <picture>
+                  <source
+                    srcset="./src/images/article-img-3.jpg"
+                    media="(max-width: 39.9375rem)"
+                  />
+                  <img src="./src/images/desk-article-img-3.png" alt="" />
+                </picture>
               </div>
               <div class="[ article-card-content ]">
                 <h4>Journal article title goes here</h4>
@@ -630,7 +660,13 @@
               class="swiper-slide [ c-article-card c-article-card-green200 ]"
             >
               <div class="[ article-card-media ]">
-                <img src="./src/images/article-img-4.jpg" alt="" />
+                <picture>
+                  <source
+                    srcset="./src/images/article-img-4.jpg"
+                    media="(max-width: 39.9375rem)"
+                  />
+                  <img src="./src/images/desk-article-img-4.png" alt="" />
+                </picture>
               </div>
               <div class="[ article-card-content ]">
                 <h4>Journal article title goes here</h4>
@@ -698,7 +734,7 @@
 
     <section class="[ c-faq-sec ]">
       <div class="[ l-container-wide ]">
-        <div class="flex justify-between gap-14.5 max-md:flex-wrap">
+        <div class="flex justify-between gap-14.5 max-md:flex-wrap items-start">
           <div class="[ c-faq-content-col ]">
             <div class="[ c-faq-content-col-inner ]">
               <h3>Open Positions</h3>
@@ -709,7 +745,7 @@
               </p>
               <div class="[ c-btn-wrap ]">
                 <a href="#" class="[ c-primary-btn ]">
-                  How we Help
+                  Send CV
                   <svg
                     width="16"
                     height="16"

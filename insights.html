@@ -208,7 +208,7 @@
             </p>
             <div class="[ c-btn-wrap ] mt-10">
               <a href="" class="[ c-primary-btn ]">
-                How we Help
+                Read more
                 <svg
                   width="16"
                   height="16"
@@ -395,7 +395,7 @@
 
     <section class="[ c-img-with-text-sec ]">
       <div class="[ l-container ]">
-        <div class="[ c-heading-col ]">
+        <div class="[ c-heading-col ] max-md:mb-7.5">
           <h3>Most Popular Articles</h3>
         </div>
         <div class="[ c-card-split ]">
@@ -421,7 +421,7 @@
             </p>
             <div class="[ c-btn-wrap ] mt-10">
               <a href="" class="[ c-primary-btn ]">
-                How we Help
+                Read more
                 <svg
                   width="16"
                   height="16"
@@ -761,11 +761,17 @@
         </div>
       </div>
       <div class="[ c-ab-shape ]">
-        <img
-          class="object-none w-full h-full max-sm:object-cover max-sm:object-center"
-          src="./src/images/zig-zag-line.png"
-          alt=""
-        />
+        <picture>
+          <source
+            srcset="./src/images/mob-imageszig-zag-line.png"
+            media="(max-width: 48rem)"
+          />
+          <img
+            class="object-none w-full h-full max-md:object-center max-md:object-cover"
+            src="./src/images/zig-zag-line.png"
+            alt=""
+          />
+        </picture>
       </div>
     </section>
 

@@ -404,11 +404,17 @@
         </div>
       </div>
       <div class="[ c-ab-shape ]">
-        <img
-          class="object-none w-full h-full max-sm:object-cover max-sm:object-center"
-          src="./src/images/zig-zag-line.png"
-          alt=""
-        />
+        <picture>
+          <source
+            srcset="./src/images/mob-imageszig-zag-line.png"
+            media="(max-width: 48rem)"
+          />
+          <img
+            class="object-none w-full h-full max-md:object-center max-md:object-cover"
+            src="./src/images/zig-zag-line.png"
+            alt=""
+          />
+        </picture>
       </div>
     </section>
 
