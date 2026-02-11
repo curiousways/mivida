@@ -92,20 +92,23 @@
     </section>
 
     <section class="[ c-section-hero-banner ]">
-      <div class="[ c-media-bg ] bg-mivida-red-400"></div>
+      <div class="[ c-media-bg ]">
+        <picture>
+          <source
+            srcset="./src/images/mob-orange-zig-zag-banner.png"
+            media="(max-width: 40rem)"
+          />
+          <img
+            class="w-full h-full object-cover"
+            src="./src/images/orange-zig-zag-banner.png"
+            alt="our-people-banner"
+          />
+        </picture>
+      </div>
       <div
         class="[ l-container-narrow c-banner-content-wrapper c-banner-content-center ] max-sm:!justify-center"
       >
         <div class="[ c-banner-content-box ]">
-          <div class="[ c-tag-with-inline-list-wrap ]">
-            <div class="flex gap-3 items-center">
-              <span class="[ c-tag ]">Investment</span>
-            </div>
-            <div class="[ c-ineline-list ]">
-              <span>01/01/2026</span>
-              <span>3 min read</span>
-            </div>
-          </div>
           <h1>
             This path leads nowhere. <br />
             We’ll help you find <br />
@@ -154,43 +157,6 @@
             </a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="[ c-cta-section ]">
-      <div class="[ l-container-inner ] text-center">
-        <h2>Ready to get started?</h2>
-        <p>
-          It easier than you think. Tell us a bit about yourself and we’ll be in
-          touch to start planning your future, together
-        </p>
-
-        <div class="[ c-btn-wrap ]">
-          <a href="#" class="[ c-secondary-btn ]">
-            Contact us
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="[ c-ab-shape ]">
-        <img
-          class="object-none w-full h-full max-sm:object-cover max-sm:object-center"
-          src="./src/images/zig-zag-line.png"
-          alt=""
-        />
       </div>
     </section>
 

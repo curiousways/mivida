@@ -36,8 +36,8 @@ const testimonialSwiper = new Swiper(".c-testimonial-sec .swiper", {
 });
 
 const stepSlider = new Swiper(".c-step-slider-sec .c-step-slider", {
-  slidesPerView: 1.181,
-  spaceBetween: 20,
+  slidesPerView: 1.12,
+  spaceBetween: 25,
 
   watchSlidesProgress: true,
   updateOnWindowResize: true,
@@ -81,8 +81,8 @@ const ValueSlider = new Swiper(".c-values-slider-sec .c-values-slider", {
 const commitmentMobSlider = new Swiper(
   ".c-commitments-sec .c-commitment-card-wrapper",
   {
-    slidesPerView: 1.18,
-    spaceBetween: 20,
+    slidesPerView: 1.12,
+    spaceBetween: 25,
 
     navigation: {
       nextEl: ".c-commitments-sec .swiper-button-next",
@@ -106,8 +106,8 @@ const commitmentMobSlider = new Swiper(
 const standardCardMobSlider = new Swiper(
   ".c-standard-card-sec .c-standard-card-slider",
   {
-    slidesPerView: 1.18,
-    spaceBetween: 12,
+    slidesPerView: 1.12,
+    spaceBetween: 25,
 
     navigation: {
       nextEl: ".c-standard-card-sec .swiper-button-next",
@@ -116,7 +116,7 @@ const standardCardMobSlider = new Swiper(
     breakpoints: {
       500: {
         slidesPerView: "auto",
-        spaceBetween: 20,
+        spaceBetween: 25,
         loop: false,
       },
       1025: {
@@ -130,8 +130,8 @@ const standardCardMobSlider = new Swiper(
 );
 
 const articleCardMobSlider = new Swiper(".c-article-card-wrapper", {
-  slidesPerView: 1.18,
-  spaceBetween: 12,
+  slidesPerView: 1.12,
+  spaceBetween: 25,
 
   navigation: {
     nextEl: ".c-multicolor-article-cards .swiper-button-next",
@@ -140,7 +140,7 @@ const articleCardMobSlider = new Swiper(".c-article-card-wrapper", {
   breakpoints: {
     500: {
       slidesPerView: "auto",
-      spaceBetween: 20,
+      spaceBetween: 25,
       loop: false,
     },
     1025: {
@@ -155,8 +155,8 @@ const articleCardMobSlider = new Swiper(".c-article-card-wrapper", {
 const mostarticleCardMobSlider = new Swiper(
   ".c-article-grid-editorial-sec .c-article-grid-editorial-slider",
   {
-    slidesPerView: 1.18,
-    spaceBetween: 12,
+    slidesPerView: 1.12,
+    spaceBetween: 25,
 
     navigation: {
       nextEl: ".c-article-grid-editorial-sec .swiper-button-next",
@@ -165,7 +165,7 @@ const mostarticleCardMobSlider = new Swiper(
     breakpoints: {
       500: {
         slidesPerView: "auto",
-        spaceBetween: 20,
+        spaceBetween: 25,
         loop: false,
       },
       1025: {
@@ -181,8 +181,8 @@ const mostarticleCardMobSlider = new Swiper(
 const verticalCardMobSlider = new Swiper(
   ".c-article-grid-equal .c-vertical-card-slider",
   {
-    slidesPerView: 1.18,
-    spaceBetween: 12,
+    slidesPerView: 1.15,
+    spaceBetween: 25,
     navigation: {
       nextEl: ".c-article-grid-equal .swiper-button-next",
       prevEl: ".c-article-grid-equal .swiper-button-prev",
@@ -190,7 +190,7 @@ const verticalCardMobSlider = new Swiper(
     breakpoints: {
       500: {
         slidesPerView: "auto",
-        spaceBetween: 20,
+        spaceBetween: 25,
         loop: false,
       },
       1025: {
@@ -214,14 +214,24 @@ document.querySelectorAll(".c-menu-btn").forEach((btn) => {
 });
 
 const filterButtons = document.querySelectorAll(".c-filter-btn button");
-const filterContents = document.querySelectorAll(".c-filter-content");
+const teamCards = document.querySelectorAll(".c-filter-content");
 
-filterButtons.forEach((btn, index) => {
+filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
+    const filterValue = btn.dataset.filter;
+
+    // active button
     filterButtons.forEach((b) => b.classList.remove("active"));
-    filterContents.forEach((c) => c.classList.remove("active"));
     btn.classList.add("active");
-    filterContents[index].classList.add("active");
+
+    // cards filter
+    teamCards.forEach((card) => {
+      if (filterValue === "all" || card.dataset.filter.includes(filterValue)) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
   });
 });
 
@@ -270,6 +280,10 @@ if (wrap && btn) {
   });
 }
 
+if (!document.querySelector(".c-announcement-bar")) {
+  document.body.classList.add("c-no-announcement-bar");
+}
+
 window.addEventListener("load", function () {
   function handleScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -281,3 +295,36 @@ window.addEventListener("load", function () {
   window.addEventListener("scroll", handleScroll);
   handleScroll();
 });
+
+function updateTouchViewport() {
+  if (window.innerWidth <= 1339) {
+    document.querySelectorAll(".touch-viewport-left").forEach((el) => {
+      el.style.marginLeft = "";
+    });
+    document.querySelectorAll(".touch-viewport-right").forEach((el) => {
+      el.style.marginRight = "";
+    });
+    return;
+  }
+
+  const container = document.querySelector(".l-container-wide");
+  if (!container) return;
+
+  const containerWidth = container.offsetWidth;
+  const bodyWidth = document.body.offsetWidth;
+  const specialConSpace = (bodyWidth - containerWidth) / 2;
+
+  document.querySelectorAll(".touch-viewport-left").forEach((el) => {
+    el.style.marginLeft = `-${specialConSpace}px`;
+  });
+
+  document.querySelectorAll(".touch-viewport-right").forEach((el) => {
+    el.style.marginRight = `-${specialConSpace}px`;
+  });
+}
+
+// on load
+window.addEventListener("load", updateTouchViewport);
+
+// on resize
+window.addEventListener("resize", updateTouchViewport);
