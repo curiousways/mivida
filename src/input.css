@@ -27,19 +27,6 @@
 }
 
 @font-face {
-  font-family: "Recoleta Alt";
-  src: url("./fonts/RecoletaAlt-Thin.eot");
-  src:
-    url("./fonts/RecoletaAlt-Thin.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/RecoletaAlt-Thin.woff2") format("woff2"),
-    url("./fonts/RecoletaAlt-Thin.woff") format("woff"),
-    url("./fonts/RecoletaAlt-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Recoleta";
   src: url("./fonts/Recoleta-Black.eot");
   src:
@@ -48,19 +35,6 @@
     url("./fonts/Recoleta-Black.woff") format("woff"),
     url("./fonts/Recoleta-Black.ttf") format("truetype");
   font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Recoleta DEMO";
-  src: url("./fonts/Recoleta-RegularDEMO.eot");
-  src:
-    url("./fonts/Recoleta-RegularDEMO.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/Recoleta-RegularDEMO.woff2") format("woff2"),
-    url("./fonts/Recoleta-RegularDEMO.woff") format("woff"),
-    url("./fonts/Recoleta-RegularDEMO.ttf") format("truetype");
-  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -117,169 +91,47 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Recoleta Alt";
-  src: url("./fonts/RecoletaAlt-Regular.eot");
-  src:
-    url("./fonts/RecoletaAlt-Regular.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/RecoletaAlt-Regular.woff2") format("woff2"),
-    url("./fonts/RecoletaAlt-Regular.woff") format("woff"),
-    url("./fonts/RecoletaAlt-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Recoleta Alt";
-  src: url("./fonts/RecoletaAlt-Bold.eot");
-  src:
-    url("./fonts/RecoletaAlt-Bold.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/RecoletaAlt-Bold.woff2") format("woff2"),
-    url("./fonts/RecoletaAlt-Bold.woff") format("woff"),
-    url("./fonts/RecoletaAlt-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Recoleta Alt";
-  src: url("./fonts/RecoletaAlt-Medium.eot");
-  src:
-    url("./fonts/RecoletaAlt-Medium.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/RecoletaAlt-Medium.woff2") format("woff2"),
-    url("./fonts/RecoletaAlt-Medium.woff") format("woff"),
-    url("./fonts/RecoletaAlt-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Recoleta Alt";
-  src: url("./fonts/RecoletaAlt-SemiBold.eot");
-  src:
-    url("./fonts/RecoletaAlt-SemiBold.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/RecoletaAlt-SemiBold.woff2") format("woff2"),
-    url("./fonts/RecoletaAlt-SemiBold.woff") format("woff"),
-    url("./fonts/RecoletaAlt-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Recoleta Alt";
-  src: url("./fonts/RecoletaAlt-Light.eot");
-  src:
-    url("./fonts/RecoletaAlt-Light.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/RecoletaAlt-Light.woff2") format("woff2"),
-    url("./fonts/RecoletaAlt-Light.woff") format("woff"),
-    url("./fonts/RecoletaAlt-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Recoleta Alt";
-  src: url("./fonts/RecoletaAlt-Black.eot");
-  src:
-    url("./fonts/RecoletaAlt-Black.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/RecoletaAlt-Black.woff2") format("woff2"),
-    url("./fonts/RecoletaAlt-Black.woff") format("woff"),
-    url("./fonts/RecoletaAlt-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
 @import "tailwindcss";
 @source "../index.html";
 @source "../services.html";
+@source "../who-we-are.html";
+@source "../our-people.html";
+@source "../insights.html";
+@source "../Insights-article.html";
+@source "../lets-talk.html";
+@source "../careers.html";
+@source "../partner-with-us.html";
+@source "../generic-text-page.html";
+@source "../404-error.html";
 
 @theme {
   --font-recoleta: "Recoleta", serif;
   --font-karla: "Karla", sans-serif;
-  --mivida-black: #21201f;
-  --mivida-white: #ffffff;
-  --mivida-cream-white: #fff7f1;
-  --mivida-white-warming: #fff5eb;
-  --mivida-warm-cream: #fff7f199;
-  --mivida-red: #d50401;
-  --mivida-red-400: #e64428;
-  --mivida-red-300: #eb6952;
-  --mivida-red-200: #ffc1b6;
-  --mivida-red-100: #fdf1f1;
-  --mivida-green: #4a5846;
-  --mivida-green-100: #f5f5f5;
-  --mivida-green-200: #d1d8cf;
-  --mivida-green-300: #99aa94;
-  --mivida-green-400: #6a7865;
-  --mivida-warm-grey: #737271;
-  --mivida-web-grey: #b6b6b6;
-
-  --mivida-dark-teal: #024555;
-  --h1-font-size: clamp(2.375rem, 4.89vw, 4.375rem);
-  --h2-font-size: clamp(3.125rem, 4.66vw, 4.25rem);
-  --h3-font-size: clamp(2.375rem, 3.6vw, 3.125rem);
-  --h4-font-size: 2.375rem;
-  --h5-font-size: clamp(1.3125rem, 1.96vw, 1.75rem);
-  --h6-font-size: 1.5rem;
+  --color-mivida-black: #21201f;
+  --color-mivida-white: #ffffff;
+  --color-mivida-cream-white: #fff7f1;
+  --color-mivida-white-warming: #fff5eb;
+  --color-mivida-warm-cream: #fff7f199;
+  --color-mivida-red: #d50401;
+  --color-mivida-red-400: #e64428;
+  --color-mivida-red-300: #eb6952;
+  --color-mivida-red-200: #ffc1b6;
+  --color-mivida-red-100: #fdf1f1;
+  --color-mivida-green: #4a5846;
+  --color-mivida-green-100: #f5f5f5;
+  --color-mivida-green-200: #d1d8cf;
+  --color-mivida-green-300: #99aa94;
+  --color-mivida-green-400: #6a7865;
+  --color-mivida-warm-grey: #737271;
+  --color-mivida-web-grey: #b6b6b6;
+  --color-mivida-dark-teal: #024555;
+  --text-h1: clamp(2.375rem, 4.89vw, 4.375rem);
+  --text-h2: clamp(3.125rem, 4.66vw, 4.25rem);
+  --text-h3: clamp(2.375rem, 3.6vw, 3.125rem);
+  --text-h4: 2.375rem;
+  --text-h5: clamp(1.3125rem, 1.96vw, 1.75rem);
+  --text-h6: 1.5rem;
   --text-2xl: clamp(3.125rem, 4.66vw, 4.25rem);
-}
-
-@utility bg-mivida-white {
-  background-color: var(--mivida-white);
-}
-@utility bg-mivida-cream-white {
-  background-color: var(--mivida-cream-white);
-}
-@utility bg-mivida-black {
-  background-color: var(--mivida-black);
-}
-@utility bg-mivida-red-100 {
-  background-color: var(--mivida-red-100);
-}
-@utility bg-mivida-red-400 {
-  background-color: var(--mivida-red-400);
-}
-@utility bg-mivida-red-300 {
-  background-color: var(--mivida-red-300);
-}
-@utility bg-mivida-green {
-  background-color: var(--mivida-green);
-}
-@utility bg-mivida-red {
-  background-color: var(--mivida-red);
-}
-@utility bg-mivida-red-200 {
-  background-color: var(--mivida-red-200);
-}
-@utility bg-mivida-green-100 {
-  background-color: var(--mivida-green-100);
-}
-@utility bg-mivida-warm-cream {
-  background-color: var(--mivida-warm-cream);
-}
-
-@utility bg-mivida-green-200 {
-  background-color: var(--mivida-green-200);
-}
-
-@utility bg-mivida-green-300 {
-  background-color: var(--mivida-green-300);
-}
-@utility bg-mivida-warm-grey {
-  background-color: var(--mivida-warm-grey);
-}
-
-@utility bg-mivida-green-400 {
-  background-color: var(--mivida-green-400);
-}
-@utility bg-mivida-dark-teal {
-  background-color: var(--mivida-dark-teal);
 }
 
 h1,
@@ -296,7 +148,7 @@ h6 {
   }
 
   .scrollbar-thin::-webkit-scrollbar-thumb {
-    background-color: var(--mivida-red-100); /* gray-400 */
+    background-color: var(--color-mivida-red-100); /* gray-400 */
     border-radius: 9999px;
   }
 
@@ -306,69 +158,78 @@ h6 {
 }
 
 @layer base {
-  h1 {
-    font-size: var(--h1-font-size);
+  h1,
+  .u-h1 {
+    font-size: var(--text-h1);
     line-height: 1.01;
     margin-bottom: 1.875rem;
-    color: var(--mivida-white);
+    color: var(--color-mivida-white);
   }
   h1 span {
-    color: var(--mivida-red-400);
+    color: var(--color-mivida-red-400);
   }
-  h2 {
-    font-size: var(--h2-font-size);
+  h2,
+  .u-h2 {
+    font-size: var(--text-h2);
     line-height: 1.1;
   }
-  h2 span {
-    color: var(--mivida-red-400);
+  h2 span,
+  .u-h2 span {
+    color: var(--color-mivida-red-400);
   }
 
-  h3 {
-    font-size: var(--h3-font-size);
+  h3,
+  .u-h3 {
+    font-size: var(--text-h3);
     line-height: 1.1;
   }
-  h3 span {
-    color: var(--mivida-red-400);
+  h3 span,
+  .u-h3 span {
+    color: var(--color-mivida-red-400);
   }
 
-  h4 {
-    font-size: var(--h4-font-size);
+  h4,
+  .u-h4 {
+    font-size: var(--text-h4);
     line-height: 1.1;
   }
-  h4 span {
-    color: var(--mivida-red-400);
+  h4 span,
+  .u-h4 span {
+    color: var(--color-mivida-red-400);
   }
-  h5 {
-    font-size: var(--h5-font-size);
+  h5,
+  .u-h5 {
+    font-size: var(--text-h5);
     line-height: 1.1;
     font-weight: 400;
     margin-bottom: 1.5rem;
   }
-  h5 span {
-    color: var(--mivida-red-400);
+  h5 span,
+  .u-h5 span {
+    color: var(--color-mivida-red-400);
   }
-  h6 {
-    font-size: var(--h6-font-size);
+  h6,
+  .u-h6 {
+    font-size: var(--text-h6);
     line-height: 1.1;
   }
-  h6 span {
-    color: var(--mivida-red-400);
+  h6 span,
+  .u-h6 span {
+    color: var(--color-mivida-red-400);
   }
-  h5:last-child {
+  h5:last-child,
+  .u-h5:last-child {
     margin: 0;
   }
 
   p {
     font-size: 1rem;
     line-height: 1.4;
-    color: var(--mivida-white);
+    color: var(--color-mivida-white);
     font-family: var(--font-karla);
   }
   p:last-child {
     @apply !mb-0;
-  }
-  h5 span {
-    color: var(--mivida-red-400);
   }
 }
 
@@ -396,13 +257,13 @@ h6 {
   @apply mx-auto max-w-302.75 px-3.25 sm:px-10 py-4;
 }
 
-.scrollLock {
+.c-scrollLock {
   @apply overflow-hidden;
 }
 .l-flex {
   @apply flex items-center justify-between;
 }
-.u-transistion-linear {
+.u-transition-linear {
   @apply transition-all duration-300 ease-linear;
 }
 /* .u-title {
@@ -414,10 +275,10 @@ h6 {
 
 .u-m-title {
   @apply font-[var(--font-recoleta)]
-         text-[var(--h2-font-size)]
+         text-h2
          leading-[1.01]
          mb-[30px]
-         text-[var(--mivida-black)];
+         text-mivida-black;
 }
 
 /* header-css */
@@ -477,7 +338,7 @@ h6 {
   @apply max-lg:flex max-lg:flex-col max-lg:gap-5;
 }
 .c-header-menu li a {
-  @apply text-(--mivida-black) text-[1rem] font-normal leading-[1.4] hover:text-[var(--mivida-red-400)] transition-all duration-300 ease-linear;
+  @apply text-mivida-black text-[1rem] font-normal leading-[1.4] hover:text-mivida-red-400 transition-all duration-300 ease-linear;
 }
 .c-site-header .c-btn-wrap {
   @apply flex items-center gap-4 max-lg:flex-col max-lg:gap-5;
@@ -503,7 +364,7 @@ h6 {
 .c-menu-btn.toggled span:nth-of-type(3) {
   @apply max-lg:rotate-[-45deg] max-lg:translate-x-[0px] max-lg:translate-y-[-5px];
 }
-nav {
+.c-site-header nav {
   @apply max-lg:max-h-0 
          max-lg:overflow-hidden 
          max-lg:opacity-0 
@@ -513,7 +374,7 @@ nav {
          max-lg:ease-in-out;
   transition-delay: 0s, 0s, 350ms;
 }
-nav.open {
+.c-site-header nav.open {
   @apply max-lg:max-h-[80vh] 
          max-lg:opacity-100 
          max-lg:visible
@@ -558,10 +419,10 @@ nav.open {
   @apply justify-center;
 }
 .c-banner-content-box .c-tag-with-inline-list-wrap .c-tag {
-  @apply bg-mivida-red text-(--mivida-white);
+  @apply bg-mivida-red text-mivida-white;
 }
-.c-banner-content-box .c-tag-with-inline-list-wrap .c-ineline-list span {
-  @apply text-(--mivida-white) after:bg-mivida-white;
+.c-banner-content-box .c-tag-with-inline-list-wrap .c-inline-list span {
+  @apply text-mivida-white after:bg-mivida-white;
 }
 .c-banner-content-box h1 {
   @apply mb-3.5;
@@ -611,23 +472,23 @@ nav.open {
 .c-tag-with-inline-list-wrap {
   @apply flex flex-wrap gap-3.5 items-center mb-7.5;
 }
-.c-tag-with-inline-list-wrap .c-ineline-list {
+.c-tag-with-inline-list-wrap .c-inline-list {
   @apply m-0;
 }
-.c-tag-with-inline-list-wrap .c-ineline-list span {
-  @apply text-[1rem] leading-[1.4] text-(--mivida-black) pl-8  after:bg-mivida-black after:left-3.5;
+.c-tag-with-inline-list-wrap .c-inline-list span {
+  @apply text-[1rem] leading-[1.4] text-mivida-black pl-8  after:bg-mivida-black after:left-3.5;
 }
-.c-card-split-content .c-ineline-list span:first-child {
+.c-card-split-content .c-inline-list span:first-child {
   @apply pl-0;
 }
 .c-tag {
-  @apply bg-mivida-red-200 text-(--mivida-black) px-4 py-1 rounded-full text-[1rem] leading-[1.4] block;
+  @apply bg-mivida-red-200 text-mivida-black px-4 py-1 rounded-full text-[1rem] leading-[1.4] block;
 }
 .c-card-split-content h3 {
-  @apply mb-7.5 text-[var(--mivida-black)];
+  @apply mb-7.5 text-mivida-black;
 }
 .c-card-split-content p {
-  @apply mb-7.5 text-[var(--mivida-black)];
+  @apply mb-7.5 text-mivida-black;
 }
 .c-card-split-content .c-btn-wrapper {
   @apply mt-15;
@@ -649,11 +510,11 @@ nav.open {
 }
 
 .c-card-banner-content h2 {
-  @apply text-(--mivida-red-100) mb-7.5;
+  @apply text-mivida-red-100 mb-7.5;
 }
 
 .c-card-banner-content p {
-  @apply mb-5 text-[1.125rem] leading-[1.4] text-(--mivida-red-100);
+  @apply mb-5 text-[1.125rem] leading-[1.4] text-mivida-red-100;
 }
 .c-card-banner-content p:last-child {
   @apply mb-0;
@@ -669,7 +530,7 @@ nav.open {
   @apply relative z-2 overflow-hidden w-full md:w-[50%] flex justify-center items-center max-md:pt-10 max-md:px-6 max-sm:pb-1;
 }
 .c-banner-team-card .c-team-card {
-  @apply w-67.5 max-sm:max-w-[100%] max-sm:grow-0 min-h-105.5  rounded-2xl flex flex-col overflow-hidden border border-(--mivida-web-grey) bg-mivida-cream-white lg:ml-27;
+  @apply w-67.5 max-sm:max-w-[100%] max-sm:grow-0 min-h-105.5  rounded-2xl flex flex-col overflow-hidden border border-mivida-web-grey bg-mivida-cream-white lg:ml-27;
 }
 .c-banner-team-card .c-team-media {
   @apply w-full h-59;
@@ -681,16 +542,16 @@ nav.open {
   @apply relative pt-7 pl-5 pb-5.5 pr-4  flex flex-col sm:justify-between grow-1;
 }
 .c-banner-team-card .c-team-top-content h6 {
-  @apply text-(--mivida-green) mb-2.5 font-karla font-bold;
+  @apply text-mivida-green mb-2.5 font-karla font-bold;
 }
 .c-banner-team-card .c-team-top-content p {
-  @apply text-(--mivida-green) mb-2.5;
+  @apply text-mivida-green mb-2.5;
 }
 .c-banner-team-card .c-bottom-content {
   @apply max-w-47.5 mb-0;
 }
 .c-banner-team-card .c-bottom-content .c-tag {
-  @apply bg-mivida-green-200 text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit mb-1 text-[0.75rem]  block;
+  @apply bg-mivida-green-200 text-mivida-green py-1.5 px-2.5 rounded-[3.125rem]  mb-1 text-[0.75rem] w-[89%];
 }
 .c-banner-team-card .c-team-content .c-btn {
   @apply bottom-4.5 right-4  absolute ml-auto;
@@ -707,22 +568,22 @@ nav.open {
   @apply flex flex-col justify-center;
 }
 .c-cta-section h2 {
-  @apply text-[clamp(50px,4.66vw,68px)] text-[var(--mivida-cream-white)] leading-[1.10] mb-10;
+  @apply text-[clamp(50px,4.66vw,68px)] text-mivida-cream-white leading-[1.10] mb-10;
 }
 .c-cta-section p {
-  @apply text-[1.125rem] leading-[1.4] text-[var(--mivida-cream-white)] max-w-150 mx-auto;
+  @apply text-[1.125rem] leading-[1.4] text-mivida-cream-white max-w-150 mx-auto;
 }
 .c-cta-section .c-btn-wrap {
   @apply mt-10 flex justify-center w-full;
 }
 .c-cta-section.c-cta-section-layout-2 .c-secondary-btn {
-  @apply text-(--mivida-green);
+  @apply text-mivida-green;
 }
 .c-cta-section.c-cta-section-layout-2 .c-secondary-btn:hover {
-  @apply text-(--mivida-white) bg-mivida-red-400;
+  @apply text-mivida-white bg-mivida-red-400;
 }
 .c-cta-section-layout-2 .c-secondary-btn svg path {
-  @apply fill-(--mivida-green);
+  @apply fill-(--color-mivida-green);
 }
 
 /* btn-css-code */
@@ -736,23 +597,23 @@ nav.open {
   @apply max-sm:min-w-37.75;
 }
 .c-primary-btn {
-  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-mivida-red-400 min-w-46.5 text-[1rem] text-[var(--mivida-white)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-[0.625rem] bg-mivida-red-400 min-w-46.5 text-[1rem] text-mivida-white font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
 .c-primary-btn:hover {
   @apply bg-mivida-green;
 }
 
 .c-secondary-btn {
-  @apply cursor-pointer flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg  bg-mivida-white min-w-46.5 text-[1rem]  text-[var(--mivida-red-400)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  @apply cursor-pointer flex items-center justify-center gap-2.5 px-5 py-5 rounded-[0.625rem]  bg-mivida-white min-w-46.5 text-[1rem]  text-mivida-red-400 font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
 .c-secondary-btn:hover {
-  @apply bg-mivida-green text-[var(--mivida-white)];
+  @apply bg-mivida-green text-mivida-white;
 }
 .c-secondary-btn svg path {
-  @apply fill-(--mivida-red-400) transition-all duration-300 ease-out;
+  @apply fill-(--color-mivida-red-400) transition-all duration-300 ease-out;
 }
 .c-secondary-btn:hover svg path {
-  @apply fill-(--mivida-white);
+  @apply fill-(--color-mivida-white);
 }
 
 .c-secondary-btn.c-green-bg:hover {
@@ -760,58 +621,44 @@ nav.open {
 }
 
 .c-tertiary-btn {
-  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-mivida-green-200 min-w-46.5 text-[1rem] text-(--mivida-green) font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-[0.625rem] bg-mivida-green-200 min-w-46.5 text-[1rem] text-mivida-green font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
 .c-tertiary-btn svg {
   @apply w-auto h-auto;
 }
 .c-tertiary-btn svg path {
-  @apply fill-(--mivida-green);
+  @apply fill-(--color-mivida-green);
 }
 .c-tertiary-btn:hover {
   @apply bg-mivida-white;
 }
 
 .c-tertiary-btn.c-btn-size {
-  @apply p-5;
+  @apply px-5 py-4.75 !h-auto;
 }
 .c-transparent-btn {
-  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg bg-transparent border-[1px] border-[var(--mivida-black)] min-w-46.5 text-[1rem]  text-[var(--mivida-black)] font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
+  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-[0.625rem] bg-transparent border-[1px] border-mivida-black min-w-46.5 text-[1rem]  text-mivida-black font-[var(--font-karla)] leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
 }
 .c-transparent-btn:hover {
-  @apply bg-mivida-green text-(--mivida-white) border-transparent;
+  @apply bg-mivida-green text-mivida-white border-transparent;
 }
 .c-transparent-btn svg path {
-  @apply fill-(--mivida-black) transition-all duration-300 ease-out;
+  @apply fill-(--color-mivida-black) transition-all duration-300 ease-out;
 }
 .c-transparent-btn:hover svg path {
-  @apply fill-(--mivida-white);
+  @apply fill-(--color-mivida-white);
 }
 .c-transparent-btn.white-border {
-  @apply border-[var(--mivida-white)] text-[var(--mivida-white)];
+  @apply border-mivida-white text-mivida-white;
 }
 .c-transparent-btn.white-border:hover {
   @apply border-transparent;
 }
 .c-transparent-btn.white-border svg path {
-  @apply fill-(--mivida-white);
+  @apply fill-(--color-mivida-white);
 }
 .c-btn-size {
-  @apply min-w-32.75 px-3.75 py-3 rounded;
-}
-
-/* form-btn */
-.c-form-primay-btn {
-  @apply flex items-center justify-center gap-2.5 px-5 py-5 rounded-lg  bg-mivida-white min-w-46.5 text-[1rem]  text-(--mivida-green) font-karla leading-[1.1] font-medium w-fit  transition-all duration-300 ease-out;
-}
-.c-form-primay-btn:hover {
-  @apply bg-mivida-red-400 text-(--mivida-white);
-}
-.c-form-primay-btn img {
-  @apply transition-all duration-300 ease-out;
-}
-.c-form-primay-btn:hover img {
-  @apply brightness-0 invert-100;
+  @apply min-w-32.75 px-3.75 py-3 rounded-[0.625rem];
 }
 
 /* sliderbtn-css-code */
@@ -863,13 +710,13 @@ nav.open {
   @apply flex flex-wrap gap-2.5 mb-5 sm:mb-8.5;
 }
 .c-menu-col {
-  @apply w-fit text-(--mivida-white);
+  @apply w-fit text-mivida-white;
 }
 .c-footer-menu-heading {
   @apply mb-2.5 font-bold leading-[1.18];
 }
 .c-footer-links a {
-  @apply text-[0.875rem] font-normal text-(--mivida-white) leading-[1.3] block mb-2.5 transition-all duration-300 ease-out hover:text-(--mivida-red-400);
+  @apply text-[0.875rem] font-normal text-mivida-white leading-[1.3] block mb-2.5 transition-all duration-300 ease-out hover:text-mivida-red-400;
 }
 .c-social-links {
   @apply w-full sm:w-fit;
@@ -879,10 +726,10 @@ nav.open {
 }
 
 .c-connect-links a {
-  @apply font-recoleta text-[1.3125rem] font-normal text-(--mivida-white) leading-[1.1] block mb-1 transition-all duration-300 ease-out w-fit;
+  @apply font-recoleta text-[1.3125rem] font-normal text-mivida-white leading-[1.1] block mb-1 transition-all duration-300 ease-out w-fit;
 }
 .c-connect-links a:hover {
-  @apply text-(--mivida-red-400);
+  @apply text-mivida-red-400;
 }
 
 /* c-testimonial-sec-css */
@@ -891,13 +738,13 @@ nav.open {
 }
 
 .c-testimonial-sec .c-border-color-layout {
-  @apply border-(--mivida-green) border rounded-2xl;
+  @apply border-mivida-green border rounded-2xl;
 }
 .c-testimonial-sec .c-testimonial-wrapper {
   @apply min-h-87.5 lg:min-h-117.75 px-5 sm:px-10 pt-10 sm:pt-9.5 pb-10 sm:pb-13.5 flex flex-col justify-between;
 }
 .c-testimonial-sec.c-color-layout-2 .c-border-color-layout {
-  @apply border-(--mivida-red-400);
+  @apply border-mivida-red-400;
 }
 .c-testimonial-sec .swiper::before {
   @apply !bg-transparent;
@@ -916,13 +763,13 @@ nav.open {
 }
 
 .c-testimonial-sec h3 {
-  @apply text-(--mivida-green) mb-5.5;
+  @apply text-mivida-green mb-5.5;
 }
 .c-testimonial-sec.c-color-layout-2 h3 {
-  @apply text-(--mivida-red-400);
+  @apply text-mivida-red-400;
 }
 .c-author-name {
-  @apply text-(--mivida-black) uppercase tracking-[2.85px] leading-[1.10] text-[0.875rem] font-bold font-karla;
+  @apply text-mivida-black uppercase tracking-[2.85px] leading-[1.10] text-[0.875rem] font-bold font-karla;
 }
 
 /* multi-color-card-slider */
@@ -930,7 +777,7 @@ nav.open {
   @apply flex justify-between gap-7.5 mb-11.5 max-sm:mb-7.5 flex-wrap;
 }
 .c-card-slider-sec {
-  @apply h-153;
+  @apply h-153 max-sm:min-h-153 max-sm:h-auto;
 }
 .c-slider-card {
   @apply flex flex-wrap max-sm:flex-col w-137 sm:h-74.5 rounded-2xl overflow-hidden bg-mivida-green-200;
@@ -948,19 +795,19 @@ nav.open {
   @apply flex gap-2.75 mb-5;
 }
 .c-slider-card .c-tag {
-  @apply bg-mivida-green-100 text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit before:hidden;
+  @apply bg-mivida-green-100 text-mivida-green py-1 px-4 rounded-[3.125rem] w-fit font-karla text-[1rem] leading-[1.4]  before:hidden;
 }
 .c-slider-card span {
-  @apply text-(--mivida-green) font-[var(--font-karla)] font-normal relative block;
+  @apply text-mivida-green font-[var(--font-karla)] font-normal relative block;
 }
 .c-slider-card span:not(:first-child)::before {
   @apply content-[''] absolute  top-1/2 -left-4.5 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-mivida-green;
 }
 .c-slider-card h4 {
-  @apply font-normal text-(--mivida-green) mb-3.5;
+  @apply font-normal text-mivida-green mb-3.5;
 }
 .c-slider-card p {
-  @apply font-normal text-(--mivida-green) mb-3.5 max-w-100;
+  @apply font-normal text-mivida-green mb-3.5 max-w-100;
 }
 .c-btn {
   @apply flex items-center justify-center w-10 h-10 rounded-md bg-mivida-green absolute right-3 bottom-4 max-sm:bottom-5 max-sm:right-4  transition-all duration-300 ease-out;
@@ -975,19 +822,19 @@ nav.open {
   @apply bg-mivida-green;
 }
 .c-slider-card.c-green-layout .c-tag {
-  @apply bg-mivida-green-300 text-(--mivida-green);
+  @apply bg-mivida-green-300 text-mivida-green;
 }
 .c-slider-card.c-green-layout span {
-  @apply text-(--mivida-green-100);
+  @apply text-mivida-green-100;
 }
 .c-slider-card.c-green-layout span:not(:first-child)::before {
   @apply bg-mivida-green-100;
 }
 .c-slider-card.c-green-layout h4 {
-  @apply text-(--mivida-green-100);
+  @apply text-mivida-green-100;
 }
 .c-slider-card.c-green-layout p {
-  @apply text-(--mivida-green-100);
+  @apply text-mivida-green-100;
 }
 .c-slider-card.c-green-layout .c-btn {
   @apply bg-mivida-green-400;
@@ -999,19 +846,19 @@ nav.open {
   @apply bg-mivida-red-300;
 }
 .c-slider-card.c-red400-layout .c-tag {
-  @apply bg-(--mivida-red-200) text-(--mivida-red-400);
+  @apply bg-(--color-mivida-red-200) text-mivida-red-400;
 }
 .c-slider-card.c-red400-layout span {
-  @apply text-(--mivida-white);
+  @apply text-mivida-white;
 }
 .c-slider-card.c-red400-layout span:not(:first-child)::before {
   @apply bg-mivida-white;
 }
 .c-slider-card.c-red400-layout h4 {
-  @apply text-(--mivida-white);
+  @apply text-mivida-white;
 }
 .c-slider-card.c-red400-layout p {
-  @apply text-(--mivida-white);
+  @apply text-mivida-white;
 }
 .c-slider-card.c-red400-layout .c-btn {
   @apply bg-mivida-red-400;
@@ -1020,18 +867,18 @@ nav.open {
   @apply bg-mivida-green;
 }
 .c-slider-card.c-red200-layout {
-  @apply bg-(--mivida-red-200);
+  @apply bg-(--color-mivida-red-200);
 }
 .c-slider-card.c-red100-layout {
-  @apply bg-(--mivida-red-100);
+  @apply bg-(--color-mivida-red-100);
 }
 .c-slider-card.c-red200-layout .c-tag,
 .c-slider-card.c-red100-layout .c-tag {
-  @apply bg-mivida-red-300 text-(--mivida-red-100);
+  @apply bg-mivida-red-300 text-mivida-red-100;
 }
 .c-slider-card.c-red200-layout span,
 .c-slider-card.c-red100-layout span {
-  @apply text-(--mivida-red-400);
+  @apply text-mivida-red-400;
 }
 .c-slider-card.c-red200-layout span:not(:first-child)::before,
 .c-slider-card.c-red100-layout span:not(:first-child)::before {
@@ -1039,11 +886,11 @@ nav.open {
 }
 .c-slider-card.c-red200-layout h4,
 .c-slider-card.c-red100-layout h4 {
-  @apply text-(--mivida-red);
+  @apply text-mivida-red;
 }
 .c-slider-card.c-red200-layout p,
 .c-slider-card.c-red100-layout p {
-  @apply text-(--mivida-red-400);
+  @apply text-mivida-red-400;
 }
 .c-slider-card.c-red200-layout .c-btn,
 .c-slider-card.c-red100-layout .c-btn {
@@ -1101,11 +948,17 @@ nav.open {
 .c-article-grid-editorial-slider .c-slider-card .c-slider-media {
   @apply max-lg:w-full max-lg:h-74.5;
 }
-.c-article-grid-editorial-slider .c-slider-card .c-slider-content {
-  @apply max-lg:w-full;
+.c-article-grid-editorial-slider .c-slider-card {
+  @apply lg:min-h-73.5;
 }
 .c-article-grid-editorial-slider .c-slider-card.c-silde-vertical-card {
   @apply lg:w-full lg:col-span-5 lg:row-span-2;
+}
+.c-article-grid-editorial-slider .c-slider-card p {
+  @apply lg:w-[90%];
+}
+.c-article-grid-editorial-slider .c-slider-card.c-silde-vertical-card p {
+  @apply lg:w-full;
 }
 /* multi-color-card-slider-end */
 
@@ -1138,10 +991,10 @@ nav.open {
   @apply w-full;
 }
 .c-sticky-card-wrapper h6 {
-  @apply text-[1.5rem] font-normal leading-[1.4] text-(--mivida-black) mb-4;
+  @apply text-[1.5rem] font-normal leading-[1.4] text-mivida-black mb-4;
 }
 .c-sticky-card-wrapper p {
-  @apply text-(--mivida-black);
+  @apply text-mivida-black;
 }
 
 /* normal card css */
@@ -1151,22 +1004,22 @@ nav.open {
 .l-grid {
   @apply grid gap-7 grid-cols-2 max-md:grid-cols-1;
 }
-.c-noraml-card {
+.c-media-content-card {
   @apply rounded-2xl overflow-hidden flex flex-col;
 }
-.c-noraml-card .c-card-media {
+.c-media-content-card .c-card-media {
   @apply w-full;
 }
-.c-noraml-card .c-card-content {
-  @apply p-7.5 max-sm:pr-6 border border-(--mivida-warm-grey) border-t-0 rounded-2xl rounded-tl-none rounded-tr-none flex flex-col grow-1;
+.c-media-content-card .c-card-content {
+  @apply p-7.5 max-sm:pr-6 border border-mivida-warm-grey border-t-0 rounded-2xl rounded-tl-none rounded-tr-none flex flex-col grow-1;
 }
-.c-noraml-card .c-card-content h4 {
+.c-media-content-card .c-card-content h4 {
   @apply max-lg:text-[1.75rem];
 }
-.c-noraml-card p {
-  @apply text-(--mivida-black) mb-auto;
+.c-media-content-card p {
+  @apply text-mivida-black mb-auto;
 }
-.c-noraml-card .c-btn-wrap {
+.c-media-content-card .c-btn-wrap {
   @apply mt-9 max-md:mt-7.5;
 }
 
@@ -1206,31 +1059,31 @@ nav.open {
   @apply w-full h-full object-cover object-left;
 }
 .c-step-slide-count.u-title {
-  @apply mb-0 text-(--mivida-white) font-recoleta mt-10.5 max-sm:text-[4.1875rem];
+  @apply mb-0 text-mivida-white font-recoleta mt-10.5 max-sm:text-[4.1875rem];
 }
 .c-step-slider-bg-layout-2 .c-step-slide-count.u-title {
-  @apply text-(--mivida-cream-white);
+  @apply text-mivida-cream-white;
 }
 .c-step-slide-content-inner {
   @apply w-[88.83%];
 }
 .c-step-slide-tag {
-  @apply bg-mivida-green-400 text-(--mivida-red-100) py-1 px-4 rounded-[3.125rem] w-fit mb-7.5 text-[0.875rem] font-karla;
+  @apply bg-mivida-green-400 text-mivida-red-100 py-1 px-4 rounded-[3.125rem] w-fit mb-7.5 text-[0.875rem] font-karla;
 }
 .c-step-slider-bg-layout-2 .c-step-slide-tag {
-  @apply bg-mivida-red-100 text-(--mivida-red-400);
+  @apply bg-mivida-red-100 text-mivida-red-400;
 }
 .c-step-slide-desc {
-  @apply text-[1.125rem] text-(--mivida-red-100) mt-7.5;
+  @apply text-[1.125rem] text-mivida-red-100 mt-7.5;
 }
 .c-step-slider-bg-layout-2 .c-tertiary-btn {
-  @apply bg-mivida-white text-(--mivida-red-400) hover:bg-mivida-green hover:text-(--mivida-white);
+  @apply bg-mivida-white text-mivida-red-400 hover:bg-mivida-green hover:text-mivida-white;
 }
 .c-step-slider-bg-layout-2 .c-tertiary-btn svg path {
-  @apply fill-(--mivida-red-400);
+  @apply fill-(--color-mivida-red-400);
 }
 .c-step-slider-bg-layout-2 .c-tertiary-btn:hover svg path {
-  @apply fill-(--mivida-white);
+  @apply fill-(--color-mivida-white);
 }
 .c-commitments-sec {
   @apply mt-15 mb-30 max-sm:mt-6 max-lg:mb-12;
@@ -1246,22 +1099,22 @@ nav.open {
   @apply max-lg:w-93 max-sm:w-79 min-h-146 p-7.5 pt-34 max-sm:pt-15 relative rounded-2xl overflow-hidden bg-mivida-green text-center;
 }
 .c-commitment-card h6 {
-  @apply text-[1.5rem] text-(--mivida-white) leading-[1.4] mb-4;
+  @apply text-[1.5rem] text-mivida-white leading-[1.4] mb-4;
 }
 .c-commitment-card p {
-  @apply text-(--mivida-white) mb-4 font-normal;
+  @apply text-mivida-white mb-4 font-normal;
 }
 .c-commitment-card a {
-  @apply inline-flex items-center gap-2.5 justify-center mx-auto text-(--mivida-white) text-[0.875rem] leading-[1.10] transition-all duration-300 ease-linear;
+  @apply inline-flex items-center gap-2.5 justify-center mx-auto text-mivida-white text-[0.875rem] leading-[1.10] transition-all duration-300 ease-linear;
 }
 .c-commitment-card a svg path {
   @apply transition-all duration-300 ease-linear;
 }
 .c-commitment-card a:hover {
-  @apply text-(--mivida-black);
+  @apply text-mivida-black;
 }
 .c-commitment-card a:hover svg path {
-  @apply fill-(--mivida-black);
+  @apply fill-(--color-mivida-black);
 }
 .c-commitment-card.c-color-layout-2 {
   @apply bg-mivida-green-400;
@@ -1270,22 +1123,22 @@ nav.open {
   @apply bg-mivida-green-200;
 }
 .c-commitment-card.c-color-layout-3 h6 {
-  @apply text-(--mivida-green);
+  @apply text-mivida-green;
 }
 .c-commitment-card.c-color-layout-3 p {
-  @apply text-(--mivida-green);
+  @apply text-mivida-green;
 }
 .c-commitment-card.c-color-layout-3 a {
-  @apply text-(--mivida-green);
+  @apply text-mivida-green;
 }
 .c-commitment-card.c-color-layout-3 svg path {
-  @apply fill-(--mivida-green);
+  @apply fill-(--color-mivida-green);
 }
 .c-commitment-card.c-color-layout-3 a:hover {
-  @apply text-(--mivida-black);
+  @apply text-mivida-black;
 }
 .c-commitment-card.c-color-layout-3 a:hover svg path {
-  @apply fill-(--mivida-black);
+  @apply fill-(--color-mivida-black);
 }
 .c-commitments-sec .c-swiper-btn-wrapper {
   @apply lg:hidden;
@@ -1298,10 +1151,10 @@ nav.open {
   @apply max-w-192.5 mx-auto max-lg:max-w-full max-lg:px-25 max-md:px-15 max-sm:px-5;
 }
 .c-values-slider-title h3 {
-  @apply text-(--mivida-green) mb-7.5 max-sm:mb-5;
+  @apply text-mivida-green mb-7.5 max-sm:mb-5;
 }
 .c-values-slider-title p {
-  @apply text-(--mivida-green) mb-7.5;
+  @apply text-mivida-green mb-7.5;
 }
 .c-values-slider {
   @apply mt-11.5 max-md:mt-7.5 max-w-191 max-lg:max-w-full max-lg:px-17.5 max-md:px-5;
@@ -1319,10 +1172,10 @@ nav.open {
   @apply py-10.5  max-sm:py-7.5  px-12 max-sm:px-5 w-[30%] grow-1 max-md:w-full flex flex-col justify-center;
 }
 .c-value-slide-tag {
-  @apply bg-mivida-green-400 text-(--mivida-red-100) py-1.25 px-4.75 rounded-[3.125rem] w-fit text-[0.875rem] font-karla;
+  @apply bg-mivida-green-400 text-mivida-red-100 py-1.25 px-4.75 rounded-[3.125rem] w-fit text-[0.875rem] font-karla;
 }
 .c-value-slide-dec {
-  @apply text-(--mivida-green) text-[1.125rem] leading-[1.4];
+  @apply text-mivida-green text-[1.125rem] leading-[1.4];
 }
 
 .c-primary-slider-btn.c-btn-left-postion {
@@ -1334,28 +1187,28 @@ nav.open {
 
 /* team-profile-card */
 .c-team-card-sec {
-  @apply mt-31 mb-15 mx-4 max-sm:mt-28 max-sm:mt-25;
+  @apply mt-31 mb-15 mx-4 max-sm:mt-23.5 max-sm:mb-7.5;
 }
 .c-filter-btn {
   @apply flex items-center justify-center gap-4 mt-19 max-sm:mt-15 flex-wrap max-sm:hidden max-sm:gap-x-2.5 max-sm:gap-y-5;
 }
 .c-filter-btn button {
-  @apply py-1 px-5 text-(--mivida-green) font-karla bg-mivida-green-100 rounded-[50px] border border-(--mivida-green) text-[0.875rem] leading-[1.41] transition-all duration-300 ease-linear cursor-pointer;
+  @apply py-1 px-5 text-mivida-green font-karla bg-mivida-green-100 rounded-[50px] border border-mivida-green text-[0.875rem] leading-[1.41] transition-all duration-300 ease-linear cursor-pointer;
 }
 .c-filter-btn button:hover,
 .c-filter-btn button.active {
-  @apply bg-mivida-green-400 border-(--mivida-green-400) text-(--mivida-red-100);
+  @apply bg-mivida-green-400 border-mivida-green-400 text-mivida-red-100;
 }
 
 .c-filter-btn-with-searchbox .c-filter-btn {
   @apply m-0 w-[calc(100%-260px)] max-md:w-full justify-start max-lg:gap-4 max-md:justify-center flex max-sm:gap-x-2 max-sm:gap-y-5;
 }
 .c-filter-btn-with-searchbox .c-filter-btn button {
-  @apply border-(--mivida-black) text-(--mivida-black) bg-transparent;
+  @apply border-mivida-black text-mivida-black bg-transparent;
 }
 .c-filter-btn-with-searchbox .c-filter-btn button.active,
 .c-filter-btn-with-searchbox .c-filter-btn button:hover {
-  @apply bg-mivida-black text-(--mivida-white);
+  @apply bg-mivida-black text-mivida-white;
 }
 .c-filter-btn-with-searchbox {
   @apply mt-10.75 mb-7.5 max-sm:mt-7.5 max-sm:mb-8;
@@ -1414,7 +1267,7 @@ nav.open {
   @apply flex;
 }
 .c-team-card {
-  @apply sm:w-67.5 max-sm:max-w-[80%] max-sm:w-44 max-sm:grow-1 min-h-105.5 max-sm:min-h-85.5 rounded-2xl flex flex-col overflow-hidden border border-(--mivida-web-grey);
+  @apply sm:w-67.5 max-sm:max-w-[80%] max-sm:w-44 max-sm:grow-1 min-h-105.5 max-sm:min-h-85.5 rounded-2xl flex flex-col overflow-hidden border border-mivida-web-grey;
 }
 .c-team-media {
   @apply w-full h-59 max-sm:h-37;
@@ -1423,19 +1276,22 @@ nav.open {
   @apply w-full h-full object-cover object-top;
 }
 .c-team-content {
-  @apply relative pt-7 pl-5 pb-5.5 pr-4 max-sm:pt-5 max-sm:pl-3 max-sm:pb-2 max-sm:pr-1.5 flex flex-col sm:justify-between grow-1;
+  @apply relative pt-7 pl-5 pb-5.5 pr-4 max-sm:pt-5 max-sm:pl-3 max-sm:pb-3 max-sm:pr-1.5 flex flex-col sm:justify-between grow-1;
+}
+.c-team-top-content {
+  @apply mb-2.5;
 }
 .c-team-top-content h6 {
-  @apply text-(--mivida-green) mb-2.5 font-karla font-bold;
+  @apply text-mivida-green mb-2.5 font-karla font-bold;
 }
 .c-team-top-content p {
-  @apply text-(--mivida-green) mb-2.5;
+  @apply text-mivida-green mb-2.5;
 }
 .c-bottom-content {
   @apply max-w-47.5 max-sm:mt-auto max-sm:mb-2.5;
 }
 .c-bottom-content .c-tag {
-  @apply bg-mivida-green-200 text-(--mivida-green) py-1 px-4 rounded-[3.125rem] w-fit mb-1 text-[0.75rem] max-sm:text-[0.625rem] block;
+  @apply bg-mivida-green-200 text-mivida-green py-1.75 px-2.5 rounded-[3.125rem] text-[0.75rem] max-sm:text-[0.625rem] block font-karla leading-[1.41] mb-0 text-center w-[91%] max-sm:w-full;
 }
 .c-team-content .c-btn {
   @apply bottom-4.5 right-4 max-sm:static inline-flex ml-auto;
@@ -1457,10 +1313,10 @@ nav.open {
   @apply mt-6 max-lg:mt-0;
 }
 .c-contact-heading h2 {
-  @apply text-(--mivida-green) mb-5;
+  @apply text-mivida-green mb-5;
 }
 .c-contact-heading p {
-  @apply text-(--mivida-black) mb-5;
+  @apply text-mivida-black mb-5;
 }
 .c-enquries-content {
   @apply mt-12.5;
@@ -1469,7 +1325,7 @@ nav.open {
   @apply mb-9  max-sm:text-[1.75rem];
 }
 .c-enquries-content a {
-  @apply font-recoleta font-normal text-[1.75rem] max-sm:text-[1.375rem] leading-[1.3] text-(--mivida-black) transition-all duration-300 ease-linear hover:text-(--mivida-red-400)  block;
+  @apply font-recoleta font-normal text-[1.75rem] max-sm:text-[1.375rem] leading-[1.3] text-mivida-black transition-all duration-300 ease-linear hover:text-mivida-red-400  block;
 }
 .c-contact-form {
   @apply w-[52.92%] max-lg:w-full bg-mivida-green rounded-[20px] pt-13 px-12.5 max-sm:px-4.5 pb-9 max-sm:pb-13.5;
@@ -1479,7 +1335,7 @@ nav.open {
 }
 .c-input-wrapper input,
 .c-input-wrapper textarea {
-  @apply bg-mivida-white rounded-2xl py-4.75 px-10 text-[1rem] leading-[1.4] font-karla font-normal text-(--mivida-black) w-full;
+  @apply bg-mivida-white rounded-2xl py-4.75 px-10 text-[1rem] leading-[1.4] font-karla font-normal text-mivida-black w-full;
 }
 .c-input-wrapper input:focus,
 .c-input-wrapper textarea:focus {
@@ -1487,13 +1343,13 @@ nav.open {
 }
 .c-input-wrapper input::placeholder,
 .c-input-wrapper textarea::placeholder {
-  @apply text-(--mivida-warm-grey);
+  @apply text-mivida-warm-grey;
 }
 .c-check-box-wrapper {
   @apply my-7.25;
 }
 .c-check-box-heading {
-  @apply font-normal text-[1.75rem] max-sm:text-[1.3125rem] leading-[1.10] text-(--mivida-white) mb-7;
+  @apply font-normal text-[1.75rem] max-sm:text-[1.3125rem] leading-[1.10] text-mivida-white mb-7;
 }
 .c-custom-checkbox {
   @apply flex items-center gap-3 cursor-pointer select-none;
@@ -1546,23 +1402,23 @@ nav.open {
   @apply xl:pb-13.5;
 }
 .c-standard-slide-content h6 {
-  @apply font-karla leading-[1.4] text-(--mivida-white) font-bold mb-4;
+  @apply font-karla leading-[1.4] text-mivida-white font-bold mb-4;
 }
 .c-standard-slide-content p {
   @apply mb-5;
 }
 
 .c-standard-slide-content a {
-  @apply mt-4 inline-flex items-center gap-2.5  text-(--mivida-white) text-[0.875rem] leading-[1.10] transition-all duration-300 ease-linear;
+  @apply mt-4 inline-flex items-center gap-2.5  text-mivida-white text-[0.875rem] leading-[1.10] transition-all duration-300 ease-linear;
 }
 .c-standard-slide-content a svg path {
   @apply transition-all duration-300 ease-linear;
 }
 .c-standard-slide-content a:hover {
-  @apply text-(--mivida-red-400);
+  @apply text-mivida-red-400;
 }
 .c-standard-slide-content a:hover svg path {
-  @apply fill-(--mivida-red-400);
+  @apply fill-(--color-mivida-red-400);
 }
 .c-standard-card-sec .c-swiper-btn-wrapper {
   @apply lg:hidden;
@@ -1581,18 +1437,18 @@ nav.open {
   @apply mb-7.5;
 }
 .c-faq-content-col p {
-  @apply mb-7.5 text-(--mivida-black);
+  @apply mb-7.5 text-mivida-black;
 }
 .c-faq-col {
   @apply w-[calc(41.7%+9px)] max-md:w-full lg:-mr-2.25;
 }
 
 .c-accor-heading {
-  @apply cursor-pointer pt-8.5 pb-9.75 pr-10 relative border-t-1 border-(--mivida-green);
+  @apply cursor-pointer pt-8.5 pb-9.75 pr-10 relative border-t-1 border-mivida-green;
 }
 
 .c-accor-heading h5 {
-  @apply m-0 text-(--mivida-black) relative text-[1.75rem];
+  @apply m-0 text-mivida-black relative text-[1.75rem];
 }
 .active .c-accor-heading h5 {
   @apply underline;
@@ -1601,7 +1457,7 @@ nav.open {
 .c-accor-heading h5::after {
   content: "+";
   @apply absolute -right-8.75 top-1/2 -translate-y-1/2 text-[1.9375rem]
-         transition-transform duration-300 text-(--mivida-dark-teal);
+         transition-transform duration-300 text-mivida-dark-teal;
 }
 
 .c-accor-row.active .c-accor-heading h5::after {
@@ -1610,17 +1466,17 @@ nav.open {
 
 /* content */
 .c-accor-content {
-  @apply max-h-0 overflow-hidden transition-[max-height] duration-400 ease-linear -translate-y-6.25;
+  @apply max-h-0 overflow-hidden transition-[max-height] duration-300 ease-in-out -translate-y-6.25;
 }
 
 .c-accor-content-inner {
   @apply pb-2.25 max-sm:pb-1.25 pr-5;
 }
-.c-ineline-list {
+.c-inline-list {
   @apply flex  gap-y-1 mb-3.5 flex-wrap;
 }
-.c-ineline-list span {
-  @apply relative text-(--mivida-green) font-karla text-[0.75rem] leading-[1.4] font-normal pl-3.75  after:content-['']
+.c-inline-list span {
+  @apply relative text-mivida-green font-karla text-[0.75rem] leading-[1.4] font-normal pl-3.75  after:content-['']
          after:absolute
          after:w-[3px]
          after:h-[3px]
@@ -1630,12 +1486,12 @@ nav.open {
          after:bg-mivida-green-300
          after:rounded-full;
 }
-.c-ineline-list span:first-child {
+.c-inline-list span:first-child {
   @apply pl-0  after:w-[0px]
          after:h-[0px];
 }
 .c-accor-content p {
-  @apply text-(--mivida-green);
+  @apply text-mivida-green;
 }
 
 .c-multicolor-article-cards {
@@ -1645,7 +1501,7 @@ nav.open {
   @apply sm:max-w-226.5 mb-7.5 pr-33 max-md:pr-15 max-sm:pr-6;
 }
 .article-heading-col p {
-  @apply text-(--mivida-black);
+  @apply text-mivida-black;
 }
 .c-article-card-wrapper {
   @apply lg:max-w-278 lg:ml-0 max-lg:-mr-6 max-lg:-ml-6 max-lg:px-6 max-lg:w-[calc(100%+50px)];
@@ -1656,49 +1512,49 @@ nav.open {
 .c-article-card {
   @apply max-lg:w-136.75 max-sm:w-79 flex max-sm:flex-col bg-mivida-red-200 rounded-2xl overflow-hidden min-h-85.75 max-sm:min-h-153;
 }
-.article-card-media {
+.c-article-card-media {
   @apply w-50.75 max-sm:w-full max-sm:h-68.5;
 }
-.article-card-media img {
+.c-article-card-media img {
   @apply w-full h-full object-cover object-top;
 }
-.article-card-content {
+.c-article-card-content {
   @apply px-5 pt-8 w-[30%] grow-1 max-sm:w-full max-sm:flex max-sm:flex-col max-sm:p-5 max-sm:pb-10;
 }
-.article-card-content h4 {
-  @apply text-(--mivida-red) mb-2.5;
+.c-article-card-content h4 {
+  @apply text-mivida-red mb-2.5;
 }
-.article-card-content p {
-  @apply text-(--mivida-red-400) max-w-71.5;
+.c-article-card-content p {
+  @apply text-mivida-red-400 max-w-71.5;
 }
-.article-card-content .c-btn {
+.c-article-card-content .c-btn {
   @apply static mt-6.5 bg-mivida-red-400 max-sm:mt-auto;
 }
-.article-card-content .c-btn:hover {
+.c-article-card-content .c-btn:hover {
   @apply bg-mivida-green;
 }
 .c-article-card.c-article-card-red300 {
   @apply bg-mivida-red-300;
 }
 .c-article-card.c-article-card-red300 h4 {
-  @apply text-(--mivida-red-100);
+  @apply text-mivida-red-100;
 }
 .c-article-card.c-article-card-red300 p {
-  @apply text-(--mivida-red-100);
+  @apply text-mivida-red-100;
 }
 .c-article-card.c-article-card-green {
   @apply bg-mivida-green;
 }
 .c-article-card.c-article-card-green h4,
 .c-article-card.c-article-card-green p {
-  @apply text-(--mivida-green-100);
+  @apply text-mivida-green-100;
 }
 .c-article-card.c-article-card-green200 {
   @apply bg-mivida-green-200;
 }
 .c-article-card.c-article-card-green200 h4,
 .c-article-card.c-article-card-green200 p {
-  @apply text-(--mivida-green);
+  @apply text-mivida-green;
 }
 
 .c-article-card.c-article-card-green200 .c-btn,
@@ -1730,7 +1586,7 @@ nav.open {
   @apply mb-7;
 }
 .c-insights-article-content p {
-  @apply text-(--mivida-black) mb-5;
+  @apply text-mivida-black mb-5;
 }
 .c-insights-article-content .c-content-box:not(:first-child) {
   @apply mt-24;
@@ -1742,7 +1598,7 @@ nav.open {
   @apply mt-7.5 flex gap-5 items-center;
 }
 .c-share-box p {
-  @apply text-(--mivida-black) font-bold mb-0;
+  @apply text-mivida-black font-bold mb-0;
 }
 .c-social-share {
   @apply flex gap-4;
@@ -1755,14 +1611,14 @@ nav.open {
 }
 
 .text-box span {
-  @apply text-[1rem] leading-[1.4] font-karla font-normal text-(--mivida-black) block mb-6 max-sm:mb-5.5;
+  @apply text-[1rem] leading-[1.4] font-karla font-normal text-mivida-black block mb-6 max-sm:mb-5.5;
 }
 .text-box p {
-  @apply text-(--mivida-black) mt-4.75;
+  @apply text-mivida-black mt-4.75;
 }
 .text-box ul {
   @apply list-disc ml-[1.5rem];
 }
 .text-box ul li {
-  @apply text-[1rem] leading-[1.35] font-karla font-normal text-(--mivida-black);
+  @apply text-[1rem] leading-[1.35] font-karla font-normal text-mivida-black;
 }
