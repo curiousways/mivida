@@ -208,7 +208,7 @@ document.querySelectorAll(".c-menu-btn").forEach((btn) => {
     this.classList.toggle("toggled");
     document.querySelector(".c-site-header nav")?.classList.toggle("menuOpen");
     document.querySelector(".c-site-header")?.classList.toggle("active");
-    document.documentElement.classList.toggle("scrollLock");
+    document.documentElement.classList.toggle("c-scrollLock");
     document.querySelector("nav")?.classList.toggle("open");
   });
 });

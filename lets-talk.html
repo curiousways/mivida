@@ -75,144 +75,196 @@
       </div>
     </header>
 
-    <section class="[ c-announcement-bar ]">
-      <div class="[ l-container ] max-sm:!px-3.5">
-        <p class="[ c-announcement-bar-text ]">
-          To get in touch please send us an Email at
-          <a
-            href="#"
-            class="[ u-transistion-linear ] underline hover:text-(--mivida-black)"
-          >
-            hello@mividawealth.co.uk
-          </a>
-          or call us on 01279 647663
-        </p>
-      </div>
-    </section>
-
-    <section class="[ c-section-hero-banner ]">
-      <div class="[ c-media-bg c-media-overlay ]">
-        <picture>
-          <img
-            class="w-full h-full object-cover"
-            src="./src/images/lets-talk-banner.png"
-            alt="who-we-are-bannerr"
-          />
-        </picture>
-      </div>
-
-      <div class="[ l-container-narrow c-banner-content-wrapper ]">
-        <div class="[ c-banner-content-box ] xl:max-w-[65.6%]">
-          <h1>Let’s Talk</h1>
-
-          <p class="[ c-banner-desc ] md:max-w-[75.7%]">
-            Start with a free consultation. No pressure, no obligation. Take an
-            opportunity to discuss your finances and discover how we can bring
-            clarity to your plans. It’s an open conversation where you can share
-            your priorities, ask what’s on your mind, and explore how we can
-            help.
+    <main id="main-content">
+      <section class="[ c-announcement-bar ]">
+        <div class="[ l-container ] max-sm:!px-3.5">
+          <p class="[ c-announcement-bar-text ]">
+            To get in touch please send us an Email at
+            <a
+              href="#"
+              class="[ u-transition-linear ] underline hover:text-mivida-black"
+            >
+              hello@mividawealth.co.uk
+            </a>
+            or call us on 01279 647663
           </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="[ c-get-in-touch-sec ]">
-      <div class="[ l-container-wide ]">
-        <div
-          class="flex justify-between max-lg:flex-wrap gap-10 gap-y-15 px-8.5 max-sm:px-0"
-        >
-          <div class="[ c-contant-content ]">
-            <div class="[ c-contact-heading ]">
-              <h2>Get in touch with us</h2>
-              <p>
-                Whether you prefer a call, a video chat, or a face-to-face
-                meeting, we’ll work around you.
-              </p>
-              <p>
-                Use the form to arrange your free consultation at a time that
-                suits.
-              </p>
-            </div>
-            <div class="[ c-enquries-content ]">
-              <h4>Enquiries</h4>
-              <div class="">
-                <a href="">enquiries@mivida.com</a>
-                <a href="">Press@mivida.com</a>
-              </div>
-            </div>
+      <section class="[ c-section-hero-banner ]">
+        <div class="[ c-media-bg c-media-overlay ]">
+          <picture>
+            <img
+              class="w-full h-full object-cover"
+              src="./src/images/lets-talk-banner.png"
+              alt="who-we-are-bannerr"
+            />
+          </picture>
+        </div>
+
+        <div class="[ l-container-narrow c-banner-content-wrapper ]">
+          <div class="[ c-banner-content-box ] xl:max-w-[65.6%]">
+            <h1>Let’s Talk</h1>
+
+            <p class="[ c-banner-desc ] md:max-w-[75.7%]">
+              Start with a free consultation. No pressure, no obligation. Take
+              an opportunity to discuss your finances and discover how we can
+              bring clarity to your plans. It’s an open conversation where you
+              can share your priorities, ask what’s on your mind, and explore
+              how we can help.
+            </p>
           </div>
-          <div class="[ c-contact-form ]">
-            <form action="">
-              <div class="[ c-input-wrapper ]">
-                <input type="text" placeholder="Full name" />
-              </div>
-              <div class="[ c-input-wrapper ]">
-                <input type="number" placeholder="Telephone" />
-              </div>
-              <div class="[ c-input-wrapper ]">
-                <input type="email" placeholder="Email" />
-              </div>
-              <div class="[ c-input-wrapper ]">
-                <textarea
-                  name=""
-                  id=""
-                  placeholder="Message"
-                  rows="4"
-                ></textarea>
-              </div>
+        </div>
+      </section>
 
-              <div class="[ c-check-box-wrapper ]">
-                <h3 class="[ c-check-box-heading ]">How can we help?</h3>
+      <section class="[ c-get-in-touch-sec ]">
+        <div class="[ l-container-wide ]">
+          <div
+            class="flex justify-between max-lg:flex-wrap gap-10 gap-y-15 px-8.5 max-sm:px-0"
+          >
+            <div class="[ c-contant-content ]">
+              <div class="[ c-contact-heading ]">
+                <h2>Get in touch with us</h2>
+                <p>
+                  Whether you prefer a call, a video chat, or a face-to-face
+                  meeting, we’ll work around you.
+                </p>
+                <p>
+                  Use the form to arrange your free consultation at a time that
+                  suits.
+                </p>
+              </div>
+              <div class="[ c-enquries-content ]">
+                <h4>Enquiries</h4>
+                <div class="">
+                  <a href="">enquiries@mivida.com</a>
+                  <a href="">Press@mivida.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="[ c-contact-form ]">
+              <form action="">
+                <div class="[ c-input-wrapper ]">
+                  <label for="name" class="sr-only">Full name</label>
+                  <input id="name" type="text" placeholder="Full name" />
+                </div>
+                <div class="[ c-input-wrapper ]">
+                  <label for="phone" class="sr-only">Telephone</label>
+                  <input id="phone" type="tel" placeholder="Telephone" />
+                </div>
+                <div class="[ c-input-wrapper ]">
+                  <label for="email" class="sr-only">Email</label>
+                  <input id="email" type="email" placeholder="Email" />
+                </div>
+                <div class="[ c-input-wrapper ]">
+                  <label for="message" class="sr-only">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    rows="4"
+                  ></textarea>
+                </div>
+
+                <div class="[ c-check-box-wrapper ]">
+                  <h3 class="[ c-check-box-heading ]">How can we help?</h3>
+
+                  <div
+                    class="grid grid-cols-2 max-sm:grid-cols-1 gap-y-4.5 gap-x-5"
+                  >
+                    <label class="[ c-custom-checkbox ]">
+                      <input type="checkbox" class="peer sr-only" />
+                      <span class="">Enquiry type</span>
+                    </label>
+                    <label class="[ c-custom-checkbox ]">
+                      <input type="checkbox" class="peer sr-only" />
+                      <span class="">Enquiry type</span>
+                    </label>
+                    <label class="[ c-custom-checkbox ]">
+                      <input type="checkbox" class="peer sr-only" />
+                      <span class="">Enquiry type</span>
+                    </label>
+                    <label class="[ c-custom-checkbox ]">
+                      <input type="checkbox" class="peer sr-only" />
+                      <span class="">Enquiry type</span>
+                    </label>
+                    <label class="[ c-custom-checkbox ]">
+                      <input type="checkbox" class="peer sr-only" />
+                      <span class="">Enquiry type</span>
+                    </label>
+                    <label class="[ c-custom-checkbox ]">
+                      <input type="checkbox" class="peer sr-only" />
+                      <span class="">Enquiry type</span>
+                    </label>
+                  </div>
+                </div>
 
                 <div
-                  class="grid grid-cols-2 max-sm:grid-cols-1 gap-y-4.5 gap-x-5"
+                  class="flex justify-between gap-10 gap-y-7.5 max-sm:gap-y-15.5 pt-7 max-sm:pt-8 items-center flex-wrap"
                 >
-                  <label class="[ c-custom-checkbox ]">
-                    <input type="checkbox" class="peer sr-only" />
-                    <span class="">Enquiry type</span>
-                  </label>
-                  <label class="[ c-custom-checkbox ]">
-                    <input type="checkbox" class="peer sr-only" />
-                    <span class="">Enquiry type</span>
-                  </label>
-                  <label class="[ c-custom-checkbox ]">
-                    <input type="checkbox" class="peer sr-only" />
-                    <span class="">Enquiry type</span>
-                  </label>
-                  <label class="[ c-custom-checkbox ]">
-                    <input type="checkbox" class="peer sr-only" />
-                    <span class="">Enquiry type</span>
-                  </label>
-                  <label class="[ c-custom-checkbox ]">
-                    <input type="checkbox" class="peer sr-only" />
-                    <span class="">Enquiry type</span>
-                  </label>
-                  <label class="[ c-custom-checkbox ]">
-                    <input type="checkbox" class="peer sr-only" />
-                    <span class="">Enquiry type</span>
-                  </label>
-                </div>
-              </div>
-
-              <div
-                class="flex justify-between gap-10 gap-y-7.5 max-sm:gap-y-15.5 pt-7 max-sm:pt-8 items-center flex-wrap"
-              >
-                <div class="[ c-agree-wrapper ]">
-                  <label class="[ c-custom-checkbox ]">
-                    <input type="checkbox" class="peer sr-only" />
-                    <span class=""
-                      >I agree to the
-                      <a
-                        href=""
-                        class="underline text-white hover:text-(--mivida-red-400)"
-                        >Privacy Policy.</a
-                      ></span
+                  <div class="[ c-agree-wrapper ]">
+                    <label class="[ c-custom-checkbox ]">
+                      <input type="checkbox" class="peer sr-only" />
+                      <span class=""
+                        >I agree to the
+                        <a
+                          href=""
+                          class="underline text-white hover:text-(--mivida-red-400)"
+                          >Privacy Policy.</a
+                        ></span
+                      >
+                    </label>
+                  </div>
+                  <div class="[ c-btn-wrap ]">
+                    <button
+                      type="submit"
+                      class="[ c-secondary-btn c-green-bg ]"
                     >
-                  </label>
+                      Send Enquiry
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-                <div class="[ c-btn-wrap ]">
-                  <button type="submit" class="[ c-secondary-btn c-green-bg ]">
-                    Send Enquiry
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="[ c-standard-card-sec ]">
+        <div class="[ l-container ]">
+          <div class="swiper [ c-standard-card-slider ]">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide [ c-standard-card-slide ]">
+                <div class="[ c-standard-slide-media ]">
+                  <img src="./src/images/standsted-office.png" alt="" />
+                </div>
+                <div class="[ c-standard-slide-content ]">
+                  <h6>Standsted Office</h6>
+                  <div class="flex flex-col justify-between grow-1">
+                    <p>
+                      Western House <br />
+                      2 Cambridge Road <br />
+                      Stansted <br />
+                      CM24 8BZ
+                    </p>
+                    <p>01279 647663</p>
+                  </div>
+                  <a href=""
+                    >View on Map
                     <svg
                       width="16"
                       height="16"
@@ -227,104 +279,135 @@
                         fill="white"
                       />
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
-            </form>
+              <div class="swiper-slide [ c-standard-card-slide ]">
+                <div class="[ c-standard-slide-media ]">
+                  <img src="./src/images/standsted-office.png" alt="" />
+                </div>
+                <div class="[ c-standard-slide-content ]">
+                  <h6>Standsted Office</h6>
+                  <div class="flex flex-col justify-between grow-1">
+                    <p>
+                      Western House <br />
+                      2 Cambridge Road <br />
+                      Stansted <br />
+                      CM24 8BZ
+                    </p>
+                    <p>01279 647663</p>
+                  </div>
+                  <a href=""
+                    >View on Map
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide [ c-standard-card-slide ]">
+                <div class="[ c-standard-slide-media ]">
+                  <img src="./src/images/standsted-office.png" alt="" />
+                </div>
+                <div class="[ c-standard-slide-content ]">
+                  <h6>Standsted Office</h6>
+                  <div class="flex flex-col justify-between grow-1">
+                    <p>
+                      Western House <br />
+                      2 Cambridge Road <br />
+                      Stansted <br />
+                      CM24 8BZ
+                    </p>
+                    <p>01279 647663</p>
+                  </div>
+                  <a href=""
+                    >View on Map
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="[ c-swiper-btn-wrapper ] mt-7.5">
+            <div class="swiper-button-prev [ c-primary-slider-btn ] rotate-180">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-next [ c-primary-slider-btn ]">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="[ c-standard-card-sec ]">
-      <div class="[ l-container ]">
-        <div class="swiper [ c-standard-card-slider ]">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide [ c-standard-card-slide ]">
-              <div class="[ c-standard-slide-media ]">
-                <img src="./src/images/standsted-office.png" alt="" />
-              </div>
-              <div class="[ c-standard-slide-content ]">
-                <h6>Standsted Office</h6>
-                <div class="flex flex-col justify-between grow-1">
-                  <p>
-                    Western House <br />
-                    2 Cambridge Road <br />
-                    Stansted <br />
-                    CM24 8BZ
-                  </p>
-                  <p>01279 647663</p>
-                </div>
-                <a href=""
-                  >View on Map
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
-              </div>
+      <section class="[ c-img-with-text-sec ]">
+        <div class="[ l-container ]">
+          <div class="[ c-card-split ]">
+            <div class="[ c-card-split-media ]">
+              <img src="./src/images/join-us.png" alt="" />
             </div>
-            <div class="swiper-slide [ c-standard-card-slide ]">
-              <div class="[ c-standard-slide-media ]">
-                <img src="./src/images/standsted-office.png" alt="" />
-              </div>
-              <div class="[ c-standard-slide-content ]">
-                <h6>Standsted Office</h6>
-                <div class="flex flex-col justify-between grow-1">
-                  <p>
-                    Western House <br />
-                    2 Cambridge Road <br />
-                    Stansted <br />
-                    CM24 8BZ
-                  </p>
-                  <p>01279 647663</p>
-                </div>
-                <a href=""
-                  >View on Map
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide [ c-standard-card-slide ]">
-              <div class="[ c-standard-slide-media ]">
-                <img src="./src/images/standsted-office.png" alt="" />
-              </div>
-              <div class="[ c-standard-slide-content ]">
-                <h6>Standsted Office</h6>
-                <div class="flex flex-col justify-between grow-1">
-                  <p>
-                    Western House <br />
-                    2 Cambridge Road <br />
-                    Stansted <br />
-                    CM24 8BZ
-                  </p>
-                  <p>01279 647663</p>
-                </div>
-                <a href=""
-                  >View on Map
+            <div class="[ c-card-split-content ]">
+              <h3>Join Us</h3>
+              <p>
+                Our success is built on exceptional people who share our
+                commitment to client-focused financial planning. At Mivida, we
+                create an environment where professionals grow, collaboration
+                thrives, and client care is always paramount. If you’re driven
+                to make a genuine difference in people’s financial lives, we’d
+                love to hear from you.
+              </p>
+              <div class="[ c-btn-wrap ] mt-7.5 lg:mt-15">
+                <a href="" class="[ c-primary-btn ]">
+                  View careers page
                   <svg
                     width="16"
                     height="16"
@@ -344,89 +427,15 @@
             </div>
           </div>
         </div>
-        <div class="[ c-swiper-btn-wrapper ] mt-7.5">
-          <div class="swiper-button-prev [ c-primary-slider-btn ] rotate-180">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
-                fill="white"
-              />
-            </svg>
-          </div>
-          <div class="swiper-button-next [ c-primary-slider-btn ]">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
-                fill="white"
-              />
-            </svg>
-          </div>
+        <div class="[ c-ab-shape ] !left-60">
+          <img
+            class="w-full h-full object-contain mix-blend-soft-light max-md:hidden"
+            src="./src/images/Vector-11.png"
+            alt=""
+          />
         </div>
-      </div>
-    </section>
-
-    <section class="[ c-img-with-text-sec ]">
-      <div class="[ l-container ]">
-        <div class="[ c-card-split ]">
-          <div class="[ c-card-split-media ]">
-            <img src="./src/images/join-us.png" alt="" />
-          </div>
-          <div class="[ c-card-split-content ]">
-            <h3>Join Us</h3>
-            <p>
-              Our success is built on exceptional people who share our
-              commitment to client-focused financial planning. At Mivida, we
-              create an environment where professionals grow, collaboration
-              thrives, and client care is always paramount. If you’re driven to
-              make a genuine difference in people’s financial lives, we’d love
-              to hear from you.
-            </p>
-            <div class="[ c-btn-wrap ] mt-7.5 lg:mt-15">
-              <a href="" class="[ c-primary-btn ]">
-                View careers page
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7.3418 2.86083C7.52928 2.67334 7.834 2.67334 8.02148 2.86083L12.4961 7.33641C12.5208 7.36042 12.5434 7.38669 12.5625 7.41551C12.6865 7.60198 12.6664 7.85655 12.502 8.02098L8.02148 12.5015C7.83407 12.6887 7.52926 12.6886 7.3418 12.5015C7.1547 12.3141 7.15476 12.0102 7.3418 11.8227L11.0029 8.16161H3.20117C2.93607 8.16161 2.72077 7.94623 2.7207 7.68114C2.7207 7.416 2.93603 7.20067 3.20117 7.20067H11.0029L7.3418 3.54051C7.15436 3.35308 7.15445 3.04832 7.3418 2.86083Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="[ c-ab-shape ] !left-60">
-        <img
-          class="w-full h-full object-contain mix-blend-soft-light max-md:hidden"
-          src="./src/images/Vector-11.png"
-          alt=""
-        />
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="[ c-site-footer ]">
       <div class="[ l-container-footer ]">
