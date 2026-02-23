@@ -1,7 +1,6 @@
 const journalSwiper = new Swiper(".c-card-slider-sec.swiper", {
   slidesPerView: 1.202,
   spaceBetween: 12,
-
   resistanceRatio: 0,
   slidesOffsetAfter: 0,
   touchReleaseOnEdges: true,
@@ -63,40 +62,6 @@ journalSwiper.on("update", updateNavLimit);
 
 // 🔹 IMPORTANT
 journalSwiper.init();
-
-// function updateNavLimit() {
-//   if (!window.matchMedia("(min-width: 640px)").matches) {
-//     const nextBtn = document.querySelector(".journal-sec .swiper-button-next");
-//     nextBtn.classList.remove("swiper-button-disabled");
-//     nextBtn.style.pointerEvents = "";
-//     nextBtn.style.opacity = "";
-//     return;
-//   }
-
-//   const totalSlides = journalSwiper.slides.length;
-
-//   const remainingSlides = Math.max(totalSlides - 1, 0);
-//   const columns = 1 + Math.ceil(remainingSlides / 2);
-
-//   const currentColumn = Math.round(journalSwiper.activeIndex);
-
-//   const nextBtn = document.querySelector(".journal-sec .swiper-button-next");
-
-//   if (currentColumn >= columns - 1) {
-//     nextBtn.classList.add("swiper-button-disabled");
-//     nextBtn.style.pointerEvents = "none";
-//     nextBtn.style.opacity = "0.5";
-//   } else {
-//     nextBtn.classList.remove("swiper-button-disabled");
-//     nextBtn.style.pointerEvents = "";
-//     nextBtn.style.opacity = "";
-//   }
-// }
-
-// journalSwiper.on("init", updateNavLimit);
-// journalSwiper.on("slideChange", updateNavLimit);
-// journalSwiper.on("resize", updateNavLimit);
-// journalSwiper.init();
 
 const testimonialSwiper = new Swiper(".c-testimonial-sec .swiper", {
   slidesPerView: 1,
@@ -299,11 +264,9 @@ filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const filterValue = btn.dataset.filter;
 
-    // active button
     filterButtons.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
-    // cards filter
     teamCards.forEach((card) => {
       if (filterValue === "all" || card.dataset.filter.includes(filterValue)) {
         card.style.display = "flex";
@@ -320,7 +283,6 @@ accorHeadings.forEach((heading) => {
     const row = heading.parentElement;
     const content = row.querySelector(".c-accor-content");
 
-    // close others (optional – remove if multiple open chahiye)
     document.querySelectorAll(".c-accor-row").forEach((item) => {
       if (item !== row) {
         item.classList.remove("active");
@@ -407,3 +369,18 @@ window.addEventListener("load", updateTouchViewport);
 
 // on resize
 window.addEventListener("resize", updateTouchViewport);
+
+document.addEventListener("DOMContentLoaded", function () {
+  function updateAnnouncementHeight() {
+    const bar = document.querySelector(".c-announcement-bar");
+    const height = bar ? bar.offsetHeight : 0;
+
+    document.documentElement.style.setProperty(
+      "--c-announcement-bar-height",
+      height + "px",
+    );
+  }
+  updateAnnouncementHeight();
+
+  window.addEventListener("resize", updateAnnouncementHeight);
+});
